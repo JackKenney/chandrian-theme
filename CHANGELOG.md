@@ -1,5 +1,11 @@
+## 1.2.0
+
+- Unify semantic colors across all 3 themes
+- Back to roots with chandrian semantic guidelines
+
 ## 1.1.0
 
+- unify accent colors across variants
 - standardize workspace accent colors across themes
 - improve color cohesion
 - a black background version of the dark theme

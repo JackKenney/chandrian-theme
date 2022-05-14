@@ -1,24 +1,27 @@
 [
-    
     {
         "scope": [
             "entity.name.tag.yaml",
             "keyword.other.definition.ini"
         ],
         "settings": {
-            "foreground": "{{main}}"
+            "foreground": "{{functions}}"
         }
     },
     {
-        "scope": ["log.date"],
+        "scope": [
+            "log.date"
+        ],
         "settings": {
-            "foreground": "{{textProminent}}"
+            "foreground": "{{textIntense}}"
         }
     },
     {
-        "scope": ["log.constant"],
+        "scope": [
+            "log.constant"
+        ],
         "settings": {
-            "foreground": "{{alt4}}"
+            "foreground": "{{attributes}}"
         }
     },
     {
