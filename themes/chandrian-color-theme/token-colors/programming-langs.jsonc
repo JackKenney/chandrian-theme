@@ -311,7 +311,6 @@
     {
         "name": "Exit Keywords",
         "scope": [
-            "keyword.control",
             "keyword.control.flow",
             "keyword.control.return",
             "keyword.control.break",
