@@ -6,8 +6,8 @@
         "textMostMild": "{{base0}}",
         "textMild": "{{base1}}",
         "text": "{{base1-5}}",
-        "textIntense": "{{base1}}", //fn params
-        "textMostIntense": "{{base2}}",
+        "textIntense": "{{base2}}", //fn params
+        "textMostIntense": "{{base3}}",
         // background
         "terminalBackground": "{{base-4}}",
         "background": "{{base-2}}",
