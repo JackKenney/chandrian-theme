@@ -10,9 +10,9 @@
         "textMostIntense": "{{base4}}", //fn params
         // background
         "terminalBackground": "{{base04}}",
-        "background": "{{base02}}",
-        "backgroundIntense": "{{base03}}",
         "backgroundMostIntense": "{{base04}}",
+        "backgroundIntense": "{{base03}}",
+        "background": "{{base02}}",
         "backgroundMild": "{{base03}}",
         "backgroundMostMild": "{{base00}}",
         "selectionBackground":"{{base02}}",

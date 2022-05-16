@@ -292,13 +292,6 @@
             "keyword.control.import", //keyword.control.import.tsx,
             "keyword.control.export",
             "keyword.control",
-            "keyword.operator.class", //-> in php
-            "keyword.operator.delete",
-            "keyword.operator.minus.exponent",
-            "keyword.operator.new",
-            "keyword.operator.noexcept",
-            "keyword.operator.plus.exponent",
-            "keyword.operator",
             "keyword.other.new",
             "keyword.other.operator",
             "keyword.other.using",
@@ -311,6 +304,13 @@
     {
         "name": "Exit Keywords",
         "scope": [
+            "keyword.operator.class", //-> in php
+            "keyword.operator.delete",
+            "keyword.operator.minus.exponent",
+            "keyword.operator.new",
+            "keyword.operator.noexcept",
+            "keyword.operator.plus.exponent",
+            "keyword.operator",
             "keyword.control.flow",
             "keyword.control.return",
             "keyword.control.break",
