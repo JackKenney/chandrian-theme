@@ -19,7 +19,7 @@
     "banner.foreground": "#beb8a5",
     "banner.iconForeground": "#eee8d5",
     "breadcrumb.activeSelectionForeground": "#beb8a5",
-    "breadcrumb.background": "#383b3d",
+    "breadcrumb.background": "#1e1e1e",
     "breadcrumb.focusForeground": "#beb8a5",
     "breadcrumb.foreground": "#839496",
     "breadcrumbPicker.background": "#252526",
