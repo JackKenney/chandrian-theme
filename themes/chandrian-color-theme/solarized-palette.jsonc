@@ -3,6 +3,7 @@
     "base-3": "#252526", // menu black
     "base-2": "#383b3d", // fringe black
     "base-1": "#555555", // sidebar black
+    "base-00": "#888883", // lightest base
     "base04": "#102530", // deepblack
     "base03": "#002b36", // brblack
     "base02": "#073642", // black
@@ -11,7 +12,9 @@
     "base0": "#839496", // brblue
     "base1": "#93a1a1", // brcyan
     "base1-5": "#beb8a5", // dark tan
+    "base1-75": "#cec8b5", // medium tan
     "base2": "#ded8c5", // tan
+    "base2-5": "#e6e0cd", // light tan
     "base3": "#eee8d5", // white
     "base4": "#fdf6e3", // brwhite
     "darkYellow": "#875B10", // dyellow

@@ -2,7 +2,7 @@
 	"name": "solarized-chandrian",
 	"displayName": "Solarized Chandrian",
 	"description": "A semantic solarized color theme for VS Code",
-	"version": "1.2.6",
+	"version": "1.2.7",
 	"publisher": "jackkenney",
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -40,7 +40,10 @@
 	},
 	"scripts": {
 		"build": "node ./build/compile-themes.js",
-		"watch": "node ./build/watch-and-compile.js"
+		"watch": "node ./build/watch-and-compile.js",
+		"package": "vsce package",
+		"publish": "vsce package && vsce publish",
+		"test-install": "npm run build && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
 	},
 	"author": "Jack Kenney",
 	"license": "ISC",

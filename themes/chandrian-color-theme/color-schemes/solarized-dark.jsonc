@@ -13,9 +13,9 @@
         "backgroundMostIntense": "{{base04}}",
         "backgroundIntense": "{{base03}}",
         "background": "{{base02}}",
-        "backgroundMild": "{{base03}}",
+        "backgroundMild": "{{base01}}",
         "backgroundMostMild": "{{base00}}",
-        "selectionBackground":"{{base02}}",
+        "selectionBackground": "{{base02}}",
         // end basics
         "commentGray": "{{base0}}",
         "commentGrayProminent": "{{base1}}",

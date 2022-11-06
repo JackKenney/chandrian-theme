@@ -10,12 +10,12 @@
         "textMostIntense": "{{base3}}",
         // background
         "terminalBackground": "{{base-4}}",
-        "background": "{{base-2}}",
-        "backgroundIntense": "{{base-3}}",
         "backgroundMostIntense": "{{base-4}}",
-        "backgroundMild": "{{base-3}}",
-        "backgroundMostMild": "{{base00}}",
-        "selectionBackground":"{{base02}}",
+        "backgroundIntense": "{{base-3}}",
+        "background": "{{base-2}}",
+        "backgroundMild": "{{base-1}}",
+        "backgroundMostMild": "{{base-00}}",
+        "selectionBackground": "{{base02}}",
         // end basics
         "commentGray": "{{base0}}",
         "commentGrayProminent": "{{base1}}",
