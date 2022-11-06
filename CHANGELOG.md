@@ -1,20 +1,23 @@
-## 1.2.0
+## 1.2.x
 
-- Unify semantic colors across all 3 themes
-- Back to roots with chandrian semantic guidelines
+- unify semantic colors across all 3 themes
+- back to roots with chandrian semantic guidelines
+- update readme and contributing docs
+- smooth out devops for testing and packaging
 
-## 1.1.0
+## 1.1.x
 
 - unify accent colors across variants
 - standardize workspace accent colors across themes
 - improve color cohesion
 - a black background version of the dark theme
 
-## Up to 1.0.12
+## 1.0.x
 
 Color scheme is being improved incremementally to ensure there is good color contrast
 and theme consistency between the light and dark themes.
 
+- initial release
 - make highlighting stand out more
 - fix widget colors and hover colors
 - adjust color naming to be more intuitive for light/dark
@@ -24,6 +27,3 @@ and theme consistency between the light and dark themes.
 - unify solarized light and dark general settings
 - augment solarized palette for higher contrast (AA) viewing per theme
 - use solarized palette for both light and dark themes
-
-## 1.0.0
-- Initial release
