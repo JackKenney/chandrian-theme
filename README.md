@@ -1,4 +1,4 @@
-# Solarized Chandrian VS Code Color Theme
+# Solarized Chandrian VSCode Color Theme
 
 A mix of the chandrian theme from https://github.com/narenranjit/chandrian-theme and the solarized colors https://ethanschoonover.com/solarized/. 
 
