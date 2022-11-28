@@ -1,0 +1,113 @@
+<idea-plugin>
+  <name>Solarized Themes</name>
+  <id>com.4lex4.intellij.solarized</id>
+  <version>2.4.0</version>
+  <vendor email="4lex49@zoho.com" url="https://github.com/4lex4/intellij-platform-solarized">4lex4</vendor>
+  <category>UI</category>
+
+  <description>
+    <![CDATA[
+Adds Solarized Dark and Light color themes.
+<br/><br/>
+
+Notable features:
+<ul>
+<li>High quality and consistent both the UI and editor schemes with an adaptation of minor colors
+    (for the supported IDE version) avoiding any usage of Default or Darcula colors</li>
+<li>Clean editor schemes with regular font styles avoiding bolds</li>
+<li>Usage of inheritance mechanism to achieve unified look and feel between various languages
+    (so, for example, syntax highlighting for such statically typed languages
+    as Java, Kotlin, C#, Go or C++ and so on is as similar as possible and the same
+    for the other kinds of languages)</li>
+</ul>
+<br/><br/>
+
+To install:
+<ol>
+<li>Go to <b>Settings | Plugins</b>, find the theme plugin and install it</li>
+<li>Restart the IDE</li>
+<li>Go to <b>Settings | Appearance & Behavior | Appearance</b> and select
+    <b>Solarized Dark</b> or <b>Solarized Light</b> in the Theme dropdown</li>
+<ul type="disc">
+<li>Or to select only an editor scheme go to <b>Settings | Editor | Color Scheme</b> and
+    select <b>Solarized Dark (4lex4)</b> or <b>Solarized Light (4lex4)</b> in the Scheme dropdown</li>
+</ul>
+</ol>
+    ]]>
+  </description>
+
+  <change-notes>
+    <![CDATA[
+<b>2.4.0</b>
+<br/>
+<ul>
+<li>Support for IntelliJ platform version 2021.2</li>
+<li>Set console ANSI colors with the solarized termcol palette</li>
+<li>Adjust debug colors of the light theme to improve visibility of inline hint foreground</li>
+</ul>
+<br/>
+<b>2.3.0</b>
+<br/>
+<ul>
+<li>Support for IntelliJ platform version 2020.2</li>
+</ul>
+<br/>
+<b>2.2.4</b>
+<br/>
+<ul>
+<li>UI fixes and improvements</li>
+<li>Add editor schemes variants with higher gray contrast (named as Hard Gray)</li>
+</ul>
+<br/>
+<b>2.2.3</b>
+<br/>
+<ul>
+<li>Full Flame Graph support</li>
+<li>Fix: some editor scroll bar colors became invalid after editing the scheme in IDE</li>
+<li>Other minor fixes</li>
+</ul>
+<br/>
+<b>2.2.2</b>
+<br/>
+<ul>
+<li>Fix some UI foreground colors</li>
+<li>Improve background highlighting colors in editor schemes</li>
+<li>Improvements to syntax highlighting for some technologies</li>
+<li>Other minor fixes</li>
+</ul>
+<br/>
+<b>2.2.1</b>
+<br/>
+<ul>
+<li>Lower contrast for underscore effect of a reassigned/mutable variable</li>
+<li>Calibrate the identifier under caret and search result attributes colors</li>
+<li>Other fixes for editor schemes</li>
+<li>Add support for Rainbow Brackets plugin</li>
+</ul>
+<br/>
+<b>2.2.0</b>
+<br/>
+<ul>
+<li>Support for IntelliJ platform version 2020.1</li>
+<li>UI and editor schemes fixes and improvements</li>
+<li>Magenta color is now used to highlight method declarations and methods in some contexts.</li>
+<li>Highlight Kotlin extension/dynamic properties and calls in the same way as usual ones</li>
+</ul>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="192"/>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="6a41f0b6-ad89-4fc0-a326-ff52958b07b7" path="/SolarizedDark.theme.json"/>
+    <themeProvider id="987fea89-a3e4-45f6-9898-7dbace4d7bd3" path="/SolarizedLight.theme.json"/>
+    <bundledColorScheme id="6a41f0b6-ad89-4fc0-a326-ff52958b07b8" path="/editor/SolarizedDarkHardGray"/>
+    <bundledColorScheme id="987fea89-a3e4-45f6-9898-7dbace4d7bd4" path="/editor/SolarizedLightHardGray"/>
+  </extensions>
+
+  <actions>
+  </actions>
+
+</idea-plugin>
