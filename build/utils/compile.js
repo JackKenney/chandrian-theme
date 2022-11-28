@@ -13,23 +13,6 @@ function parseContents(fileName, colors) {
   return parseTemplateString(contents, colors);
 }
 
-function stripTransparency(colorList) {
-  return colorList.map((col) => {
-    const dupe = Object.assign({}, col);
-    if (dupe.settings && dupe.settings.foreground) {
-      dupe.settings.foreground = dupe.settings.foreground.slice(0, 7);
-    }
-    return dupe;
-  });
-}
-
-function stripItalics(colorList) {
-  return colorList.map((col) => {
-    const dupe = Object.assign({}, col);
-    delete dupe.settings.fontStyle;
-    return dupe;
-  });
-}
 module.exports = function compile(paths) {
   const colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
   colorSchemeFiles.forEach((fileName) => {
