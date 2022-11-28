@@ -15,6 +15,7 @@ function parseContents(fileName, colors) {
 
 module.exports = function compile(paths) {
   const colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
+
   colorSchemeFiles.forEach((fileName) => {
     const solarizedContents = fs.readFileSync(
       paths.SOLARIZED_PALETTE, "utf8"
@@ -60,10 +61,12 @@ module.exports = function compile(paths) {
     }, []);
     base.tokenColors = codeColors;
 
-    const opFile = `${paths.OUTPUT_PATH}/${outputFileName}.json`;
-    fs.writeFileSync(opFile, JSON.stringify(base, null, 2), "utf8");
-    console.log("Writing", opFile);
+    const outputFile = `${paths.OUTPUT_PATH}/${outputFileName}.json`;
+    fs.writeFileSync(
+      outputFile, JSON.stringify(base, null, 2), "utf8"
+    );
 
-    console.log("Build complete.");
+    console.log("Writing", outputFile);
   });
+  console.log("Build complete.");
 };
