@@ -24,26 +24,26 @@
 			{
 				"label": "Solarized Black Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./dist/solarized-black-chandrian.json"
+				"path": "./code-dist/solarized-black-chandrian.json"
 			},
 			{
 				"label": "Solarized Dark Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./dist/solarized-dark-chandrian.json"
+				"path": "./code-dist/solarized-dark-chandrian.json"
 			},
 			{
 				"label": "Solarized Light Chandrian",
 				"uiTheme": "vs",
-				"path": "./dist/solarized-light-chandrian.json"
+				"path": "./code-dist/solarized-light-chandrian.json"
 			}
 		]
 	},
 	"scripts": {
 		"build": "node ./build/compile-themes.js",
 		"watch": "node ./build/watch-and-compile.js",
-		"package": "vsce package",
-		"publish": "vsce package && vsce publish",
-		"test-install": "npm run build && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
+		"code-package": "vsce package",
+		"code-publish": "vsce package && vsce publish",
+		"code-test-install": "npm run build && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
 	},
 	"author": "Jack Kenney",
 	"license": "ISC",

@@ -34,7 +34,7 @@ module.exports = function compile(paths) {
   const colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
   colorSchemeFiles.forEach((fileName) => {
     const solarizedContents = fs.readFileSync(
-      `${paths.basePath}/solarized-palette.jsonc`, "utf8"
+      paths.SOLARIZED_PALETTE, "utf8"
     );
     const solarizedColors = jsonc.parse(solarizedContents);
     const contents = fs.readFileSync(
@@ -77,7 +77,7 @@ module.exports = function compile(paths) {
     }, []);
     base.tokenColors = codeColors;
 
-    const opFile = `${paths.OP_PATH}/${outputFileName}.json`;
+    const opFile = `${paths.OUTPUT_PATH}/${outputFileName}.json`;
     fs.writeFileSync(opFile, JSON.stringify(base, null, 2), "utf8");
     console.log("Writing", opFile);
 
