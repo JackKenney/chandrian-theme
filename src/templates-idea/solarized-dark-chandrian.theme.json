@@ -1,8 +1,8 @@
 {
-  "name": "Solarized Dark",
+  "name": "Solarized Dark Chandrian",
   "dark": true,
-  "author": "4lex4",
-  "editorScheme": "/editor/SolarizedDark.xml",
+  "author": "jackkenney",
+  "editorScheme": "/editor/solarized-dark-chandrian.xml",
   "colors": {
     "colorBackground": "#0E3C4A",
     "colorForeground": "#A9B3AE",

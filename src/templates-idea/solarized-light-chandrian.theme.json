@@ -1,8 +1,8 @@
 {
-  "name": "Solarized Light",
+  "name": "Solarized Light Chandrian",
   "dark": false,
-  "author": "4lex4",
-  "editorScheme": "/editor/SolarizedLight.xml",
+  "author": "jackkenney",
+  "editorScheme": "/editor/SolarizedLightChandrian.xml",
   "colors": {
     "colorBackground": "#EEE8D5",
     "colorForeground": "#2E4E58",
