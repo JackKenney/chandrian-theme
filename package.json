@@ -52,7 +52,8 @@
 		"eslint-plugin-prettier": "^3.4.0",
 		"json-templates": "^2.0.0",
 		"jsonc-parser": "^2.0.1",
-		"prettier": "^2.2.1"
+		"prettier": "^2.2.1",
+		"string-template": "^1.0.0"
 	},
 	"__metadata": {
 		"id": "6575abf0-45af-4b6d-9817-7ca26dd3a221",

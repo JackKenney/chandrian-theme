@@ -1,6 +1,7 @@
 import fs from "fs";
 import jsonc from "jsonc-parser";
-import template from "json-templates";
+import templateJSON from "json-templates";
+import templateXML from "string-template";
 import * as paths from "./paths.mjs";
 
 export default class Compiler {
@@ -21,7 +22,7 @@ export default class Compiler {
             };
 
             const preTemplateColors = scheme.colors;
-            const colors = this.parseTemplateString(
+            const colors = this.parseJSONTemplateString(
                 JSON.stringify(preTemplateColors), this.solarizedColors);
 
             const generalColors = this.parseAndTemplateAsObject(
@@ -32,8 +33,9 @@ export default class Compiler {
                 colors, paths.CODE_STYLES_FOLDER);
             base.tokenColors = codeColors;
 
-            const outputFileName = `${scheme.name.toLowerCase().replace(" ", "-")}-chandrian`;
-            this.writeOutputFile(outputFileName, paths.VSCODE_OUTPUT_PATH, base);
+            const outputFileName = this.outputFileName(scheme);
+            this.writeOutputFile(
+                base, paths.VSCODE_OUTPUT_PATH, outputFileName, "json");
         });
         console.log("Build complete.");
     };
@@ -45,14 +47,33 @@ export default class Compiler {
             const themeJSON = {
                 name: `${scheme.name} Chandrian`,
                 dark: scheme.type == "dark",
-                // todo add more fields
+                editorScheme: "",
+                colors: {},
+                ui: {}
             };
 
             const preTemplateColors = scheme.colors;
-            const colors = this.parseTemplateString(JSON.stringify(preTemplateColors), this.solarizedColors);
+            const colors = this.parseJSONTemplateString(
+                JSON.stringify(preTemplateColors), this.solarizedColors);
 
-            console.log(`IDEA base: ${JSON.stringify(themeJSON)}`);
+            const colorsAndName = colors;
+            colorsAndName["themeName"] = "#" + themeJSON["name"];
+            const editorXML = this.replaceXMLTemplateContents(
+                `${paths.IDEA_TEMPLATES}/editor/solarized-chandrian.xml`, colors);
 
+            const themeBase = this.parseJSONContents(
+                `${paths.IDEA_TEMPLATES}/solarized-chandrian.theme.json`, colors);
+
+            const themeFilePrefix = this.outputFileName(scheme);
+            const xmlFilename = this.writeOutputFile(
+                editorXML, `${paths.IDEA_OUTPUT_PATH}/editor`, themeFilePrefix, "xml", false);
+
+            themeJSON["editorScheme"] = `/editor/${xmlFilename}`;
+            themeJSON["colors"] = themeBase["colors"];
+            themeJSON["ui"] = themeBase["ui"];
+
+            this.writeOutputFile(
+                themeJSON, paths.IDEA_OUTPUT_PATH, themeFilePrefix, "theme.json");
         });
         console.log("Build complete.");
     };
@@ -63,13 +84,23 @@ export default class Compiler {
         );
         return jsonc.parse(solarizedContents);
     }
-    parseContents = (fileName, colors) => {
+    parseJSONContents = (fileName, colors) => {
         const contents = fs.readFileSync(fileName, "utf8");
-        return this.parseTemplateString(contents, colors);
+        return this.parseJSONTemplateString(contents, colors);
     }
-    parseTemplateString = (preimage, colors) => {
-        const templated = template(preimage)(colors);
+    parseJSONTemplateString = (preimage, colors) => {
+        const templated = templateJSON(preimage)(colors);
         return jsonc.parse(templated);
+    }
+
+    /** Strips the # off each value (only pass hex colors) */
+    replaceXMLTemplateContents = (fileName, hexColors) => {
+        const colorsNoHash = {};
+        Object.keys(hexColors).map((key) => {
+            colorsNoHash[key] = hexColors[key].substr(1);
+        });
+        const contents = fs.readFileSync(fileName, "utf8");
+        return templateXML(contents, colorsNoHash);
     }
 
     parseColorScheme = (fileName) => {
@@ -82,7 +113,7 @@ export default class Compiler {
     parseAndTemplateAsObject = (colors, folder) => {
         const files = fs.readdirSync(folder);
         return files.reduce((accum, fileName) => {
-            const contents = this.parseContents(
+            const contents = this.parseJSONContents(
                 `${folder}/${fileName}`,
                 colors
             );
@@ -93,7 +124,7 @@ export default class Compiler {
     parseAndTemplateAsArray = (colors, folder) => {
         const files = fs.readdirSync(folder);
         return files.reduce((accum, fileName) => {
-            const contents = this.parseContents(
+            const contents = this.parseJSONContents(
                 `${folder}/${fileName}`,
                 colors
             );
@@ -102,12 +133,23 @@ export default class Compiler {
         }, []);
     }
 
-    writeOutputFile = (fileName, path, base) => {
-        const outputFile = `${path}/${fileName}.json`;
+    outputFileName = (scheme) => (
+        `${scheme.name.toLowerCase().replace(" ", "-")}-chandrian`
+    )
 
-        fs.writeFileSync(
-            outputFile, JSON.stringify(base, null, 2), "utf8"
-        );
+    /** Returns the final output filename.extension */
+    writeOutputFile = (contents, path, fileName, ext, stringify = true) => {
+        fileName = `${fileName}.${ext}`;
+        const outputFile = `${path}/${fileName}`;
+
+        if (stringify)
+            fs.writeFile(
+                outputFile, JSON.stringify(contents, null, 2), "utf8", () => { }
+            );
+        else
+            fs.writeFile(outputFile, contents, "utf8", () => { });
+
         console.log("Writing", outputFile);
+        return fileName;
     }
 }
