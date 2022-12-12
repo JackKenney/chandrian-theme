@@ -4,12 +4,13 @@ import template from "json-templates";
 import * as paths from "./paths.mjs";
 
 export default class Compiler {
+    constructor() {
+        this.solarizedColors = this.parseColors();
+        this.colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
+    }
+
     compileVSCode = () => {
-        const solarizedColors = this.parseColors();
-
-        const colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
-
-        colorSchemeFiles.forEach((fileName) => {
+        this.colorSchemeFiles.forEach((fileName) => {
             const scheme = this.parseColorScheme(fileName);
 
             const base = {
@@ -20,7 +21,8 @@ export default class Compiler {
             };
 
             const preTemplateColors = scheme.colors;
-            const colors = this.parseTemplateString(JSON.stringify(preTemplateColors), solarizedColors);
+            const colors = this.parseTemplateString(
+                JSON.stringify(preTemplateColors), this.solarizedColors);
 
             const generalColors = this.parseAndTemplateAsObject(
                 colors, paths.GENERAL_STYLES_FOLDER);
@@ -30,13 +32,29 @@ export default class Compiler {
                 colors, paths.CODE_STYLES_FOLDER);
             base.tokenColors = codeColors;
 
-            this.writeOutputFile(scheme.name, paths.VSCODE_OUTPUT_PATH, base);
+            const outputFileName = `${scheme.name.toLowerCase().replace(" ", "-")}-chandrian`;
+            this.writeOutputFile(outputFileName, paths.VSCODE_OUTPUT_PATH, base);
         });
         console.log("Build complete.");
     };
 
     compileIDEA = () => {
-        console.log("TODO: Implement IDEA variant");
+        this.colorSchemeFiles.forEach((fileName) => {
+            const scheme = this.parseColorScheme(fileName);
+
+            const themeJSON = {
+                name: `${scheme.name} Chandrian`,
+                dark: scheme.type == "dark",
+                // todo add more fields
+            };
+
+            const preTemplateColors = scheme.colors;
+            const colors = this.parseTemplateString(JSON.stringify(preTemplateColors), this.solarizedColors);
+
+            console.log(`IDEA base: ${JSON.stringify(themeJSON)}`);
+
+        });
+        console.log("Build complete.");
     };
 
     parseColors = () => {
@@ -61,16 +79,6 @@ export default class Compiler {
         return jsonc.parse(contents);
     }
 
-    writeOutputFile = (name, path, base) => {
-        const outputFileName = `${name.toLowerCase()}-chandrian`;
-        const outputFile = `${path}/${outputFileName}.json`;
-
-        fs.writeFileSync(
-            outputFile, JSON.stringify(base, null, 2), "utf8"
-        );
-        console.log("Writing", outputFile);
-    }
-
     parseAndTemplateAsObject = (colors, folder) => {
         const files = fs.readdirSync(folder);
         return files.reduce((accum, fileName) => {
@@ -92,5 +100,14 @@ export default class Compiler {
             accum = accum.concat(contents);
             return accum;
         }, []);
+    }
+
+    writeOutputFile = (fileName, path, base) => {
+        const outputFile = `${path}/${fileName}.json`;
+
+        fs.writeFileSync(
+            outputFile, JSON.stringify(base, null, 2), "utf8"
+        );
+        console.log("Writing", outputFile);
     }
 }

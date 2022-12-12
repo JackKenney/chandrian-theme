@@ -1,4 +1,5 @@
 import Compiler from './utils/compile.mjs'
 
-(new Compiler).compileVSCode();
-// Compiler.compileIDEA();
+const compiler = new Compiler();
+compiler.compileVSCode();
+compiler.compileIDEA();
