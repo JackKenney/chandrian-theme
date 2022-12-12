@@ -4,6 +4,14 @@
 	"description": "A semantic solarized color theme for VS Code",
 	"version": "2.0.0",
 	"publisher": "jackkenney",
+	"author": "Jack Kenney",
+	"license": "ISC",
+	"scripts": {
+		"compile": "node ./src/build/compile-themes.mjs",
+		"code-package": "vsce package",
+		"code-publish": "vsce package && vsce publish",
+		"code-test-install": "npm run compile && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
+	},
 	"icon": "icon.png",
 	"galleryBanner": {
 		"color": "#002b36",
@@ -25,30 +33,21 @@
 			{
 				"label": "Solarized Black Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./code-dist/solarized-black-chandrian.json"
+				"path": "./dist/code/solarized-black-chandrian.json"
 			},
 			{
 				"label": "Solarized Dark Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./code-dist/solarized-dark-chandrian.json"
+				"path": "./dist/code/solarized-dark-chandrian.json"
 			},
 			{
 				"label": "Solarized Light Chandrian",
 				"uiTheme": "vs",
-				"path": "./code-dist/solarized-light-chandrian.json"
+				"path": "./dist/code/solarized-light-chandrian.json"
 			}
 		]
 	},
-	"scripts": {
-		"build": "esbuild ./build/compile-themes.js",
-		"code-package": "vsce package",
-		"code-publish": "vsce package && vsce publish",
-		"code-test-install": "npm run build && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
-	},
-	"author": "Jack Kenney",
-	"license": "ISC",
 	"devDependencies": {
-		"esbuild": "^0.14.38",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"json-templates": "^2.0.0",
