@@ -19,7 +19,7 @@
     "colorAcceleratorForeground": "#2ab1a8",
     "colorAcceleratorSelectionForeground": "#ded8c5",
     "colorHighlight": "#fdf6e3",
-    "colorShadow": "#66A5EFAA"
+    "colorShadow": "#B2CEE6"
   },
   "ui": {
     "*": {
@@ -115,19 +115,19 @@
       "focusedBorderColor": "#66A5EF66",
       "hoverIconColor": "#93a1a1",
       "iconColor": "#93a1a1",
-      "inactiveErrorFocusColor": "#DBA00077",
-      "inactiveWarningFocusColor": "#DBA00077",
+      "inactiveErrorFocusColor": "#53515A",
+      "inactiveWarningFocusColor": "#555129",
       "infoForeground": "##657b83",
-      "warningFocusColor": "#DBA000AA"
+      "warningFocusColor": "#9A7926"
     },
     "Counter": {
-      "background": "#586e75",
-      "foreground": "#ded8c5"
+      "background": "#99A6A5B0",
+      "foreground": "#657b83"
     },
     "CurrentMnemonic": {
       "background": "#66A5EF66",
       "borderColor": "#66A5EF66",
-      "foreground": "#ded8c5"
+      "foreground": "#BEC2B9"
     },
     "Debugger": {
       "Variables": {
@@ -169,7 +169,7 @@
     },
     "EditorTabs": {
       "inactiveColoredFileBackground": "#002b3699",
-      "underlinedTabBackground": "#073642"
+      "underlinedTabBackground": "#225261"
     },
     "FileColor": {
       "Blue": "#66A5EF",
@@ -263,7 +263,7 @@
       "successForeground": "#2ab1a8"
     },
     "Lesson": {
-      "shortcutBackground": "#102530",
+      "shortcutBackground": "#0C3340",
       "stepNumberForeground": "#657b83",
       "Tooltip": {
         "background": "#657b83",
@@ -333,16 +333,16 @@
       "messageForeground": "colorForeground"
     },
     "Panel": {
-      "mouseShortcutBackground": "#073642"
+      "mouseShortcutBackground": "#214C5A"
     },
     "ParameterInfo": {
       "background": "#073642",
-      "borderColor": "#586e75",
-      "currentOverloadBackground": "#586e75",
+      "borderColor": "#415E69",
+      "currentOverloadBackground": "#415E69",
       "currentParameterForeground": "colorForeground",
-      "disabledForeground": "#657b83",
+      "disabledForeground": "#60767D",
       "infoForeground": "#586e75",
-      "lineSeparatorColor": "#586e75"
+      "lineSeparatorColor": "#415E69"
     },
     "PasswordField": {
       "background": "colorAlternativeBackground"

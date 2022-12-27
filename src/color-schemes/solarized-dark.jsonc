@@ -3,51 +3,51 @@
     "type": "dark",
     "colors": {
         // standard text
-        "textMostMild": "{{base1}}",
-        "textMild": "{{base1}}",
-        "text": "{{base2}}",
-        "textIntense": "{{base3}}",
-        "textMostIntense": "{{base4}}", //fn params
+        "textMostMild": "{{base1}}", //#93a1a1
+        "textMild": "{{base1}}", //#93a1a1
+        "text": "{{base2}}", //#ded8c5
+        "textIntense": "{{base3}}", //#eee8d5
+        "textMostIntense": "{{base4}}", //#fdf6e3 //fn params
         // background
-        "terminalBackground": "{{base04}}",
-        "backgroundMostIntense": "{{base04}}",
-        "backgroundIntense": "{{base03}}",
-        "background": "{{base02}}",
-        "backgroundMild": "{{base01}}",
-        "backgroundMostMild": "{{base00}}",
-        "selectionBackground": "{{base02}}",
+        "terminalBackground": "{{base04}}", //#102530
+        "backgroundMostIntense": "{{base04}}", //#102530
+        "backgroundIntense": "{{base03}}", //#002b36
+        "background": "{{base02}}", //#073642
+        "backgroundMild": "{{base01}}", //#586e75
+        "backgroundMostMild": "{{base00}}", //#657b83
+        "selectionBackground": "{{base02}}", //#073642
         // end basics
-        "commentGray": "{{base0}}",
-        "commentGrayProminent": "{{base1}}",
+        "commentGray": "{{base0}}", //#839496
+        "commentGrayProminent": "{{base1}}", //#93a1a1
         // begin mayhem coolest to warmest
-        "keywordGray": "{{base0}}",
-        "mainMild": "{{brightCyan}}",
-        "functions": "{{brightBlue}}", // doers
-        "mainAlt": "{{brightViolet}}", //fn definition, .keys, grayish cyan
-        "keys": "{{brightCyan}}", //this.state.foo, json keys, bright purple
-        "structural": "{{brightYellow}}", //ifthen
-        "exit": "{{brightOrange}}", // return, throw
-        "macros": "{{brightViolet}}", // @gen, async
-        "types": "{{brightCyan}}", // brown-ish red, types, annotation, Type declaration
-        "subtypes": "{{brightBlue}}", // brown-ish red, types, annotation, Type declaration
-        "interpolated": "{{brightCyan}}",
-        "interfaces": "{{brightBlue}}", //class names, Promise., bright cyan
-        "attributes": "{{brightViolet}}", // grayish purple
-        "strings": "{{brightGreen}}",
-        "regex": "{{brightYellow}}",
-        "number": "{{brightViolet}}",
-        "booleans": "{{brightMagenta}}",
-        "important": "{{brightRed}}",
+        "keywordGray": "{{base0}}", //#839496
+        "mainMild": "{{brightCyan}}", //#2ab1a8
+        "functions": "{{brightBlue}}", //#66A5EF // doers
+        "mainAlt": "{{brightViolet}}", //#7f84D7 //fn definition, .keys, grayish cyan
+        "keys": "{{brightCyan}}", //#2ab1a8 //this.state.foo, json keys, bright purple
+        "structural": "{{brightYellow}}", //#DBA000 //ifthen
+        "exit": "{{brightOrange}}", //#EB7A06 // return, throw
+        "macros": "{{brightViolet}}", //#7f84D7 // @gen, async
+        "types": "{{brightCyan}}", //#2ab1a8 // brown-ish red, types, annotation, Type declaration
+        "subtypes": "{{brightBlue}}", //#66A5EF // brown-ish red, types, annotation, Type declaration
+        "interpolated": "{{brightCyan}}", //#2ab1a8
+        "interfaces": "{{brightBlue}}", //#66A5EF //class names, Promise., bright cyan
+        "attributes": "{{brightViolet}}", //#7f84D7 // grayish purple
+        "strings": "{{brightGreen}}", //#85A930
+        "regex": "{{brightYellow}}", //#DBA000
+        "number": "{{brightViolet}}", //#7f84D7
+        "booleans": "{{brightMagenta}}", //#F246A2
+        "important": "{{brightRed}}", //#ff454f
         // simple colors
-        "yellow": "{{brightYellow}}",
-        "orange": "{{brightOrange}}",
-        "red": "{{brightRed}}",
-        "magenta": "{{brightMagenta}}",
-        "violet": "{{brightViolet}}",
-        "blue": "{{brightBlue}}",
-        "darkBlue": "{{darkBlue}}",
-        "cyan": "{{brightCyan}}",
-        "green": "{{brightGreen}}",
+        "yellow": "{{brightYellow}}", //#DBA000
+        "orange": "{{brightOrange}}", //#EB7A06
+        "red": "{{brightRed}}", //#ff454f
+        "magenta": "{{brightMagenta}}", //#F246A2
+        "violet": "{{brightViolet}}", //#7f84D7
+        "blue": "{{brightBlue}}", //#66A5EF
+        "darkBlue": "{{darkBlue}}", //#2B60C0
+        "cyan": "{{brightCyan}}", //#2ab1a8
+        "green": "{{brightGreen}}", //#85A930
         "white": "#FFFFFF",
     }
 }
