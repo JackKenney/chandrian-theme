@@ -47,6 +47,7 @@ export default class Compiler {
             const themeJSON = {
                 name: `${scheme.name} Chandrian`,
                 dark: scheme.type == "dark",
+                author: "JackKenney",
                 editorScheme: "",
                 colors: {},
                 ui: {}
