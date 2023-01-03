@@ -51,6 +51,7 @@
     },
     "Button": {
       "default": {
+        "foreground": "{{textIntense}}",
         "endBackground": "{{backgroundMild}}",
         "endBorderColor": "{{backgroundMostMild}}",
         "focusColor": "{{cyanBackground}}",
@@ -351,6 +352,7 @@
       "eapTagBackground": "{{magentaBackground}}",
       "lightSelectionBackground": "{{backgroundIntense}}",
       "SearchField": {
+        "foreground": "{{text}}",
         "background": "{{backgroundMostIntense}}",
         "borderColor": "{{backgroundIntense}}"
       },
@@ -531,9 +533,9 @@
     "TextComponent": {},
     "TextField": {
       "foreground": "{{text}}",
-      "background": "{{textMostIntense}}",
-      "darkShadow": "{{background}}",
-      "highlight": "{{textIntense}}"
+      "background": "{{backgroundMostIntense}}",
+      "darkShadow": "{{backgroundIntense}}",
+      "highlight": "{{backgroundMild}}"
     },
     "TextPane": {},
     "TitledBorder": {

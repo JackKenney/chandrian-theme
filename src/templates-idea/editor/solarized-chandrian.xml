@@ -57,10 +57,10 @@
     <option name="DIAGRAM_SNAPPING_LINES" value="{backgroundMostMild}" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="{backgroundMostIntense}" />
     <option name="DIFF_SEPARATORS_TOP_BORDER" value="{cyan}" />
-    <option name="DOCUMENTATION_COLOR" value="{blueBackground}" />
+    <option name="DOCUMENTATION_COLOR" value="{background}" />
     <option name="DOC_COMMENT_GUIDE" value="{cyanBackground}" />
     <option name="DOC_COMMENT_LINK" value="{blue}" />
-    <option name="ERROR_HINT" value="{red}" />
+    <option name="ERROR_HINT" value="{redBackground}" />
     <option name="FILESTATUS_ADDED" value="{green}" />
     <option name="FILESTATUS_COPIED" value="{blue}" />
     <option name="FILESTATUS_DELETED" value="{red}" />
@@ -98,7 +98,7 @@
     <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="{redBackground}" />
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="{yellowBackground}" />
     <option name="INDENT_GUIDE" value="{background}" />
-    <option name="INFORMATION_HINT" value="{yellow}" />
+    <option name="INFORMATION_HINT" value="{yellowBackground}" />
     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{background}" />
     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="{backgroundMild}" />
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="{backgroundMostMild}" />
@@ -112,8 +112,8 @@
     <option name="MnemonicIcon.borderColor" value="{yellow}" />
     <option name="MnemonicIcon.foreground" value="{text}" />
     <option name="NOTIFICATION_BACKGROUND" value="{magentaBackground}" />
-    <option name="PROMOTION_PANE" value="{cyan}" />
-    <option name="QUESTION_HINT" value="{cyan}" />
+    <option name="PROMOTION_PANE" value="{cyanBackground}" />
+    <option name="QUESTION_HINT" value="{cyanBackground}" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
     <option name="RECENT_LOCATIONS_SELECTION" value="{background}" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="{yellow}" />
@@ -153,6 +153,7 @@
     <option name="ScrollBar.trackColor" value="{backgroundIntense}" />
     <option name="TABS" value="{backgroundMostIntense}" />
     <option name="TEARLINE_COLOR" value="{orange}" />
+    <option name="TOOLTIP" value="{background}" />
     <option name="Table.hoverBackground" value="{backgroundIntense}" />
     <option name="VCS_ANNOTATIONS_COLOR_1" value="{yellow}" />
     <option name="VCS_ANNOTATIONS_COLOR_2" value="{magenta}" />
