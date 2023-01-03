@@ -25,11 +25,11 @@ export default class Compiler {
             const colors = this.parseJSONTemplateString(
                 JSON.stringify(preTemplateColors), this.solarizedColors);
 
-            const generalColors = this.parseAndTemplateAsObject(
+            const generalColors = this.fillTemplateAsObject(
                 colors, paths.GENERAL_STYLES_FOLDER);
             base.colors = generalColors;
 
-            const codeColors = this.parseAndTemplateAsArray(
+            const codeColors = this.fillTemplateAsArray(
                 colors, paths.CODE_STYLES_FOLDER);
             base.tokenColors = codeColors;
 
@@ -54,8 +54,9 @@ export default class Compiler {
             };
 
             const preTemplateColors = scheme.colors;
-            const colors = this.parseJSONTemplateString(
+            const filledInScheme = this.parseJSONTemplateString(
                 JSON.stringify(preTemplateColors), this.solarizedColors);
+            const colors = this.addColoredBackgroundsToScheme(filledInScheme)
 
             const colorsAndName = colors;
             colorsAndName["themeName"] = "#" + themeJSON["name"];
@@ -94,7 +95,7 @@ export default class Compiler {
         return jsonc.parse(templated);
     }
 
-    /** Strips the # off each value (only pass hex colors) */
+    /** NOTE: Strips the # off each value (only pass hex colors) */
     replaceXMLTemplateContents = (fileName, hexColors) => {
         const colorsNoHash = {};
         Object.keys(hexColors).map((key) => {
@@ -111,7 +112,32 @@ export default class Compiler {
         return jsonc.parse(contents);
     }
 
-    parseAndTemplateAsObject = (colors, folder) => {
+    addColoredBackgroundsToScheme = (scheme) => {
+        const basicColorNames = ["yellow", "orange", "red", "magenta",
+            "violet", "blue", "cyan", "green"];
+
+        const extraColors = basicColorNames.reduce((accum, colorName) => {
+            const bottom = scheme["backgroundIntense"];
+            const top = scheme[colorName];
+            const key = colorName + "Background";
+            accum[key] = this.mixColors(bottom, top, 0.5);
+            return accum;
+        }, {});
+
+        return Object.assign(scheme, extraColors);
+    }
+
+    mixColors = (bottom, top, alpha) => {
+        const starts = [1, 3, 5]; // skip hashtag
+        const color = starts.reduce((string, start) =>
+            string + Math.floor((
+                parseInt(bottom.substr(start, 2), 16) * (1 - alpha) +
+                parseInt(top.substr(start, 2), 16) * alpha
+            )).toString(16), "");
+        return "#" + color;
+    }
+
+    fillTemplateAsObject = (colors, folder) => {
         const files = fs.readdirSync(folder);
         return files.reduce((accum, fileName) => {
             const contents = this.parseJSONContents(
@@ -122,7 +148,7 @@ export default class Compiler {
             return accum;
         }, {});
     }
-    parseAndTemplateAsArray = (colors, folder) => {
+    fillTemplateAsArray = (colors, folder) => {
         const files = fs.readdirSync(folder);
         return files.reduce((accum, fileName) => {
             const contents = this.parseJSONContents(
