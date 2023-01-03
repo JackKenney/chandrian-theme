@@ -53,8 +53,8 @@
       "default": {
         "endBackground": "{{backgroundMild}}",
         "endBorderColor": "{{backgroundMostMild}}",
-        "focusColor": "{{cyan}}",
-        "focusedBorderColor": "{{blue}}",
+        "focusColor": "{{cyanBackground}}",
+        "focusedBorderColor": "{{cyan}}",
         "shadowColor": "{{backgroundIntense}}",
         "startBackground": "{{backgroundMild}}",
         "startBorderColor": "{{backgroundMostMild}}"
@@ -286,7 +286,7 @@
       "disabledBackground": "{{backgroundIntense}}"
     },
     "MnemonicIcon": {
-      "background": "{{background}}",
+      "background": "{{backgroundCyan}}",
       "borderColor": "{{cyan}}"
     },
     "NavBar": {
@@ -549,9 +549,9 @@
     "ToggleButton": {
       "borderColor": "{{backgroundIntense}}",
       "buttonColor": "{{background}}",
-      "offBackground": "{{selectionBackground}}",
-      "offForeground": "{{backgroundMostMild}}",
-      "onBackground": "{{cyan}}",
+      "offBackground": "{{blueBackground}}",
+      "offForeground": "{{textMild}}",
+      "onBackground": "{{cyanBackground}}",
       "onForeground": "{{text}}"
     },
     "ToolBar": {
