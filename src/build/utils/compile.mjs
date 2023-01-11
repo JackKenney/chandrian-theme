@@ -117,12 +117,18 @@ export default class Compiler {
             "violet", "blue", "cyan", "green"];
 
         const extraColors = basicColorNames.reduce((accum, colorName) => {
-            const bottom = scheme["backgroundIntense"];
+            const bottom = scheme["backgroundMostIntense"];
             const top = scheme[colorName];
             const key = colorName + "Background";
-            accum[key] = this.mixColors(bottom, top, 0.5);
+            accum[key] = this.mixColors(bottom, top, 0.4);
             return accum;
         }, {});
+
+        extraColors["selectionBackground"] = this.mixColors(
+            scheme["backgroundMostIntense"],
+            scheme["violet"],
+            0.1
+        );
 
         return Object.assign(scheme, extraColors);
     }

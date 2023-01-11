@@ -1,8 +1,8 @@
 {
 	"name": "solarized-chandrian",
 	"displayName": "Solarized Chandrian",
-	"description": "A semantic solarized color theme for VS Code",
-	"version": "2.0.9",
+	"description": "A semantic solarized color theme",
+	"version": "2.0.13",
 	"publisher": "jackkenney",
 	"author": "Jack Kenney",
 	"license": "ISC",

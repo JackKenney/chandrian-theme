@@ -9,28 +9,28 @@
       "acceleratorForeground": "{{text}}",
       "acceleratorSelectionForeground": "{{text}}",
       "background": "{{backgroundIntense}}",
-      "caretForeground": "{{text}}",
-      "disabledForeground": "{{backgroundMostMild}}",
-      "disabledText": "{{backgroundMostMild}}",
+      "caretForeground": "{{textIntense}}",
+      "disabledForeground": "{{textMild}}",
+      "disabledText": "{{textMild}}",
       "foreground": "{{text}}",
       "hoverBackground": "{{background}}",
       "hoverInactiveBackground": "{{background}}",
       "inactiveBackground": "{{backgroundIntense}}",
       "inactiveForeground": "{{textMild}}",
-      "selectionBackground": "{{background}}",
-      "selectionBackgroundInactive": "{{backgroundMostIntense}}",
-      "selectionForeground": "{{text}}",
-      "selectionForegroundInactive": "{{text}}",
-      "selectionInactiveBackground": "{{backgroundMostIntense}}",
-      "selectionInactiveForeground": "{{text}}",
+      "selectionBackground": "{{backgroundMild}}",
+      "selectionBackgroundInactive": "{{backgroundMild}}",
+      "selectionForeground": "{{textMostIntense}}",
+      "selectionForegroundInactive": "{{textIntense}}",
+      "selectionInactiveBackground": "{{backgroundMild}}",
+      "selectionInactiveForeground": "{{textIntense}}",
       "textBackground": "{{backgroundIntense}}",
       "textForeground": "{{text}}"
     },
     "ActionButton": {
       "hoverBackground": "{{background}}",
-      "hoverBorderColor": "{{background}}",
+      "hoverBorderColor": "{{backgroundMild}}",
       "pressedBackground": "{{backgroundMild}}",
-      "pressedBorderColor": "{{backgroundMild}}"
+      "pressedBorderColor": "{{backgroundMostMild}}"
     },
     "AssignedMnemonic": {
       "background": "{{background}}",
@@ -90,7 +90,7 @@
     "CompletionPopup": {
       "foreground": "{{text}}",
       "matchForeground": "{{blue}}",
-      "selectionBackground": "{{backgroundIntense}}",
+      "selectionBackground": "{{selectionBackground}}",
       "selectionInactiveBackground": "{{background}}"
     },
     "Component": {
@@ -154,7 +154,7 @@
       "inactiveForeground": "{{text}}"
     },
     "EditorTabs": {
-      "inactiveColoredFileBackground": "{{orangBackground}}",
+      "inactiveColoredFileBackground": "{{orangeBackground}}",
       "underlinedTabBackground": "{{background}}"
     },
     "FileColor": {
@@ -252,9 +252,9 @@
       "shortcutBackground": "{{backgroundMostIntense}}",
       "stepNumberForeground": "{{text}}",
       "Tooltip": {
-        "background": "{{backgroundMostMild}}",
+        "background": "{{backgroundMild}}",
         "foreground": "{{text}}",
-        "spanBackground": "{{backgroundMild}}",
+        "spanBackground": "{{backgroundMostMild}}",
         "stepNumberForeground": "{{textIntense}}"
       }
     },
@@ -338,15 +338,15 @@
     "Plugins": {
       "background": "{{backgroundMostIntense}}",
       "Button": {
-        "installBackground": "{{backgroundMostIntense}}",
+        "installBackground": "{{cyanBackground}}",
         "installBorderColor": "{{cyan}}",
-        "installFillBackground": "{{cyan}}",
-        "installFillForeground": "{{text}}",
-        "installFocusedBackground": "{{green}}",
-        "installForeground": "{{cyan}}",
-        "updateBackground": "{{blue}}",
+        "installFillBackground": "{{cyanBackground}}",
+        "installFillForeground": "{{textMostIntense}}",
+        "installFocusedBackground": "{{cyan}}",
+        "installForeground": "{{textMostIntense}}",
+        "updateBackground": "{{blueBackground}}",
         "updateBorderColor": "{{blue}}",
-        "updateForeground": "{{text}}"
+        "updateForeground": "{{textMostIntense}}"
       },
       "disabledForeground": "{{text}}",
       "eapTagBackground": "{{magentaBackground}}",
@@ -362,7 +362,7 @@
       },
       "Tab": {},
       "tagBackground": "{{backgroundIntense}}",
-      "tagForeground": "{{text}}"
+      "tagForeground": "{{textIntense}}"
     },
     "Popup": {
       "Advertiser": {
@@ -387,7 +387,7 @@
     "ProgressBar": {
       "failedColor": "{{red}}",
       "failedEndColor": "{{magenta}}",
-      "foreground": "{{textIntense}}",
+      "foreground": "{{textMostIntense}}",
       "indeterminateEndColor": "{{background}}",
       "indeterminateStartColor": "{{backgroundMild}}",
       "passedColor": "{{green}}",
@@ -434,7 +434,7 @@
     "SearchEverywhere": {
       "Advertiser": {
         "background": "{{selectionBackground}}",
-        "foreground": "{{backgroundMild}}"
+        "foreground": "{{textMostIntense}}"
       },
       "Header": {
         "background": "{{selectionBackground}}"
@@ -445,11 +445,11 @@
       },
       "SearchField": {
         "borderColor": "{{background}}",
-        "infoForeground": "{{backgroundMild}}"
+        "infoForeground": "{{textMostIntense}}"
       },
       "Tab": {
         "selectedBackground": "{{background}}",
-        "selectedForeground": "{{text}}"
+        "selectedForeground": "{{textIntense}}"
       }
     },
     "SearchField": {
@@ -512,12 +512,12 @@
       "dropLineColor": "{{cyan}}",
       "dropLineShortColor": "{{backgroundIntense}}",
       "focusCellBackground": "{{selectionBackground}}",
-      "focusCellForeground": "{{text}}",
+      "focusCellForeground": "{{textIntense}}",
       "gridColor": "{{background}}",
-      "lightSelectionBackground": "{{background}}",
-      "lightSelectionForeground": "{{text}}",
+      "lightSelectionBackground": "{{backgroundMild}}",
+      "lightSelectionForeground": "{{textMostIntense}}",
       "lightSelectionInactiveBackground": "{{background}}",
-      "lightSelectionInactiveForeground": "{{text}}",
+      "lightSelectionInactiveForeground": "{{textIntense}}",
       "sortIconColor": "{{text}}",
       "stripeColor": "{{cyan}}"
     },
@@ -546,21 +546,21 @@
         "hoverBackground": "{{backgroundMild}}"
       },
       "inactiveInfoForeground": "{{text}}",
-      "infoForeground": "{{text}}"
+      "infoForeground": "{{textIntense}}"
     },
     "ToggleButton": {
       "borderColor": "{{backgroundIntense}}",
       "buttonColor": "{{background}}",
       "offBackground": "{{blueBackground}}",
-      "offForeground": "{{textMild}}",
+      "offForeground": "{{text}}",
       "onBackground": "{{cyanBackground}}",
-      "onForeground": "{{text}}"
+      "onForeground": "{{textIntense}}"
     },
     "ToolBar": {
       "darkShadow": "{{backgroundMostIntense}}",
-      "floatingForeground": "{{cyan}}",
+      "floatingForeground": "{{blue}}",
       "highlight": "{{textMostIntense}}",
-      "light": "{{text}}",
+      "light": "{{textIntense}}",
       "shadow": "{{backgroundIntense}}"
     },
     "Toolbar": {
@@ -575,8 +575,8 @@
       },
       "background": "{{background}}",
       "borderColor": "{{backgroundMild}}",
-      "infoForeground": "{{backgroundMild}}",
-      "shortcutForeground": "{{text}}"
+      "infoForeground": "{{textIntense}}",
+      "shortcutForeground": "{{textIntense}}"
     },
     "Tooltip": {
       "separatorColor": "{{background}}"
@@ -601,18 +601,18 @@
     },
     "Tree": {
       "errorForeground": "{{red}}",
-      "hash": "{{background}}",
-      "modifiedItemForeground": "{{blue}}"
+      "hash": "{{cyan}}",
+      "modifiedItemForeground": "{{yellow}}"
     },
     "UiDesigner": {
       "Panel": {},
       "Preview": {}
     },
     "ValidationTooltip": {
-      "errorBackground": "{{backgroundIntense}}",
-      "errorBorderColor": "{{redBackground}}",
-      "warningBackground": "{{greenBackground}}",
-      "warningBorderColor": "{{yellowBackg}}"
+      "errorBackground": "{{redBackground}}",
+      "errorBorderColor": "{{red}}",
+      "warningBackground": "{{yellowBackground}}",
+      "warningBorderColor": "{{yellow}}"
     },
     "VersionControl": {
       "FileHistory": {
@@ -623,9 +623,9 @@
       "GitLog": {
         "headIconColor": "{{yellow}}",
         "localBranchIconColor": "{{green}}",
-        "otherIconColor": "{{textIntense}}",
+        "otherIconColor": "{{magenta}}",
         "remoteBranchIconColor": "{{violet}}",
-        "tagIconColor": "{{textIntense}}"
+        "tagIconColor": "{{textIntenseIntense}}"
       },
       "HgLog": {
         "bookmarkIconColor": "{{violet}}",
@@ -641,7 +641,7 @@
         "Commit": {
           "currentBranchBackground": "{{backgroundIntense}}",
           "hoveredBackground": "{{backgroundIntense}}",
-          "unmatchedForeground": "#{{backgroundMostMild}}"
+          "unmatchedForeground": "{{backgroundMostMild}}"
         }
       },
       "RefLabel": {
@@ -654,15 +654,15 @@
       "background": "{{backgroundIntense}}",
       "borderColor": "{{backgroundMostIntense}}",
       "captionBackground": "{{background}}",
-      "captionForeground": "{{text}}",
+      "captionForeground": "{{textMostIntense}}",
       "Details": {
         "background": "{{backgroundMostIntense}}"
       },
       "footerBackground": "{{background}}",
-      "footerForeground": "{{text}}",
+      "footerForeground": "{{textIntense}}",
       "groupIconBorderColor": "{{backgroundIntense}}",
       "headerBackground": "{{background}}",
-      "headerForeground": "{{text}}",
+      "headerForeground": "{{textIntense}}",
       "Projects": {
         "actions": {
           "background": "{{background}}",
@@ -670,9 +670,9 @@
         },
         "background": "{{backgroundIntense}}",
         "selectionBackground": "{{blueBackground}}",
-        "selectionInactiveBackground": "{{background}}"
+        "selectionInactiveBackground": "{{selectionBackground}}"
       },
-      "separatorColor": "{{background}}",
+      "separatorColor": "{{backgroundMostMild}}",
       "SidePanel": {
         "background": "{{backgroundIntense}}"
       }
