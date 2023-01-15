@@ -10,3 +10,6 @@ Some of the colors are increased, so they have a contrast ratio of about 5:1, fo
 There are a dark blue, a black, and light tan version, with the color-hues preserved between them so the code doesn't change the feeling too much, as is part of the idea behind the solarized colors.
 
 Available for both IntelliJ products and VSCode.
+
+IntelliJ: https://plugins.jetbrains.com/plugin/20865-solarized-chandrian-themes
+VSCode: https://marketplace.visualstudio.com/items?itemName=JackKenney.solarized-chandrian
