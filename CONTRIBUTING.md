@@ -1,4 +1,4 @@
-# Contributing to Solarized Chandrian
+# Contributing to Solarized Chandrian VSCODE
 
 ## Prerequisites
 
@@ -35,3 +35,31 @@ which uses [vsce](https://code.visualstudio.com/api/working-with-extensions/publ
 
 - https://code.visualstudio.com/api/references/theme-color
 - https://code.visualstudio.com/api/extension-guides/color-theme
+
+# Condtributing to Solarized Chandrian IntelliJ IDEA
+
+## Build the Plugin JAR file
+
+1. To compile the templates into the `dist/` directory, run 
+
+```
+npm run compile
+```
+
+2. Using IDEA, build the project to populate the `out/` directory.
+
+3. Prepare the "solarized-chandrian-theme" plugin module for deployment.
+
+## Testing
+
+To test the plugin,
+
+1. Go to "Settings > Plugins"
+2. Click "Install Plugin from Disk..."
+3. Select the newly built JAR.
+
+NOTE: You may now need to refresh the theme with its defaults:
+1. Go to "Settings > Editor > Color Scheme"
+2. Select "Restore Defaults" from the settings cog. (UI note from 1/15/23)
+
+![screenshot](doc_assets/idea-restore-defaults-screenshot.png)
