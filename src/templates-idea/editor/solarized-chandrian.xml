@@ -1552,7 +1552,7 @@
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="{backgroundIntense}" />
-        <option name="EFFECT_COLOR" value="{blue}" />
+        <option name="EFFECT_COLOR" value="{yellow}" />
         <option name="ERROR_STRIPE_COLOR" value="{blue}" />
         <option name="EFFECT_TYPE" value="4" />
       </value>
@@ -1572,7 +1572,6 @@
     <option name="INFO_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="{yellow}" />
-        <option name="ERROR_STRIPE_COLOR" value="{yellow}" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
