@@ -179,7 +179,7 @@
 	"editorGroupHeader.tabsForeground": "{{text}}",
 	"editorGutter.addedBackground": "{{green}}",
 	"editorGutter.background": "{{backgroundMostIntense}}",
-	"editorGutter.commentRangeForeground": "{{text}}",
+	"editorGutter.commentRangeForeground": "{{backgroundMild}}",
 	"editorGutter.deletedBackground": "{{red}}",
 	"editorGutter.foldingControlForeground": "{{text}}",
 	"editorGutter.modifiedBackground": "{{yellow}}",
