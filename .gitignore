@@ -1,2 +1,7 @@
 node_modules
 *.vsix
+*.jar
+out/*
+dist/code/*.json
+dist/idea/*.json
+dist/idea/editor/*.xml

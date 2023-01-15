@@ -1,14 +1,24 @@
 {
 	"name": "solarized-chandrian",
 	"displayName": "Solarized Chandrian",
-	"description": "A semantic solarized color theme for VS Code",
-	"version": "1.2.9",
+	"description": "A semantic solarized color theme",
+	"version": "2.0.15",
 	"publisher": "jackkenney",
+	"author": "Jack Kenney",
+	"license": "ISC",
+	"scripts": {
+		"compile": "node ./src/build/compile-themes.mjs",
+		"code-package": "vsce package",
+		"code-publish": "vsce package && vsce publish",
+		"code-test-install": "npm run compile && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix",
+		"test": "jest"
+	},
 	"icon": "icon.png",
 	"galleryBanner": {
-		"color": "#002b36",
+		"color": "#252526",
 		"theme": "dark"
 	},
+	"type": "module",
 	"engines": {
 		"vscode": "^1.24.0"
 	},
@@ -24,36 +34,28 @@
 			{
 				"label": "Solarized Black Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./dist/solarized-black-chandrian.json"
+				"path": "./dist/code/solarized-black-chandrian.json"
 			},
 			{
 				"label": "Solarized Dark Chandrian",
 				"uiTheme": "vs-dark",
-				"path": "./dist/solarized-dark-chandrian.json"
+				"path": "./dist/code/solarized-dark-chandrian.json"
 			},
 			{
 				"label": "Solarized Light Chandrian",
 				"uiTheme": "vs",
-				"path": "./dist/solarized-light-chandrian.json"
+				"path": "./dist/code/solarized-light-chandrian.json"
 			}
 		]
 	},
-	"scripts": {
-		"build": "node ./build/compile-themes.js",
-		"watch": "node ./build/watch-and-compile.js",
-		"package": "vsce package",
-		"publish": "vsce package && vsce publish",
-		"test-install": "npm run build && vsce package && code --install-extension solarized-chandrian-$(node -pe 'require(`./package.json`).version').vsix"
-	},
-	"author": "Jack Kenney",
-	"license": "ISC",
 	"devDependencies": {
-		"esbuild": "^0.14.38",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
+		"jest": "^29.3.1",
 		"json-templates": "^2.0.0",
 		"jsonc-parser": "^2.0.1",
-		"prettier": "^2.2.1"
+		"prettier": "^2.2.1",
+		"string-template": "^1.0.0"
 	},
 	"__metadata": {
 		"id": "6575abf0-45af-4b6d-9817-7ca26dd3a221",
