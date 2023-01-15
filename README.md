@@ -12,4 +12,5 @@ There are a dark blue, a black, and light tan version, with the color-hues prese
 Available for both IntelliJ products and VSCode.
 
 IntelliJ: https://plugins.jetbrains.com/plugin/20865-solarized-chandrian-themes
+
 VSCode: https://marketplace.visualstudio.com/items?itemName=JackKenney.solarized-chandrian
