@@ -105,7 +105,7 @@
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="{backgroundMostMild}" />
     <option name="LINE_NUMBERS_COLOR" value="{textIntense}" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{text}" />
-    <option name="LOOKUP_COLOR" value="{blueBackground}" />
+    <option name="LOOKUP_COLOR" value="{background}" />
     <option name="METHOD_SEPARATORS_COLOR" value="{background}" />
     <option name="MODIFIED_LINES_COLOR" value="{yellowBackground}" />
     <option name="MODIFIED_TAB_ICON" value="{yellow}" />

@@ -127,7 +127,7 @@ export default class Compiler {
         extraColors["selectionBackground"] = this.mixColors(
             scheme["backgroundMostIntense"],
             scheme["violet"],
-            0.1
+            0.15
         );
 
         return Object.assign(scheme, extraColors);
