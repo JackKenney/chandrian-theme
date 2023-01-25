@@ -90,8 +90,8 @@
     "CompletionPopup": {
       "foreground": "{{text}}",
       "matchForeground": "{{blue}}",
-      "selectionBackground": "{{selectionBackground}}",
-      "selectionInactiveBackground": "{{background}}"
+      "selectionBackground": "{{violetBackground}}",
+      "selectionInactiveBackground": "{{selectionBackground}}"
     },
     "Component": {
       "borderColor": "{{background}}",
