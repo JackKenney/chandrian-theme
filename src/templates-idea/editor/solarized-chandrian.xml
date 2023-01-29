@@ -936,7 +936,7 @@
     </option>
     <option name="DART.COMMENT">
       <value>
-        <option name="FOREGROUND" value="{comment}" />
+        <option name="FOREGROUND" value="{commentGray}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -954,12 +954,51 @@
     <option name="DART.STRING">
       <value>
         <option name="FOREGROUND" value="{green}" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DART.UNRESERVED_KEYWORD">
       <value>
         <option name="FOREGROUND" value="{violet}" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DART_ENUM_CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="{magenta}"/>
+      </value>
+    </option>
+    <option name="DART_INSTANCE_GETTER_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{cyan}"/>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DART_INSTANCE_SETTER_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{cyan}"/>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DART_LOCAL_FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{magenta}"/>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DART_LOCAL_FUNCTION_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="{blue}"/>
+      </value>
+    </option>
+    <option name="DART_STATIC_GETTER_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{cyan}"/>
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DART_STATIC_SETTER_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{cyan}"/>
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
