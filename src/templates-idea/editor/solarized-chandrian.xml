@@ -115,8 +115,8 @@
         <option name="NOTIFICATION_BACKGROUND" value="{magentaBackground}"/>
         <option name="PROMOTION_PANE" value="{cyanBackground}"/>
         <option name="QUESTION_HINT" value="{cyanBackground}"/>
-        <option name="READONLY_BACKGROUND" value="{violetBackground}"/>
-        <option name="READONLY_FRAGMENT_BACKGROUND" value="{violetBackground}"/>
+        <option name="READONLY_BACKGROUND"/>
+        <option name="READONLY_FRAGMENT_BACKGROUND"/>
         <option name="RECENT_LOCATIONS_SELECTION" value="{background}"/>
         <option name="RECURSIVE_CALL_ATTRIBUTES" value="{yellow}"/>
         <option name="RIGHT_MARGIN_COLOR" value="{background}"/>
@@ -215,7 +215,7 @@
         <option name="DEFAULT_DOT">
             {dot}
         </option>
-        <option name="DEFAULT_SEMICOLON">{punctuation_unimportant}</option>
+        <option name="DEFAULT_SEMICOLON">{semicolon}</option>
         <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">{search}</option>
         <option name="DEFAULT_KEYWORD">{keyword}</option>
         <option name="DEFAULT_STRING">{string}</option>
@@ -254,7 +254,6 @@
         <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
             <value>
                 <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="EFFECT_TYPE" value="1"/>
                 <option name="FONT_TYPE" value="1"/>
             </value>
         </option>
@@ -268,22 +267,20 @@
         <option name="DEFAULT_LINE_COMMENT">{comment}</option>
         <option name="DEFAULT_LOCAL_FUNCTION">{function}</option>
         <option name="DEFAULT_METHOD_CALL">{method}</option>
-        <option name="DEFAULT_NUMBER">
-            {number}
-        </option>
+        <option name="DEFAULT_NUMBER">{scalar}</option>
         <option name="DEFAULT_PREDEFINED_SYMBOL">{keyword}</option>
         <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">{variable}</option>
         <option name="DEFAULT_REASSIGNED_PARAMETER">{parameter}</option>
-        <option name="DEFAULT_STATIC_FIELD">{variable}</option>
+        <option name="DEFAULT_STATIC_FIELD">{member}</option>
         <option name="DEFAULT_STATIC_METHOD">{method}</option>
 
-        <option name="DEFAULT_BRACE">
+        <option name="DEFAULT_BRACES">
             {curly}
         </option>
         <option name="DEFAULT_PARENTHS">
             {parenthesis}
         </option>
-        <option name="DEFAULT_BRACKET">
+        <option name="DEFAULT_BRACKETS">
             {square}
         </option>
         <option name="DEFAULT_TAG">
@@ -336,7 +333,7 @@
         <option name="BASH.BRACE">{curly}</option>
         <option name="BASH.BRACKET">{square}</option>
         <option name="BASH.CONDITIONAL">{keyword}</option>
-        <option name="BASH.EXTERNAL_COMMAND">{export}</option>
+        <option name="BASH.EXTERNAL_COMMAND">{external}</option>
         <option name="BASH.FUNCTION_CALL">{function}</option>
         <option name="BASH.FUNCTION_DEF_NAME">{function}</option>
         <option name="BASH.HERE_DOC">{comment}</option>
@@ -345,7 +342,7 @@
         <option name="BASH.INTERNAL_COMMAND">{function}</option>
         <option name="BASH.KEYWORD">{keyword}</option>
         <option name="BASH.LINE_COMMENT">{comment}</option>
-        <option name="BASH.NUMBER">{number}</option>
+        <option name="BASH.NUMBER">{scalar}</option>
         <option name="BASH.PAREN">{parenthesis}</option>
         <option name="BASH.RAW_STRING">{string}</option>
         <option name="BASH.REDIRECTION">
@@ -551,7 +548,7 @@
         </option>
         <option name="CSS.IMPORTANT">{important}</option>
         <option name="CSS.KEYWORD">{keyword}</option>
-        <option name="CSS.NUMBER">{number}</option>
+        <option name="CSS.NUMBER">{scalar}</option>
         <option name="CSS.OPERATORS">{operator}</option>
         <option name="CSS.PARENTHESES">{parenthesis}</option>
         <option name="CSS.PROPERTY_NAME">{key}</option>
@@ -560,7 +557,7 @@
         <option name="CSS.SEMICOLON">{semicolon}</option>
         <option name="CSS.STRING">{string}</option>
         <option name="CSS.TAG_NAME">{attribute}</option>
-        <option name="CSS.UNICODE.RANGE">{number}</option>
+        <option name="CSS.UNICODE.RANGE">{scalar}</option>
         <option name="CSS.URL">{link}</option>
         <option name="CTRL_CLICKABLE">{link}</option>
         <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">{invalid}</option>
@@ -588,7 +585,7 @@
 
         <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">{comment}</option>
         <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES">{comment}</option>
-        <option name="CUSTOM_NUMBER_ATTRIBUTES">{number}</option>
+        <option name="CUSTOM_NUMBER_ATTRIBUTES">{scalar}</option>
         <option name="CUSTOM_STRING_ATTRIBUTES">{string}</option>
         <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES">{escape}</option>
         <option name="Class">{class}</option>
@@ -597,7 +594,7 @@
         <option name="Cmd.ENVIRONMENT_VARIABLE_DEFINITION">{macro}</option>
         <option name="Cmd.EXPRESSION">{structure}</option>
         <option name="Cmd.KEYWORD">{keyword}</option>
-        <option name="Cmd.NUMBER">{number}</option>
+        <option name="Cmd.NUMBER">{scalar}</option>
         <option name="Cmd.STRING">{string}</option>
         <option name="Cmd.VARIABLE">{variable}</option>
 
@@ -672,7 +669,7 @@
         <option name="DART.BUILTIN_TYPES">{type}</option>
         <option name="DART.COMMENT">{comment}</option>
         <option name="DART.KEYWORD">{keyword}</option>
-        <option name="DART.NUMBER">{number}</option>
+        <option name="DART.NUMBER">{scalar}</option>
         <option name="DART.STRING">{string}</option>
         <option name="DART.UNRESERVED_KEYWORD">{variable}</option>
         <option name="DART_ENUM_CONSTANT">{enum}</option>
@@ -722,7 +719,7 @@
                 <option name="EFFECT_TYPE" value="5"/>
             </value>
         </option>
-        <option name="ENUM_CONST">{const}</option>
+        <option name="ENUM_CONST">{constant}</option>
         <option name="ENUM_NAME_ATTRIBUTES">{enum}</option>
         <option name="ERL_RECORDS">{key}</option>
         <option name="ERL_VARIABLES">{value}</option>
@@ -744,7 +741,7 @@
         </option>
         <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">{followed}</option>
         <option name="First symbol in list">{variable}</option>
-        <option name="Float literal">{number}</option>
+        <option name="Float literal">{scalar}</option>
         <option name="GENERIC_SERVER_ERROR_OR_WARNING">{bad}</option>
         <option name="GHERKIN_REGEXP_PARAMETER">{escape}</option>
         <option name="GO_BUILTIN_CONSTANT">{constant}</option>
@@ -782,7 +779,7 @@
         <option name="HTML_CUSTOM_TAG_NAME">{entity}</option>
         <option name="HTML_ENTITY_REFERENCE">{entity}</option>
         <option name="HTML_TAG">{default}</option>
-        <option name="HTML_TAG_NAME">{class}</option>
+        <option name="HTML_TAG_NAME">{entity}</option>
         <option name="HTTP_REQUEST_DIFFERENCE_FILE">
             <value>
                 <option name="FOREGROUND" value="{magenta}"/>
@@ -844,18 +841,18 @@
         <option name="IVAR">{variable}</option>
         <option name="Implicit conversion">{warn}</option>
         <option name="Instance field">{member}</option>
-        <option name="Integer literal">{number}</option>
+        <option name="Integer literal">{scalar}</option>
         <option name="Interface name">{interface}</option>
         <option name="Interpolated String Injection">{interpolation}</option>
         <option name="Invalid escape in string">{invalid}</option>
-        <option name="JADE_FILE_PATH">{url}</option>
+        <option name="JADE_FILE_PATH">{link}</option>
         <option name="JADE_FILTER_NAME">{entity}</option>
         <option name="JADE_JS_BLOCK">{injection}</option>
         <option name="JADE_STATEMENTS">{keyword}</option>
         <option name="JAVA_BLOCK_COMMENT">{comment}</option>
         <option name="JAVA_BRACES">{curly}</option>
         <option name="JAVA_BRACKETS">{square}</option>
-        <option name="JAVA_COMMA">{unimportant_punctuation}</option>
+        <option name="JAVA_COMMA">{comma}</option>
         <option name="JAVA_DOC_COMMENT">{comment}</option>
         <option name="JAVA_DOC_MARKUP">{injection}</option>
         <option name="JAVA_DOC_TAG">{attribute}</option>
@@ -863,7 +860,7 @@
         <option name="JAVA_INVALID_STRING_ESCAPE">{invalid}</option>
         <option name="JAVA_KEYWORD">{keyword}</option>
         <option name="JAVA_LINE_COMMENT">{comment}</option>
-        <option name="JAVA_NUMBER">{number}</option>
+        <option name="JAVA_NUMBER">{scalar}</option>
         <option name="JAVA_OPERATION_SIGN">{operator}</option>
         <option name="JAVA_PARENTH">{parenthesis}</option>
         <option name="JAVA_SEMICOLON">{semicolon}</option>
@@ -919,7 +916,7 @@
         <option name="JS.LOCAL_FUNCTION">{function}</option>
         <option name="JS.LOCAL_VARIABLE">{variable}</option>
         <option name="JS.MODULE_NAME">{class}</option>
-        <option name="JS.NUMBER">{number}</option>
+        <option name="JS.NUMBER">{scalar}</option>
         <option name="JS.OPERATION_SIGN">{operator}</option>
         <option name="JS.PARAMETER">{parameter}</option>
         <option name="JS.PARENTHS">{parenthesis}</option>
@@ -939,7 +936,7 @@
         <option name="JSON.INVALID_ESCAPE">{invalid}</option>
         <option name="JSON.KEYWORD">{keyword}</option>
         <option name="JSON.LINE_COMMENT">{comment}</option>
-        <option name="JSON.NUMBER">{number}</option>
+        <option name="JSON.NUMBER">{scalar}</option>
         <option name="JSON.PARAMETER">{parameter}</option>
         <option name="JSON.PROPERTY_KEY">{key}</option>
         <option name="JSON.STRING">{string}</option>
@@ -952,9 +949,9 @@
         <option name="JSONPATH.CONTEXT">{keyword}</option>
         <option name="JSONPATH.DOT">{dot}</option>
         <option name="JSONPATH.FUNCTION">{function}</option>
-        <option name="JSONPATH.IDENTIFIER">{identifier}</option>
+        <option name="JSONPATH.IDENTIFIER">{entity}</option>
         <option name="JSONPATH.KEYWORD">{keyword}</option>
-        <option name="JSONPATH.NUMBER">{number}</option>
+        <option name="JSONPATH.NUMBER">{scalar}</option>
         <option name="JSONPATH.OPERATIONS">{operator}</option>
         <option name="JSONPATH.PARENTHESES">{parenthesis}</option>
         <option name="JSONPATH.STRING">{string}</option>
@@ -969,7 +966,7 @@
             </value>
         </option>
         <option name="KDOC_LINK">{link}</option>
-        <option name="KDOC_TAG_NAME">{tag}</option>
+        <option name="KDOC_TAG_NAME">{entity}</option>
         <option name="KOTLIN_ABSTRACT_CLASS">{class}</option>
         <option name="KOTLIN_ANNOTATION">{decoration}</option>
         <option name="KOTLIN_ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">{attribute}</option>
@@ -1124,7 +1121,7 @@
         <option name="MARKDOWN.IMAGE">{structure}</option>
         <option name="MARKDOWN.ITALIC_TEXT">{string}</option>
         <option name="MARKDOWN.LINK">{link}</option>
-        <option name="MARKDOWN.MAIL_LINK">{followed_link}</option>
+        <option name="MARKDOWN.MAIL_LINK">{link}</option>
         <option name="MARKDOWN.QUOTE">{structure}</option>
         <option name="MARKDOWN.REFERENCE_LINK">{link}</option>
         <option name="MARKDOWN.TABLE">{attribute}</option>
@@ -1192,17 +1189,16 @@
         <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">{default}</option>
         <option name="MATCHED_BRACE_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{textMostIntense}"/>
-                <option name="BACKGROUND" value="{background}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="FONT_TYPE" value="1"/> <!-- bold -->
             </value>
         </option>
-        <option name="MATCHED_TAG_NAME">
+        <option name="MATCHED_TAG_NAME">{
             <value>
                 <option name="FOREGROUND" value="{blue}"/>
-                <option name="BACKGROUND" value="{background}"/>
-                <option name="FONT_TYPE" value="1"/>
-            </value>
+                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="FONT_TYPE" value="1"/> <!-- bold -->
+            </value>}
         </option>
         <option name="METHOD_CALL_ATTRIBUTES">{method}</option>
         <option name="METHOD_DECLARATION_ATTRIBUTES">{method}</option>
@@ -1244,8 +1240,8 @@
         <option name="PERL_LABEL">{attribute}</option>
         <option name="PERL_PACKAGE_CORE">{class}</option>
         <option name="PERL_PACKAGE_PRAGMA">{macro}</option>
-        <option name="PERL_SCALAR">{number}</option>
-        <option name="PERL_SCALAR_BUILTIN">{number}</option>
+        <option name="PERL_SCALAR">{scalar}</option>
+        <option name="PERL_SCALAR_BUILTIN">{scalar}</option>
         <option name="PERL_SUB">{function}</option>
         <option name="PERL_SUB_BUILTIN">{function}</option>
         <option name="PERL_XSUB">{function}</option>
@@ -1277,7 +1273,7 @@
         <option name="PHP_KEYWORD">{keyword}</option>
         <option name="PHP_MARKUP_ID">{metadata}</option>
         <option name="PHP_NAMED_ARGUMENT">{hint}</option>
-        <option name="PHP_NUMBER">{number}</option>
+        <option name="PHP_NUMBER">{scalar}</option>
         <option name="PHP_OPERATION_SIGN">{operator}</option>
         <option name="PHP_PARAMETER">{parameter}</option>
         <option name="PHP_PARENTHESES">{parenthesis}</option>
@@ -1289,7 +1285,7 @@
         <option name="PHP_PROTECTED_INSTANCE_METHOD">{method}</option>
         <option name="PHP_SCRIPTING_BACKGROUND">{injection}</option>
         <option name="PHP_SEMICOLON">{semicolon}</option>
-        <option name="PHP_STATIC_FIELD">{global}</option>
+        <option name="PHP_STATIC_FIELD">{member}</option>
         <option name="PHP_STATIC_METHOD">{method}</option>
         <option name="PHP_STRING">{string}</option>
         <option name="PHP_TAG">{class}</option>
@@ -1319,7 +1315,7 @@
         <option name="PUPPET_NAME">{entity}</option>
         <option name="PY.BUILTIN_NAME">{function}</option>
         <option name="PY.CLASS_DEFINITION">{class}</option>
-        <option name="PY.DECORATOR">{decorator}</option>
+        <option name="PY.DECORATOR">{decoration}</option>
         <option name="PY.KEYWORD_ARGUMENT">{hint}</option>
         <option name="PY.PREDEFINED_DEFINITION">{function}</option>
         <option name="PY.PREDEFINED_USAGE">{function}</option>
@@ -1352,7 +1348,7 @@
         <option name="REGEXP.NAME">{keyword}</option>
         <option name="REGEXP.OPTIONS">{variable}</option>
         <option name="REGEXP.PARENTHS">{parenthesis}</option>
-        <option name="REGEXP.QUANTIFIER">{number}</option>
+        <option name="REGEXP.QUANTIFIER">{scalar}</option>
         <option name="REGEXP.QUOTE_CHARACTER">{macro}</option>
         <option name="REGEXP.REDUNDANT_ESCAPE">{warn}</option>
         <option name="REGEXP_MATCHED_GROUPS">
@@ -1360,7 +1356,7 @@
                 <option name="BACKGROUND" value="{yellowBackground}"/>
             </value>
         </option>
-        <option name="REST.FIXED">{number}</option>
+        <option name="REST.FIXED">{scalar}</option>
         <option name="REST.INLINE">{escape}</option>
         <option name="REST.INTERPRETED">
             <value>
@@ -1398,7 +1394,7 @@
 
         <option name="RUBY_EXPR_IN_STRING">{injection}</option>
         <option name="RUBY_GVAR">{variable}</option>
-        <option name="RUBY_HASH_ASSOC">{number}</option>
+        <option name="RUBY_HASH_ASSOC">{scalar}</option>
         <option name="RUBY_HEREDOC_CONTENT">{value}</option>
         <option name="RUBY_HEREDOC_ID">{key}</option>
         <option name="RUBY_LINE_CONTINUATION">{operator}</option>
@@ -1498,7 +1494,7 @@
         <option name="SOY.IGNORE">{comment}</option>
         <option name="SOY.KEYWORD">{keyword}</option>
         <option name="SOY.NAMESPACE_ID">{external}</option>
-        <option name="SOY.NUMBER">{number}</option>
+        <option name="SOY.NUMBER">{scalar}</option>
         <option name="SOY.SPECIAL_CHAR">{escape}</option>
         <option name="SOY.STRING">{string}</option>
         <option name="SOY.TEMPLATE_ID">{class}</option>
@@ -1533,7 +1529,7 @@
         <option name="SQL_KEYWORD">{keyword}</option>
         <option name="SQL_LABEL">{value}</option>
         <option name="SQL_LOCAL_ALIAS">{variable}</option>
-        <option name="SQL_NUMBER">{number}</option>
+        <option name="SQL_NUMBER">{scalar}</option>
         <option name="SQL_OUTER_QUERY_COLUMN">{class}</option>
         <option name="SQL_PARAMETER">{parameter}</option>
         <option name="SQL_PARENS">{parenthesis}</option>
@@ -1558,7 +1554,7 @@
         <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">{level_4}</option>
         <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">{level_5}</option>
 
-        <option name="STATIC_FIELD_ATTRIBUTES">{attribute}</option>
+        <option name="STATIC_FIELD_ATTRIBUTES">{member}</option>
         <option name="STATIC_FIELD_IMPORTED_ATTRIBUTES">{external}</option>
         <option name="STATIC_FINAL_FIELD_ATTRIBUTES">{macro}</option>
         <option name="STATIC_FINAL_FIELD_IMPORTED_ATTRIBUTES">{external}</option>
@@ -1588,7 +1584,7 @@
         <option name="TEA.INVALID_STRING_ESCAPE">{invalid}</option>
         <option name="TEA.KEYWORD">{keyword}</option>
         <option name="TEA.LINE_COMMENT">{comment}</option>
-        <option name="TEA.NUMBER">{number}</option>
+        <option name="TEA.NUMBER">{scalar}</option>
         <option name="TEA.SCRIPTING_BACKGROUND">{injection}</option>
         <option name="TEA.SCRIPTING_FOREGROUND">{default}</option>
         <option name="TEA.STRING">{string}</option>
@@ -1622,7 +1618,7 @@
         <option name="TS.LINE_COMMENT">{comment}</option>
         <option name="TS.LOCAL_VARIABLE">{variable}</option>
         <option name="TS.MODULE_NAME">{class}</option>
-        <option name="TS.NUMBER">{number}</option>
+        <option name="TS.NUMBER">{scalar}</option>
         <option name="TS.OPERATION_SIGN">{operator}</option>
         <option name="TS.PARAMETER">{parameter}</option>
         <option name="TS.PARENTHS">{parenthesis}</option>
@@ -1696,11 +1692,11 @@
         <option name="XML_PROLOGUE">{keyword}</option>
         <option name="XML_TAG">{default}</option>
         <option name="XML_TAG_DATA">{default}</option>
-        <option name="XML_TAG_NAME">{attribute}</option>
+        <option name="XML_TAG_NAME">{entity}</option>
         <option name="XPATH.BRACKET">{square}</option>
         <option name="XPATH.FUNCTION">{function}</option>
         <option name="XPATH.KEYWORD">{keyword}</option>
-        <option name="XPATH.NUMBER">{number}</option>
+        <option name="XPATH.NUMBER">{scalar}</option>
         <option name="XPATH.OPERATION_SIGN">{operator}</option>
         <option name="XPATH.PARENTH">{parenthesis}</option>
         <option name="XPATH.STRING">{string}</option>
@@ -1715,7 +1711,7 @@
         <option name="YAML_SCALAR_KEY">{key}</option>
         <option name="YAML_SCALAR_LIST">{entity}</option>
         <option name="YAML_SCALAR_STRING">{string}</option>
-        <option name="YAML_SCALAR_VALUE">{number}</option>
+        <option name="YAML_SCALAR_VALUE">{scalar}</option>
         <option name="YAML_SIGN">{operator}</option>
         <option name="YAML_TEXT">{default}</option>
         <option name="bemhtml.bem.error">{bad}</option>
@@ -1740,7 +1736,7 @@
         <option name="link_tag">{link}</option>
         <option name="org.rust.ASSOC_FUNCTION">{function}</option>
         <option name="org.rust.DOC_CODE">{injection}</option>
-        <option name="org.rust.LIFETIME">{number}</option>
+        <option name="org.rust.LIFETIME">{scalar}</option>
         <option name="org.rust.MACRO">{macro}</option>
         <option name="org.rust.METHOD">{method}</option>
         <option name="org.rust.MUT_BINDING">{keyword}</option>
@@ -1753,10 +1749,10 @@
         </option>
         <option name="org.toml.BOOLEAN">{constant}</option>
         <option name="org.toml.COMMENT">{comment}</option>
-        <option name="org.toml.DATE">{number}</option>
+        <option name="org.toml.DATE">{scalar}</option>
         <option name="org.toml.INVALID_STRING_ESCAPE">{invalid}</option>
         <option name="org.toml.KEY">{key}</option>
-        <option name="org.toml.NUMBER">{number}</option>
+        <option name="org.toml.NUMBER">{scalar}</option>
         <option name="org.toml.STRING">{string}</option>
         <option name="org.toml.VALID_STRING_ESCAPE">{escape}</option>
     </attributes>

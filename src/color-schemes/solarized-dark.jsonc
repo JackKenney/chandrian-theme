@@ -3,7 +3,7 @@
     "type": "dark",
     "colors": {
         // standard text
-        "textMostMild": "{{base1}}", //#93a1a1
+        "textMostMild": "{{base0}}", //#839496
         "textMild": "{{base1}}", //#93a1a1
         "text": "{{base2}}", //#ded8c5
         "textIntense": "{{base3}}", //#eee8d5
@@ -17,7 +17,7 @@
         "backgroundMostMild": "{{base00}}", //#657b83
         "selectionBackground": "{{base02}}", //#073642
         // end basics
-        "commentGray": "{{base0}}", //#839496
+        "commentGray": "{{base1}}", //#93a1a1
         "commentGrayProminent": "{{base1}}", //#93a1a1
         // begin mayhem coolest to warmest
         "keywordGray": "{{base0}}", //#839496

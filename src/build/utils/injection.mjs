@@ -1,17 +1,17 @@
 export default class XMLInjector {
     /*
     EFFECT_TYPE
+        none but color present = bordered
         1 = underscored
-        2 = bold underscored
-        3 = under-waved
-        4 = bordered
+        2 = under-waved
+        4 = bold underscored
         5 = strikeout
         6 = dotted line
 
     FONT_TYPE
         1 = bold
         2 = italic
-        3 = both?
+        3 = bold and italic
 
 
     <option name="">
@@ -30,7 +30,7 @@ export default class XMLInjector {
             bad: `<value>
                 <option name="FOREGROUND" value="{red}"/>
                 <option name="EFFECT_COLOR" value="{redBackground}"/>
-                <option name="EFFECT_TYPE" value="3"/>
+                <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
             </value>`,
 
             comment: `<value>
@@ -98,15 +98,11 @@ export default class XMLInjector {
             </value>`,
 
             injection: `<value>
-                    <option name="FOREGROUND" value="{text}"/>
-                    <option name="BACKGROUND" value="{background}"/>
-                    <option name="EFFECT_TYPE" value="4"/>
                     <option name="EFFECT_COLOR" value="{green}"/>
                 </value>`,
 
             interpolation: `<value>
                 <option name="FOREGROUND" value="{yellow}"/>
-                <option name="FONT_TYPE" value="1"/>
             </value>`,
 
             key: `<value>
@@ -120,7 +116,7 @@ export default class XMLInjector {
             </value>`,
 
             member: `<value>
-                <option name="FOREGROUND" value="{textIntense}"/>
+                <option name="FOREGROUND" value="{blue}"/>
             </value>`,
 
             metadata: `<value>
@@ -141,6 +137,7 @@ export default class XMLInjector {
 
             search: `<value>
                 <option name="BACKGROUND" value="{background}"/>
+                <option name="EFFECT_TYPE" value="{}" />
                 <option name="EFFECT_COLOR" value="{yellow}"/>
                 <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
             </value>`,
@@ -158,9 +155,7 @@ export default class XMLInjector {
             </value>`,
 
             template: `<value>
-                <option name="FOREGROUND" value="{text}"/>
-                <option name="BACKGROUND" value="{violetBackground}"/>
-                <option name="EFFECT_TYPE" value="4"/>
+                <option name="BACKGROUND" value="{backgroundIntense}"/>
                 <option name="EFFECT_COLOR" value="{violet}"/>
             </value>`,
 
@@ -168,6 +163,10 @@ export default class XMLInjector {
                 <option name="FOREGROUND" value="{commentGray}"/>
                 <option name="EFFECT_COLOR" value="{commentGray}"/>
                 <option name="EFFECT_TYPE" value="5"/>
+            </value>`,
+
+            value: `<value>
+                <option name="FOREGROUND" value="{green}"/>
             </value>`,
 
             variable: `<value>
@@ -180,6 +179,7 @@ export default class XMLInjector {
                 <option name="EFFECT_TYPE" value="2"/>
             </value>`,
 
+            // levels
 
             level_0: `<value>
                 <option name="FOREGROUND" value="{blue}"/>
@@ -231,7 +231,7 @@ export default class XMLInjector {
         template["keyword"] = template["structure"];
         template["method"] = template["function"];
         template["macro"] = template["global"];
-        template["number"] = template["constant"];
+        template["scalar"] = template["constant"];
         template["object"] = template["class"];
         template["operator"] = template["structure"];
         template["overloaded"] = template["macro"];

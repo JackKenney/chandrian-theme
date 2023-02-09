@@ -17,7 +17,7 @@
         "backgroundMostMild": "{{base-00}}", //#888883
         "selectionBackground": "{{base02}}", //#073642
         // end basics
-        "commentGray": "{{base0}}", //#839496
+        "commentGray": "{{base1}}", //#93a1a1
         "commentGrayProminent": "{{base1}}", //#93a1a1
         // begin mayhem coolest to warmest
         "keywordGray": "{{base0}}", //#
