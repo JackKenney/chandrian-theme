@@ -24,6 +24,8 @@ export default class XMLInjector {
         <option name="FONT_TYPE" value="" />
         </value>
     </option>
+
+    TODO: Adjust the injection so that `<value></value>` tags are already present in the XML document-to-template so that injections can be concatenated, i.e. `<value>{color}{bold}{otherEffect}</value>`.
     */
     getInjectionXMLTemplates() {
         const template = {
