@@ -1,5 +1,4 @@
-export default class XMLInjector {
-    /*
+/**
     EFFECT_TYPE
         none but color present = bordered
         1 = underscored
@@ -13,206 +12,211 @@ export default class XMLInjector {
         2 = italic
         3 = bold and italic
 
-
-    <option name="">
-        <value>
-        <option name="FOREGROUND" value="{}" />
-        <option name="BACKGROUND" value="{}" />
-        <option name="EFFECT_TYPE" value="" />
-        <option name="EFFECT_COLOR" value="{}" />
-        <option name="ERROR_STRIPE_COLOR" value="{}" />
-        <option name="FONT_TYPE" value="" />
-        </value>
-    </option>
-
-    TODO: Adjust the injection so that `<value></value>` tags are already present in the XML document-to-template so that injections can be concatenated, i.e. `<value>{color}{bold}{otherEffect}</value>`.
-    */
+    <option name="FOREGROUND" value="{}" />
+    <option name="BACKGROUND" value="{}" />
+    <option name="EFFECT_TYPE" value="" />
+    <option name="EFFECT_COLOR" value="{}" />
+    <option name="ERROR_STRIPE_COLOR" value="{}" />
+    <option name="FONT_TYPE" value="" />
+*/
+export default class XMLInjector {
     getInjectionXMLTemplates() {
         const template = {
-            bad: `<value>
+            bad: `
                 <option name="FOREGROUND" value="{red}"/>
                 <option name="EFFECT_COLOR" value="{redBackground}"/>
                 <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
-            </value>`,
+            `,
 
-            comment: `<value>
+            bold: `
+                <option name="FONT_TYPE" value="1"/>
+            `,
+
+            bold_italic: `
+                <option name="FONT_TYPE" value="3"/>
+            `,
+
+            comment: `
                 <option name="FOREGROUND" value="{commentGray}"/>
                 <option name="FONT_TYPE" value="2"/>
-            </value>`,
+            `,
 
-            constant: `<value>
+            constant: `
                 <option name="FOREGROUND" value="{magenta}"/>
                 <option name="FONT_TYPE" value="2"/>
-            </value>`,
+            `,
 
-            decoration: `<value>
+            decoration: `
                 <option name="FOREGROUND" value="{magenta}"/>
                 <option name="FONT_TYPE" value="2"/>
-            </value>`,
+            `,
 
-            default: `<value>
+            default: `
                 <option name="FOREGROUND" value="{text}"/>
                 <option name="BACKGROUND" value="{backgroundMostIntense}"/>
-            </value>`,
+            `,
 
-            deprecated: `<value>
+            deprecated: `
                 <option name="EFFECT_COLOR" value="{textMild}"/>
                 <option name="EFFECT_TYPE" value="3"/>
-            </value>`,
+            `,
 
-            entity: `<value>
+            entity: `
                 <option name="FOREGROUND" value="{blue}"/>
-            </value>`,
+            `,
 
-            expensive: `<value>
+            expensive: `
                 <option name="EFFECT_COLOR" value="{red}"/>
                 <option name="EFFECT_TYPE" value="1"/>
-            </value>`,
+            `,
 
-            external: `<value>
+            external: `
                 <option name="FOREGROUND" value="{violet}"/>
-            </value>`,
+            `,
 
-            followed: `<value>
+            followed: `
                 <option name="FOREGROUND" value="{violet}"/>
                 <option name="FONT_TYPE" value="2"/>
                 <option name="EFFECT_COLOR" value="{violet}"/>
                 <option name="EFFECT_TYPE" value="1"/>
-            </value>`,
+            `,
 
-            function: `<value>
+            function: `
                 <option name="FOREGROUND" value="{magenta}"/>
-                </value>`,
+                `,
 
-            global: `<value>
+            global: `
                 <option name="FOREGROUND" value="{orange}"/>
                 <option name="FONT_TYPE" value="2"/>
-                </value>`,
+                `,
 
-            hint: `<value>
+            hint: `
                 <option name="FOREGROUND" value="{violet}"/>
                 <option name="BACKGROUND" value="{background}"/>
-            </value>`,
+            `,
 
-            important: `<value>
+            important: `
                 <option name="FOREGROUND" value="{red}"/>
                 <option name="BACKGROUND" value="{backgroundIntense}"/>
-            </value>`,
+            `,
 
-            injection: `<value>
+            injection: `
                     <option name="EFFECT_COLOR" value="{green}"/>
-                </value>`,
+                `,
 
-            interpolation: `<value>
+            interpolation: `
                 <option name="FOREGROUND" value="{yellow}"/>
-            </value>`,
+            `,
 
-            key: `<value>
+            italic: `
+                <option name="FONT_TYPE" value="2"/>
+            `,
+
+            key: `
                 <option name="FOREGROUND" value="{cyan}"/>
-            </value>`,
+            `,
 
-            link: `<value>
+            link: `
                 <option name="FOREGROUND" value="{blue}"/>
                 <option name="EFFECT_COLOR" value="{blue}"/>
                 <option name="EFFECT_TYPE" value="1"/>
-            </value>`,
+            `,
 
-            member: `<value>
+            member: `
                 <option name="FOREGROUND" value="{blue}"/>
-            </value>`,
+            `,
 
-            metadata: `<value>
+            metadata: `
                 <option name="FOREGROUND" value="{violet}"/>
-            </value>`,
+            `,
 
-            parenthesis: `<value>
+            parenthesis: `
                 <option name="FOREGROUND" value="{blue}"/>
-            </value>`,
+            `,
 
-            punctuation_important: `<value>
+            punctuation_important: `
                 <option name="FOREGROUND" value="{textMostIntense}"/>
-            </value>`,
+            `,
 
-            punctuation_unimportant: `<value>
+            punctuation_unimportant: `
                 <option name="FOREGROUND" value="{textMild}"/>
-            </value>`,
+            `,
 
-            search: `<value>
+            search: `
                 <option name="BACKGROUND" value="{background}"/>
-                <option name="EFFECT_TYPE" value="{}" />
                 <option name="EFFECT_COLOR" value="{yellow}"/>
                 <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
-            </value>`,
+            `,
 
-            string: `<value>
+            string: `
                 <option name="FOREGROUND" value="{green}"/>
-            </value>`,
+            `,
 
-            structure: `<value>
+            structure: `
                 <option name="FOREGROUND" value="{yellow}"/>
-            </value>`,
+            `,
 
-            tag: `<value>
+            tag: `
                 <option name="FOREGROUND" value="{cyan}"/>
-            </value>`,
+            `,
 
-            template: `<value>
+            template: `
                 <option name="BACKGROUND" value="{backgroundIntense}"/>
                 <option name="EFFECT_COLOR" value="{violet}"/>
-            </value>`,
+            `,
 
-            unknown: `<value>
+            unknown: `
                 <option name="FOREGROUND" value="{commentGray}"/>
                 <option name="EFFECT_COLOR" value="{commentGray}"/>
                 <option name="EFFECT_TYPE" value="5"/>
-            </value>`,
+            `,
 
-            value: `<value>
+            value: `
                 <option name="FOREGROUND" value="{green}"/>
-            </value>`,
+            `,
 
-            variable: `<value>
+            variable: `
                 <option name="FOREGROUND" value="{cyan}"/>
-            </value>`,
+            `,
 
-            warn: `<value>
+            warn: `
                 <option name="EFFECT_COLOR" value="{yellowBackground}"/>
                 <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
                 <option name="EFFECT_TYPE" value="2"/>
-            </value>`,
+            `,
 
             // levels
 
-            level_0: `<value>
+            level_0: `
                 <option name="FOREGROUND" value="{blue}"/>
-            </value>`,
-            level_1: `<value>
+            `,
+            level_1: `
                 <option name="FOREGROUND" value="{orange}"/>
-            </value>`,
-            level_2: `<value>
+            `,
+            level_2: `
                 <option name="FOREGROUND" value="{cyan}"/>
-            </value>`,
-            level_3: `<value>
+            `,
+            level_3: `
                 <option name="FOREGROUND" value="{violet}"/>
-            </value>`,
-            level_4: `<value>
+            `,
+            level_4: `
                 <option name="FOREGROUND" value="{yellow}"/>
-            </value>`,
-            level_5: `<value>
+            `,
+            level_5: `
                 <option name="FOREGROUND" value="{magenta}"/>
-            </value>`,
-            level_6: `<value>
+            `,
+            level_6: `
                 <option name="FOREGROUND" value="{green}"/>
-            </value>`,
-            level_7: `<value>
+            `,
+            level_7: `
                 <option name="FOREGROUND" value="{red}"/>
-            </value>`,
-            level_8: `<value>
+            `,
+            level_8: `
                 <option name="FOREGROUND" value="{blue}"/>
-            </value>`,
-            level_9: `<value>
+            `,
+            level_9: `
                 <option name="FOREGROUND" value="{orange}"/>
-            </value>`,
+            `,
         };
 
         // duplicates to facilitate future complications
