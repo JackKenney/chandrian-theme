@@ -96,7 +96,7 @@ export default class XMLInjector {
             `,
 
             important: `
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{orange}"/>
                 <option name="BACKGROUND" value="{backgroundIntense}"/>
             `,
 
@@ -221,6 +221,7 @@ export default class XMLInjector {
 
         // duplicates to facilitate future complications
 
+        template["angle"] = template["default"];
         template["attribute"] = template["key"];
         template["class"] = template["entity"];
         template["constructor"] = template["function"];
@@ -232,6 +233,7 @@ export default class XMLInjector {
         template["escape"] = template["interpolation"];
         template["field"] = template["member"];
         template["getter"] = template["function"];
+        template["identifier"] = template["entity"];
         template["interface"] = template["entity"];
         template["invalid"] = template["bad"];
         template["keyword"] = template["structure"];

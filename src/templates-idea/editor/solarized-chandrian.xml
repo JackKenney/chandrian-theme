@@ -1619,6 +1619,30 @@
         <option name="LAMBDA_PARAMETER_ATTRIBUTES">
             <value>{parameter}</value>
         </option>
+        <option name="LESS_ATTRIBUTE_NAME">
+            <value>{attribute}</value>
+        </option>
+        <option name="LESS_BAD_CHARACTER">
+            <value>{bad}</value>
+        </option>
+        <option name="LESS_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="LESS_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="LESS_CLASS_NAME">
+            <value>{class}</value>
+        </option>
+        <option name="LESS_COLON">
+            <value>{colon}</value>
+        </option>
+        <option name="LESS_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="LESS_COMMENT">
+            <value>{comment}</value>
+        </option>
         <option name="LINE_FULL_COVERAGE">
             <value>
                 <option name="BACKGROUND" value="{greenBackground}" />
@@ -1738,6 +1762,9 @@
         </option>
         <option name="List/map to object conversion">
             <value>{warn}</value>
+        </option>
+        <option name="LiveLiteralsHighlightAttribute">
+            <value>{injection}</value>
         </option>
         <option name="Local lazy val/var">
             <value>{warn}</value>
@@ -2013,6 +2040,36 @@
         </option>
         <option name="METHOD_DECLARATION_ATTRIBUTES">
             <value>{method}</value>
+        </option>
+        <option name="NG.BANANA_BINDING_ATTR_NAME">
+            <value>{attribute}</value>
+        </option>
+        <option name="NG.EVENT_BINDING_ATTR_NAME">
+            <value>{attribute}</value>
+        </option>
+        <option name="NG.EXPANSION_FORM">
+            <value>{function}</value>
+        </option>
+        <option name="NG.EXPANSION_FORM_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="NG.EXPANSION_FORM_DELIMITERS">
+            <value>{separator}</value>
+        </option>
+        <option name="NG.EXPRESSIONS">
+            <value>{injection}</value>
+        </option>
+        <option name="NG.PROPERTY_BINDING_ATTR_NAME">
+            <value>{attribute}</value>
+        </option>
+        <option name="NG.REFERENCE_ATTR_NAME">
+            <value>{attribute}</value>
+        </option>
+        <option name="NG.SCRIPT_DELIMITERS">
+            <value>{separator}</value>
+        </option>
+        <option name="NG.TEMPLATE_BINDINGS_ATTR_NAME">
+            <value>{attribute}</value>
         </option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
@@ -2314,6 +2371,97 @@
         <option name="PROTOCOL_REFERENCE">
             <value>{function}</value>
         </option>
+
+        <option name="PROTOTEXT">
+            <value>{default}</value>
+        </option>
+        <option name="PROTOTEXT_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="PROTOTEXT_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="PROTOTEXT_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="PROTOTEXT_COMMENT_DIRECTIVE">
+            <value>{function}</value>
+        </option>
+        <option name="PROTOTEXT_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="PROTOTEXT_ENUM_VALUE">
+            <value>{enum}</value>
+        </option>
+        <option name="PROTOTEXT_IDENTIFIER">
+            <value>{identifier}</value>
+        </option>
+        <option name="PROTOTEXT_INVALID_STRING_ESCAPE">
+            <value>{invalid}</value>
+        </option>
+        <option name="PROTOTEXT_LINE_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="PROTOTEXT_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="PROTOTEXT_OPERATION_SIGN">
+            <value>{operator}</value>
+        </option>
+        <option name="PROTOTEXT_SEMICOLON">
+            <value>{semicolon}</value>
+        </option>
+        <option name="PROTOTEXT_STRING">
+            <value>{string}</value>
+        </option>
+        <option name="PROTOTEXT_VALID_STRING_ESCAPE">
+            <value>{escape}</value>
+        </option>
+        <option name="PROTO_BLOCK_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="PROTO_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="PROTO_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="PROTO_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="PROTO_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="PROTO_ENUM_VALUE">
+            <value>{enum}</value>
+        </option>
+        <option name="PROTO_IDENTIFIER">
+            <value>{entity}</value>
+        </option>
+        <option name="PROTO_INVALID_STRING_ESCAPE">
+            <value>{invalid}</value>
+        </option>
+        <option name="PROTO_KEYWORD">
+            <value>{keyword}</value>
+        </option>
+        <option name="PROTO_LINE_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="PROTO_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="PROTO_PARENTHESES">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="PROTO_SEMICOLON">
+            <value>{semicolon}</value>
+        </option>
+        <option name="PROTO_STRING">
+            <value>{string}</value>
+        </option>
+        <option name="PROTO_VALID_STRING_ESCAPE">
+            <value>{escape}</value>
+        </option>
         <option name="PUBLIC_REFERENCE">
             <value>{entity}</value>
         </option>
@@ -2358,6 +2506,49 @@
         </option>
         <option name="QL_FUNCTION">
             <value>{function}</value>
+        </option>
+
+        <option name="QUTE_BACKGROUND">
+            <value></value>
+        </option>
+        <option name="QUTE_BOOLEAN">
+            <value>{constant}</value>
+        </option>
+        <option name="QUTE_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="QUTE_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="QUTE_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="QUTE_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="QUTE_IDENTIFIER">
+            <value>{entity}</value>
+        </option>
+        <option name="QUTE_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="QUTE_OPERATOR_SIGN">
+            <value>{operator}</value>
+        </option>
+        <option name="QUTE_PARENTHESES">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="QUTE_SECONDARY_KEYWORD">
+            <value>{keyword}</value>
+        </option>
+        <option name="QUTE_STRING">
+            <value>{string}</value>
+        </option>
+        <option name="QUTE_TAG_BRACE">
+            <value>{angle}</value>
+        </option>
+        <option name="QUTE_TAG_NAME">
+            <value>{key}</value>
         </option>
         <option name="RAINBOW_COLOR0">
             <value>{level_0}</value>
@@ -2658,20 +2849,115 @@
         <option name="Regular expression">
             <value>{escape}</value>
         </option>
+
         <option name="SASS_ATTRIBUTE">
-            <value>{attribute}</value>
+            <value>{entity}</value>
+        </option>
+        <option name="SASS_ATTRIBUTE_NAME">
+            <value>{key}</value>
+        </option>
+        <option name="SASS_BAD_CHARACTER">
+            <value>{bad}</value>
+        </option>
+        <option name="SASS_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="SASS_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="SASS_CLASS_NAME">
+            <value>{class}</value>
+        </option>
+        <option name="SASS_COLON">
+            <value>{colon}</value>
+        </option>
+        <option name="SASS_COLOR">
+            <value>
+            </value>
+        </option>
+        <option name="SASS_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="SASS_COMMENT">
+            <value>{comment}</value>
         </option>
         <option name="SASS_CONSTANT">
             <value>{constant}</value>
         </option>
+        <option name="SASS_DEFAULT">
+            <value>{default}</value>
+        </option>
         <option name="SASS_DIRECTIVE">
+            <value>{keyword}</value>
+        </option>
+        <option name="SASS_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="SASS_EXTEND">
+            <value>{structure}</value>
+        </option>
+        <option name="SASS_FUNCTION">
             <value>{function}</value>
         </option>
+        <option name="SASS_GLOBAL">
+            <value>{global}</value>
+        </option>
+        <option name="SASS_IDENTIFIER">
+            <value>{entity}</value>
+        </option>
+        <option name="SASS_ID_SELECTOR">
+            <value>{entity}</value>
+        </option>
+        <option name="SASS_IMPORTANT">
+            <value>{important}</value>
+        </option>
+        <option name="SASS_INTERPOLATION">
+            <value>{interpolation}</value>
+        </option>
+        <option name="SASS_KEYWORD">
+            <value>{keyword}</value>
+        </option>
         <option name="SASS_MIXIN">
-            <value>{string}</value>
+            <value>{function}</value>
+        </option>
+        <option name="SASS_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="SASS_OPERATORS">
+            <value>{operator}</value>
+        </option>
+        <option name="SASS_OPTIONAL">
+            <value>{italic}</value>
+        </option>
+        <option name="SASS_PARENTHESES">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="SASS_PROPERTY_NAME">
+            <value>{key}</value>
+        </option>
+        <option name="SASS_PROPERTY_VALUE">
+            <value>{value}</value>
+        </option>
+        <option name="SASS_PSEUDO">
+            <value>{global}</value>
         </option>
         <option name="SASS_RULE">
-            <value>{attribute}</value>
+            <value>{structure}</value>
+        </option>
+        <option name="SASS_SEMICOLON">
+            <value>{semicolon}</value>
+        </option>
+        <option name="SASS_STRING">
+            <value>{string}</value>
+        </option>
+        <option name="SASS_TAG_NAME">
+            <value>{key}</value>
+        </option>
+        <option name="SASS_UNICODE_RANGE">
+            <value>{number}</value>
+        </option>
+        <option name="SASS_URL">
+            <value>{link}</value>
         </option>
         <option name="SASS_VARIABLE">
             <value>{variable}</value>
@@ -2751,6 +3037,62 @@
         </option>
         <option name="SOY.TEMPLATE_PARAMETER">
             <value>{parameter}</value>
+        </option>
+
+        <option name="SPEL.BACKGROUND">
+            <value>
+            </value>
+        </option>
+        <option name="SPEL.BEAN_PREFIX">
+            <value>{interpolation}</value>
+        </option>
+        <option name="SPEL.BOUNDS">
+            <value>{separator}</value>
+        </option>
+        <option name="SPEL.BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="SPEL.BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="SPEL.COLON">
+            <value>{colon}</value>
+        </option>
+        <option name="SPEL.COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="SPEL.DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="SPEL.IDENTIFIER">
+            <value>{entity}</value>
+        </option>
+        <option name="SPEL.KEYWORD">
+            <value>{keyword}</value>
+        </option>
+        <option name="SPEL.METHOD_CALL">
+            <value>{method}</value>
+        </option>
+        <option name="SPEL.NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="SPEL.OPERATIONS">
+            <value>{operator}</value>
+        </option>
+        <option name="SPEL.PARENTHESES">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="SPEL.PROPERTY_KEY">
+            <value>{key}</value>
+        </option>
+        <option name="SPEL.QUALIFIED_TYPE">
+            <value>{type}</value>
+        </option>
+        <option name="SPEL.STATIC_FIELD">
+            <value>{member}</value>
+        </option>
+        <option name="SPEL.STRING">
+            <value>{string}</value>
         </option>
         <option name="SPY-JS.EXCEPTION">
             <value>{warn}</value>
@@ -2936,6 +3278,23 @@
         </option>
         <option name="TAPESTRY_COMPONENT_TAG">
             <value>{attribute}</value>
+        </option>
+        <option name="TDIFF_EXCLUDED_COLUMN">
+            <value>
+                <option name="EFFECT_COLOR" value="{orange}" />
+            </value>
+        </option>
+        <option name="TDIFF_FUZZY_MATCHED">
+            <value>
+                <option name="BACKGROUND" value="{yellow}" />
+            </value>
+        </option>
+        <option name="TDIFF_FUZZY_MISMATCHED">
+            <value>
+                <option name="BACKGROUND" value="383b3d" />
+                <option name="EFFECT_COLOR" value="f0a000" />
+                <option name="ERROR_STRIPE_COLOR" value="f0a000" />
+            </value>
         </option>
         <option name="TEA.BADCHARACTER">
             <value>{bad}</value>
@@ -3164,11 +3523,53 @@
         <option name="Unresolved reference access">
             <value>{unknown}</value>
         </option>
+        <option name="VELOCITY_BAD_CHARACTER">
+            <value>{bad}</value>
+        </option>
+        <option name="VELOCITY_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="VELOCITY_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="VELOCITY_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="VELOCITY_COMMENT">
+            <value>{comment}</value>
+        </option>
         <option name="VELOCITY_DIRECTIVE">
             <value>{function}</value>
         </option>
+        <option name="VELOCITY_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="VELOCITY_ESCAPE">
+            <value>{escape}</value>
+        </option>
+        <option name="VELOCITY_KEYWORD">
+            <value>{keyword}</value>
+        </option>
+        <option name="VELOCITY_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="VELOCITY_OPERATION_SIGN">
+            <value>{operator}</value>
+        </option>
+        <option name="VELOCITY_PARENTHS">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="VELOCITY_REFERENCE">
+            <value>{entity}</value>
+        </option>
         <option name="VELOCITY_SCRIPTING_BACKGROUND">
             <value>{injection}</value>
+        </option>
+        <option name="VELOCITY_SEMICOLON">
+            <value>{semicolon}</value>
+        </option>
+        <option name="VELOCITY_STRING">
+            <value>{string}</value>
         </option>
         <option name="Valid escape in string">
             <value>{escape}</value>
