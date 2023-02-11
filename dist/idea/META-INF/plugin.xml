@@ -1,8 +1,9 @@
 <idea-plugin>
   <name>Solarized Chandrian Themes</name>
   <id>com.jackkenney.solarized-chandrian-theme</id>
-  <version>2.0.16</version>
-  <vendor email="jack@kenney.dev" url="https://github.com/JackKenney/solarized-chandrian-theme">JackKenney</vendor>
+  <version>2.1.1</version>
+  <vendor email="jack@kenney.dev" url="https://github.com/JackKenney/solarized-chandrian-theme">
+    JackKenney</vendor>
   <category>UI</category>
 
   <description>
@@ -48,17 +49,17 @@ To install:
     ]]>
   </change-notes>
 
-  <idea-version since-build="192"/>
+  <idea-version since-build="192" />
 
   <depends>com.intellij.modules.lang</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="sbcJSON" path="/solarized-black-chandrian.theme.json"/>
-    <themeProvider id="sdcJSON" path="/solarized-dark-chandrian.theme.json"/>
-    <themeProvider id="slcJSON" path="/solarized-light-chandrian.theme.json"/>
-    <bundledColorScheme id="sbcXML" path="/editor/solarized-black-chandrian"/>
-    <bundledColorScheme id="sdcXML" path="/editor/solarized-dark-chandrian"/>
-    <bundledColorScheme id="slcXML" path="/editor/solarized-light-chandrian"/>
+    <themeProvider id="sbcJSON" path="/solarized-black-chandrian.theme.json" />
+    <themeProvider id="sdcJSON" path="/solarized-dark-chandrian.theme.json" />
+    <themeProvider id="slcJSON" path="/solarized-light-chandrian.theme.json" />
+    <bundledColorScheme id="sbcXML" path="/editor/solarized-black-chandrian" />
+    <bundledColorScheme id="sdcXML" path="/editor/solarized-dark-chandrian" />
+    <bundledColorScheme id="slcXML" path="/editor/solarized-light-chandrian" />
   </extensions>
 
   <actions>
