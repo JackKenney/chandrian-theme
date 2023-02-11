@@ -2,7 +2,9 @@ import fs from "fs";
 import jsonc from "jsonc-parser";
 import templateJSON from "json-templates";
 import templateXML from "string-template";
+
 import * as paths from "./paths.mjs";
+import XMLInjector from "./injection.mjs";
 
 export default class Compiler {
     constructor() {
@@ -60,6 +62,7 @@ export default class Compiler {
 
             const colorsAndName = colors;
             colorsAndName["themeName"] = "#" + themeJSON["name"];
+
             const editorXML = this.replaceXMLTemplateContents(
                 `${paths.IDEA_TEMPLATES}/editor/solarized-chandrian.xml`, colors);
 
@@ -97,12 +100,22 @@ export default class Compiler {
 
     /** NOTE: Strips the # off each value (only pass hex colors) */
     replaceXMLTemplateContents = (fileName, hexColors) => {
+        const contents = fs.readFileSync(fileName, "utf8");
+
         const colorsNoHash = {};
         Object.keys(hexColors).map((key) => {
             colorsNoHash[key] = hexColors[key].substr(1);
         });
-        const contents = fs.readFileSync(fileName, "utf8");
-        return templateXML(contents, colorsNoHash);
+
+        const injections = (new XMLInjector()).getInjectionXMLTemplates();
+        Object.keys(injections).map((key) => {
+            injections[key] = templateXML(injections[key], colorsNoHash);
+        });
+
+        // combine templates to do one round of templating
+        const template = Object.assign(injections, colorsNoHash);
+
+        return templateXML(contents, template);
     }
 
     parseColorScheme = (fileName) => {
@@ -120,7 +133,7 @@ export default class Compiler {
             const bottom = scheme["backgroundMostIntense"];
             const top = scheme[colorName];
             const key = colorName + "Background";
-            accum[key] = this.mixColors(bottom, top, 0.4);
+            accum[key] = this.mixColors(bottom, top, 0.33);
             return accum;
         }, {});
 
