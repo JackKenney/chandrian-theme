@@ -19,7 +19,7 @@
         <option name="Atom">{default}</option>
         <option name="BACKGROUND">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
             </value>
         </option>
         <option name="BAD_CHARACTER">{bad}</option>
@@ -43,7 +43,7 @@
         <option name="BASH.RAW_STRING">{string}</option>
         <option name="BASH.REDIRECTION">
             <value>
-                <option name="FOREGROUND" value="{violet}"/>
+                <option name="FOREGROUND" value="{violet}" />
             </value>
         </option>
         <option name="BASH.SHEBANG">{macro}</option>
@@ -54,35 +54,35 @@
         <option name="BASH.VAR_USE_COMPOSED">{variable}</option>
         <option name="BOOKMARKS_ATTRIBUTES">
             <value>
-                <option name="ERROR_STRIPE_COLOR" value="{orange}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{orange}" />
             </value>
         </option>
         <option name="BREADCRUMBS_CURRENT">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{textIntense}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{textIntense}" />
             </value>
         </option>
         <option name="BREADCRUMBS_DEFAULT">
             <value>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="BREADCRUMBS_HOVERED">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="BREADCRUMBS_INACTIVE">
             <value>
-                <option name="FOREGROUND" value="{textMild}"/>
+                <option name="FOREGROUND" value="{textMild}" />
             </value>
         </option>
         <option name="BREAKPOINT_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{red}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="ERROR_STRIPE_COLOR" value="{red}" />
             </value>
         </option>
         <option name="BUILD.BUILTIN_NAME">{structure}</option>
@@ -95,17 +95,17 @@
         <option name="CMD_LABEL">{variable}</option>
         <option name="CODE_LENS_BORDER_COLOR">
             <value>
-                <option name="EFFECT_COLOR" value="{cyan}"/>
+                <option name="EFFECT_COLOR" value="{cyan}" />
             </value>
         </option>
         <option name="CODE_VISION_DEFAULT">
             <value>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="CODE_VISION_HOVERED">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="COFFEESCRIPT.IDENTIFIER">{class}</option>
@@ -113,107 +113,107 @@
         <option name="CONDITIONALLY_NOT_COMPILED">{warn}</option>
         <option name="CONSOLE_BLACK_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{textMostIntense}"/>
+                <option name="FOREGROUND" value="{textMostIntense}" />
             </value>
         </option>
         <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="FOREGROUND" value="{blue}" />
             </value>
         </option>
         <option name="CONSOLE_BLUE_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="FOREGROUND" value="{blue}" />
             </value>
         </option>
         <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="CONSOLE_CYAN_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="CONSOLE_DARKGRAY_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{textMild}"/>
+                <option name="FOREGROUND" value="{textMild}" />
             </value>
         </option>
         <option name="CONSOLE_ERROR_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{red}" />
             </value>
         </option>
         <option name="CONSOLE_GRAY_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{commentGray}"/>
+                <option name="FOREGROUND" value="{commentGray}" />
             </value>
         </option>
         <option name="CONSOLE_GREEN_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{green}"/>
+                <option name="FOREGROUND" value="{green}" />
             </value>
         </option>
         <option name="CONSOLE_GREEN_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{green}"/>
+                <option name="FOREGROUND" value="{green}" />
             </value>
         </option>
         <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="CONSOLE_MAGENTA_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="CONSOLE_NORMAL_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="CONSOLE_RANGE_TO_EXECUTE">
             <value>
-                <option name="EFFECT_COLOR" value="{blue}"/>
+                <option name="EFFECT_COLOR" value="{blue}" />
             </value>
         </option>
         <option name="CONSOLE_RED_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{red}" />
             </value>
         </option>
         <option name="CONSOLE_RED_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{red}" />
             </value>
         </option>
         <option name="CONSOLE_SYSTEM_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="CONSOLE_USER_INPUT">
             <value>
-                <option name="FOREGROUND" value="{textMostIntense}"/>
+                <option name="FOREGROUND" value="{textMostIntense}" />
             </value>
         </option>
         <option name="CONSOLE_WHITE_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{white}"/>
+                <option name="FOREGROUND" value="{white}" />
             </value>
         </option>
         <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="CONSOLE_YELLOW_OUTPUT">
             <value>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="CONSTRUCTOR_CALL_ATTRIBUTES">{function}</option>
@@ -226,7 +226,7 @@
         <option name="CSS.COLON">{colon}</option>
         <option name="CSS.COLOR">
             <value>
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{red}" />
             </value>
         </option>
         <option name="CSS.COMMA">{comma}</option>
@@ -237,7 +237,7 @@
         <option name="CSS.IMPORTANT">{important}</option>
         <option name="CSS.INDENT">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="CSS.KEYWORD">{keyword}</option>
@@ -256,22 +256,22 @@
         <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">{invalid}</option>
         <option name="CUSTOM_KEYWORD1_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="FOREGROUND" value="{blue}" />
             </value>
         </option>
         <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{orange}"/>
+                <option name="FOREGROUND" value="{orange}" />
             </value>
         </option>
         <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">{comment}</option>
@@ -290,68 +290,68 @@
         <option name="Cmd.VARIABLE">{variable}</option>
         <option name="CodeWithMe.USER_1_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{green}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{green}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_1_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{green}"/>
+                <option name="EFFECT_COLOR" value="{green}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_2_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{blue}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_2_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{blue}"/>
+                <option name="EFFECT_COLOR" value="{blue}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_3_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_3_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{magenta}"/>
+                <option name="EFFECT_COLOR" value="{magenta}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_4_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{violet}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{violet}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_4_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{violet}"/>
+                <option name="EFFECT_COLOR" value="{violet}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_5_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_5_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{magenta}"/>
+                <option name="EFFECT_COLOR" value="{magenta}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_6_MARKER">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="CodeWithMe.USER_6_SELECTION">
             <value>
-                <option name="EFFECT_COLOR" value="{cyan}"/>
+                <option name="EFFECT_COLOR" value="{cyan}" />
             </value>
         </option>
         <option name="DART.BADCHARACTER">{bad}</option>
@@ -396,8 +396,8 @@
         <option name="DEFAULT_GLOBAL_VARIABLE">{global}</option>
         <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="DEFAULT_IDENTIFIER">{variable}</option>
@@ -429,44 +429,66 @@
         <option name="DEFAULT_VALID_STRING_ESCAPE">{escape}</option>
         <option name="DELETED_TEXT_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{redBackground}"/>
-                <option name="FOREGROUND" value="{textIntense}"/>
+                <option name="BACKGROUND" value="{redBackground}" />
+                <option name="FOREGROUND" value="{textIntense}" />
             </value>
         </option>
         <option name="DEPRECATED_ATTRIBUTES">{deprecated}</option>
         <option name="DIFF_CONFLICT">
             <value>
-                <option name="BACKGROUND" value="{magentaBackground}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{magenta}"/>
+                <option name="BACKGROUND" value="{magentaBackground}" />
+                <option name="ERROR_STRIPE_COLOR" value="{magenta}" />
             </value>
         </option>
         <option name="DIFF_DELETED">
             <value>
-                <option name="BACKGROUND" value="{redBackground}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{red}"/>
+                <option name="BACKGROUND" value="{redBackground}" />
+                <option name="ERROR_STRIPE_COLOR" value="{red}" />
             </value>
         </option>
         <option name="DIFF_INSERTED">
             <value>
-                <option name="BACKGROUND" value="{greenBackground}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{green}"/>
+                <option name="BACKGROUND" value="{greenBackground}" />
+                <option name="ERROR_STRIPE_COLOR" value="{green}" />
             </value>
         </option>
         <option name="DIFF_MODIFIED">
             <value>
-                <option name="BACKGROUND" value="{yellowBackground}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
+                <option name="BACKGROUND" value="{yellowBackground}" />
+                <option name="ERROR_STRIPE_COLOR" value="{yellow}" />
             </value>
         </option>
         <option name="DJANGO_ID">{value}</option>
+        <option name="DOCKER_BRACKETS">{square}</option>
+        <option name="DOCKER_COMMA">{comma}</option>
+        <option name="DOCKER_COMMENTS">{comment}</option>
+        <option name="DOCKER_DOT">{dot}</option>
+        <option name="DOCKER_KEYWORD">{keyword}</option>
+        <option name="DOCKER_NUMBER">{number}</option>
+        <option name="DOCKER_PARENTH">{parenthesis}</option>
+        <option name="DOCKER_STRING">{string}</option>
+        <option name="DOCKER_VARIABLE">{variable}</option>
         <option name="DOC_COMMENT_TAG_VALUE">{value}</option>
-        <option name="DROOLS_RULE"/>
+        <option name="DROOLS_RULE" />
         <option name="DUPLICATE_FROM_SERVER">
             <value>
-                <option name="EFFECT_COLOR" value="{orange}"/>
-                <option name="EFFECT_TYPE" value="5"/>
+                <option name="EFFECT_COLOR" value="{orange}" />
+                <option name="EFFECT_TYPE" value="5" />
             </value>
         </option>
+        <option name="EDITORCONFIG_BRACE">{curly}</option>
+        <option name="EDITORCONFIG_BRACKET">{square}</option>
+        <option name="EDITORCONFIG_COMMA">{comma}</option>
+        <option name="EDITORCONFIG_IDENTIFIER">{entity}</option>
+        <option name="EDITORCONFIG_INVALID_CHAR_ESCAPE">{invalid}</option>
+        <option name="EDITORCONFIG_LINE_COMMENT">{comment}</option>
+        <option name="EDITORCONFIG_PATTERN">{interpolation}</option>
+        <option name="EDITORCONFIG_PROPERTY_KEY">{key}</option>
+        <option name="EDITORCONFIG_PROPERTY_VALUE">{value}</option>
+        <option name="EDITORCONFIG_SEPARATOR">{separator}</option>
+        <option name="EDITORCONFIG_SPECIAL_SYMBOL">{interpolation}</option>
+        <option name="EDITORCONFIG_VALID_CHAR_ESCAPE">{escape}</option>
+        <option name="EDITORCONFIG_VARIABLE">{variable}</option>
         <option name="ENUM_CONST">{constant}</option>
         <option name="ENUM_NAME_ATTRIBUTES">{enum}</option>
         <option name="ERL_RECORDS">{key}</option>
@@ -476,15 +498,15 @@
         <option name="EVALUATED_EXPRESSION_EXECUTION_LINE_ATTRIBUTES">{injection}</option>
         <option name="EXECUTIONPOINT_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{blue}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{blue}"/>
+                <option name="EFFECT_COLOR" value="{blue}" />
+                <option name="ERROR_STRIPE_COLOR" value="{blue}" />
             </value>
         </option>
         <option name="Enum name">{enum}</option>
         <option name="FILESTATUS_ERRORS">{bad}</option>
         <option name="FOLDED_TEXT_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
             </value>
         </option>
         <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">{followed}</option>
@@ -502,7 +524,7 @@
         <option name="GO_PACKAGE">{entity}</option>
         <option name="GO_SHADOWING_VARIABLE">
             <value>
-                <option name="FOREGROUND" value="{violet}"/>
+                <option name="FOREGROUND" value="{violet}" />
             </value>
         </option>
         <option name="GO_STRUCT_EXPORTED_MEMBER">{external}</option>
@@ -511,7 +533,7 @@
         <option name="GO_STRUCT_LOCAL_MEMBER_CALL">{method}</option>
         <option name="GO_TYPE_REFERENCE">{type}</option>
         <option name="GQL_ID">
-            <value/>
+            <value />
         </option>
         <option name="GROOVY_KEYWORD">{keyword}</option>
         <option name="Groovydoc comment">{comment}</option>
@@ -530,14 +552,14 @@
         <option name="HTML_TAG_NAME">{entity}</option>
         <option name="HTTP_REQUEST_DIFFERENCE_FILE">
             <value>
-                <option name="FONT_TYPE" value="2"/>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="FONT_TYPE" value="2" />
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="HTTP_REQUEST_MULTIPART_BOUNDARY">
             <value>
-                <option name="FONT_TYPE" value="3"/>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FONT_TYPE" value="3" />
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="HTTP_REQUEST_PARAMETER_NAME">{key}</option>
@@ -545,34 +567,34 @@
         <option name="HYPERLINK_ATTRIBUTES">{link}</option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{violet}"/>
-                <option name="EFFECT_TYPE" value="1"/>
+                <option name="EFFECT_COLOR" value="{violet}" />
+                <option name="EFFECT_TYPE" value="1" />
             </value>
         </option>
         <option name="INACTIVE_HYPERLINK_ATTRIBUTES">{link}</option>
         <option name="INFO_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{yellowBackground}"/>
-                <option name="EFFECT_TYPE" value="1"/>
+                <option name="EFFECT_COLOR" value="{yellowBackground}" />
+                <option name="EFFECT_TYPE" value="1" />
             </value>
         </option>
         <option name="INHERITED_METHOD_ATTRIBUTES">{parameter}</option>
         <option name="INJECTED_LANGUAGE_FRAGMENT">{injection}</option>
         <option name="INLAY_DEFAULT">
             <value>
-                <option name="BACKGROUND" value="{background}"/>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="BACKGROUND" value="{background}" />
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="INLAY_TEXT_WITHOUT_BACKGROUND">
             <value>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="INLINE_PARAMETER_HINT">{hint}</option>
@@ -580,7 +602,7 @@
         <option name="INLINE_PARAMETER_HINT_HIGHLIGHTED">{hint}</option>
         <option name="INLINE_STACK_FRAMES">
             <value>
-                <option name="FOREGROUND" value="{textMostIntense}"/>
+                <option name="FOREGROUND" value="{textMostIntense}" />
             </value>
         </option>
         <option name="INSTANCE_FIELD_ATTRIBUTES">{member}</option>
@@ -625,12 +647,12 @@
         <option name="JFLEX_MACROS_REF">{macro}</option>
         <option name="JFLEX_OPTION_BACKGROUND">
             <value>
-                <option name="BACKGROUND" value="{orangeBackground}"/>
+                <option name="BACKGROUND" value="{orangeBackground}" />
             </value>
         </option>
         <option name="JFLEX_REGEXP_BACKGROUND">
             <value>
-                <option name="BACKGROUND" value="{yellowBackground}"/>
+                <option name="BACKGROUND" value="{yellowBackground}" />
             </value>
         </option>
         <option name="JFLEX_REGEXP_CLASS_SYMBOL">{class}</option>
@@ -676,6 +698,7 @@
         <option name="JS.STRING">{string}</option>
         <option name="JS.TYPE_ALIAS">{type}</option>
         <option name="JS.VALID_STRING_ESCAPE">{escape}</option>
+        <option name="JavaScript:INJECTED_LANGUAGE_FRAGMENT">{injection}</option>
         <option name="JSON.BLOCK_COMMENT">{comment}</option>
         <option name="JSON.BRACES">{curly}</option>
         <option name="JSON.BRACKETS">{square}</option>
@@ -705,12 +728,12 @@
         <option name="JSONPATH.STRING">{string}</option>
         <option name="JSP_DIRECTIVE_NAME">{structure}</option>
         <option name="JSP_SCRIPTING_BACKGROUND">
-            <value/>
+            <value />
         </option>
         <option name="JUPYTER_INLINE_VALUES">{default}</option>
         <option name="JUPYTER_SELECTED_CELL">
             <value>
-                <option name="BACKGROUND" value="{background}"/>
+                <option name="BACKGROUND" value="{background}" />
             </value>
         </option>
         <option name="KDOC_LINK">{link}</option>
@@ -776,24 +799,31 @@
         <option name="LAMBDA_PARAMETER_ATTRIBUTES">{parameter}</option>
         <option name="LINE_FULL_COVERAGE">
             <value>
-                <option name="BACKGROUND" value="{greenBackground}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{greenBackground}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="LINE_NONE_COVERAGE">
             <value>
-                <option name="BACKGROUND" value="{redBackground}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{redBackground}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="LINE_PARTIAL_COVERAGE">
             <value>
-                <option name="BACKGROUND" value="{yellowBackground}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{yellowBackground}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="LIVE_TEMPLATE_ATTRIBUTES">{injection}</option>
         <option name="LIVE_TEMPLATE_INACTIVE_SEGMENT">{injection}</option>
+        <option name="LOCALE.LINE_COMMENT">{comment}</option>
+        <option name="LOCALE.MSGCTXT_KEYWORD">{keyword}</option>
+        <option name="LOCALE.MSGID_KEYWORD">{keyword}</option>
+        <option name="LOCALE.MSGID_PLURAL_KEYWORD">{keyword}</option>
+        <option name="LOCALE.MSGSTR_KEYWORD">{keyword}</option>
+        <option name="LOCALE.MSGSTR_PLURAL_KEYWORD">{keyword}</option>
+        <option name="LOCALE.STRING_LITERAL">{string}</option>
         <option name="LOCAL_VARIABLE_ATTRIBUTES">{variable}</option>
         <option name="LOGCAT_FILTER_KEY">{key}</option>
         <option name="LOGCAT_FILTER_KVALUE">{value}</option>
@@ -840,18 +870,18 @@
         <option name="MAKEFILE_VARIABLE_VALUE">{value}</option>
         <option name="MAKO.SUBSTITUTION">
             <value>
-                <option name="BACKGROUND" value="{violetBackground}"/>
+                <option name="BACKGROUND" value="{violetBackground}" />
             </value>
         </option>
         <option name="MARKDOWN.AUTO_LINK">{link}</option>
         <option name="MARKDOWN.BLOCK_QUOTE">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
             </value>
         </option>
         <option name="MARKDOWN.BOLD_TEXT">
             <value>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="MARKDOWN.CODE_BLOCK">{injection}</option>
@@ -876,7 +906,7 @@
         <option name="MARKDOWN_BLOCK_QUOTE_MARKER">{operator}</option>
         <option name="MARKDOWN_BOLD">
             <value>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="MARKDOWN_BOLD_MARKER">{operator}</option>
@@ -886,7 +916,7 @@
         <option name="MARKDOWN_CODE_SPAN_MARKER">{operator}</option>
         <option name="MARKDOWN_DEFINITION">{function}</option>
         <option name="MARKDOWN_DEFINITION_LIST">
-            <value/>
+            <value />
         </option>
         <option name="MARKDOWN_DEFINITION_LIST_MARKER">{operator}</option>
         <option name="MARKDOWN_EXPLICIT_LINK">{link}</option>
@@ -903,12 +933,12 @@
         <option name="MARKDOWN_INLINE_HTML">{injection}</option>
         <option name="MARKDOWN_ITALIC">
             <value>
-                <option name="FONT_TYPE" value="2"/>
+                <option name="FONT_TYPE" value="2" />
             </value>
         </option>
         <option name="MARKDOWN_ITALIC_MARKER">
             <value>
-                <option name="FOREGROUND" value="{magenta}"/>
+                <option name="FOREGROUND" value="{magenta}" />
             </value>
         </option>
         <option name="MARKDOWN_LINK_DESTINATION">{link}</option>
@@ -921,9 +951,9 @@
         <option name="MARKDOWN_REFERENCE_LINK">{link}</option>
         <option name="MARKDOWN_STRIKE_THROUGH">
             <value>
-                <option name="EFFECT_COLOR" value="{textMostIntense}"/>
-                <option name="EFFECT_TYPE" value="3"/>
-                <option name="FOREGROUND" value="{textMostIntense}"/>
+                <option name="EFFECT_COLOR" value="{textMostIntense}" />
+                <option name="EFFECT_TYPE" value="3" />
+                <option name="FOREGROUND" value="{textMostIntense}" />
             </value>
         </option>
         <option name="MARKDOWN_TABLE_SEPARATOR">{separator}</option>
@@ -933,29 +963,29 @@
         <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">{default}</option>
         <option name="MATCHED_BRACE_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="MATCHED_TAG_NAME">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FONT_TYPE" value="1"/>
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FONT_TYPE" value="1" />
+                <option name="FOREGROUND" value="{blue}" />
             </value>
         </option>
         <option name="METHOD_CALL_ATTRIBUTES">{method}</option>
         <option name="METHOD_DECLARATION_ATTRIBUTES">{method}</option>
         <option name="NOT_TOP_FRAME_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{magentaBackground}"/>
+                <option name="BACKGROUND" value="{magentaBackground}" />
             </value>
         </option>
         <option name="NOT_USED_ELEMENT_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{commentGray}"/>
-                <option name="EFFECT_TYPE" value="2"/>
-                <option name="FOREGROUND" value="{textMild}"/>
+                <option name="EFFECT_COLOR" value="{commentGray}" />
+                <option name="EFFECT_TYPE" value="2" />
+                <option name="FOREGROUND" value="{textMild}" />
             </value>
         </option>
         <option name="OC.CONDITIONALLY_NOT_COMPILED">{warn}</option>
@@ -1095,28 +1125,28 @@
         <option name="REGEXP.REDUNDANT_ESCAPE">{warn}</option>
         <option name="REGEXP_MATCHED_GROUPS">
             <value>
-                <option name="BACKGROUND" value="{yellowBackground}"/>
+                <option name="BACKGROUND" value="{yellowBackground}" />
             </value>
         </option>
         <option name="REST.FIXED">{scalar}</option>
         <option name="REST.INLINE">{escape}</option>
         <option name="REST.INTERPRETED">
             <value>
-                <option name="BACKGROUND" value="{magentaBackground}"/>
+                <option name="BACKGROUND" value="{magentaBackground}" />
             </value>
         </option>
         <option name="RHTML_EXPRESSION_END_ID">
-            <value/>
+            <value />
         </option>
         <option name="RHTML_EXPRESSION_START_ID">
-            <value/>
+            <value />
         </option>
         <option name="RHTML_OMIT_NEW_LINE_ID">
-            <value/>
+            <value />
         </option>
         <option name="RHTML_SCRIPTING_BACKGROUND_ID">
             <value>
-                <option name="BACKGROUND" value="{yellowBackground}"/>
+                <option name="BACKGROUND" value="{yellowBackground}" />
             </value>
         </option>
         <option name="RHTML_SCRIPTLET_END_ID">{class}</option>
@@ -1171,7 +1201,7 @@
         <option name="ReSharper.IL_METHOD_IDENTIFIER">{method}</option>
         <option name="ReSharper.IL_VIEWER_SYNCHRONIZATION">
             <value>
-                <option name="BACKGROUND" value="{violetBackground}"/>
+                <option name="BACKGROUND" value="{violetBackground}" />
             </value>
         </option>
         <option name="ReSharper.MATCHED_FORMAT_STRING_ITEM">{escape}</option>
@@ -1197,14 +1227,14 @@
         <option name="SCENARIO_HEADING">{default}</option>
         <option name="SCOPE_KEY_All Changed Files">
             <value>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="SCOPE_KEY_All">{default}</option>
         <option name="SCOPE_KEY_Non-Project Files">{external}</option>
         <option name="SCOPE_KEY_Open Files">
             <value>
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{cyan}" />
             </value>
         </option>
         <option name="SCOPE_KEY_Production">{macro}</option>
@@ -1231,15 +1261,15 @@
         <option name="SPY-JS.FUNCTION_SCOPE">{structure}</option>
         <option name="SPY-JS.PATH_LEVEL_ONE">
             <value>
-                <option name="BACKGROUND" value="{greenBackground}"/>
-                <option name="EFFECT_TYPE" value="2"/>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="BACKGROUND" value="{greenBackground}" />
+                <option name="EFFECT_TYPE" value="2" />
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="SPY-JS.PATH_LEVEL_TWO">
             <value>
-                <option name="EFFECT_COLOR" value="{backgroundMostMild}"/>
-                <option name="EFFECT_TYPE" value="1"/>
+                <option name="EFFECT_COLOR" value="{backgroundMostMild}" />
+                <option name="EFFECT_TYPE" value="1" />
             </value>
         </option>
         <option name="SPY-JS.PROGRAM_SCOPE">{default}</option>
@@ -1287,9 +1317,9 @@
         <option name="STRUCT_LIKE">{entity}</option>
         <option name="SUGGESTION">
             <value>
-                <option name="EFFECT_COLOR" value="{green}"/>
-                <option name="EFFECT_TYPE" value="2"/>
-                <option name="ERROR_STRIPE_COLOR" value="{green}"/>
+                <option name="EFFECT_COLOR" value="{green}" />
+                <option name="EFFECT_TYPE" value="2" />
+                <option name="ERROR_STRIPE_COLOR" value="{green}" />
             </value>
         </option>
         <option name="Scala Immutable Collection">{constant}</option>
@@ -1317,9 +1347,9 @@
         <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">{search}</option>
         <option name="TODO_DEFAULT_ATTRIBUTES">
             <value>
-                <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
-                <option name="FONT_TYPE" value="2"/>
-                <option name="FOREGROUND" value="{yellow}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{yellow}" />
+                <option name="FONT_TYPE" value="2" />
+                <option name="FOREGROUND" value="{yellow}" />
             </value>
         </option>
         <option name="TS.BADCHARACTER">{bad}</option>
@@ -1360,7 +1390,7 @@
         <option name="TS.TYPE.ALIAS">{metadata}</option>
         <option name="TS.TYPE_GUARD">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
             </value>
         </option>
         <option name="TS.TYPE_PARAMETER">{type}</option>
@@ -1370,8 +1400,8 @@
         <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">{type}</option>
         <option name="TYPO">
             <value>
-                <option name="EFFECT_COLOR" value="{green}"/>
-                <option name="EFFECT_TYPE" value="2"/>
+                <option name="EFFECT_COLOR" value="{green}" />
+                <option name="EFFECT_TYPE" value="2" />
             </value>
         </option>
         <option name="Template lazy val/var">{variable}</option>
@@ -1386,13 +1416,13 @@
         <option name="UNITY_EXPENSIVE_NULL_COMPARISON">{expensive}</option>
         <option name="UNITY_PERFORMANCE_CRITICAL_LINE_MARKER">
             <value>
-                <option name="BACKGROUND" value="{redBackground}"/>
-                <option name="FOREGROUND" value="{text}"/>
+                <option name="BACKGROUND" value="{redBackground}" />
+                <option name="FOREGROUND" value="{text}" />
             </value>
         </option>
         <option name="UNMATCHED_BRACE_ATTRIBUTES">
             <value>
-                <option name="FOREGROUND" value="{red}"/>
+                <option name="FOREGROUND" value="{red}" />
             </value>
         </option>
         <option name="Unresolved reference access">{unknown}</option>
@@ -1402,15 +1432,15 @@
         <option name="WARNING_ATTRIBUTES">{warn}</option>
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="FONT_TYPE" value="1"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="FONT_TYPE" value="1" />
             </value>
         </option>
         <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="EFFECT_COLOR" value="{magenta}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{magenta}"/>
+                <option name="BACKGROUND" value="{backgroundIntense}" />
+                <option name="EFFECT_COLOR" value="{magenta}" />
+                <option name="ERROR_STRIPE_COLOR" value="{magenta}" />
             </value>
         </option>
         <option name="WRONG_REFERENCES_ATTRIBUTES">{bad}</option>
@@ -1479,7 +1509,7 @@
         <option name="org.rust.TYPE_PARAMETER">{type}</option>
         <option name="org.rust.UNSAFE_CODE">
             <value>
-                <option name="BACKGROUND" value="{redBackground}"/>
+                <option name="BACKGROUND" value="{redBackground}" />
             </value>
         </option>
         <option name="org.toml.BOOLEAN">{constant}</option>
@@ -1492,173 +1522,174 @@
         <option name="org.toml.VALID_STRING_ESCAPE">{escape}</option>
     </attributes>
     <colors>
-        <option name="ADDED_LINES_COLOR" value="{greenBackground}"/>
-        <option name="ANNOTATIONS_COLOR" value="{textIntense}"/>
-        <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="{textMostIntense}"/>
-        <option name="ANNOTATIONS_MERGED_COLOR" value="{textIntense}"/>
-        <option name="ActionButton.hoverBackground" value="{background}"/>
-        <option name="ActionButton.iconTextForeground" value="{text}"/>
-        <option name="ActionButton.pressedBackground" value="{backgroundIntense}"/>
-        <option name="BREADCRUMBS_BORDER_COLOR" value="{background}"/>
-        <option name="BookmarkIcon.background" value="{yellow}"/>
-        <option name="CARET_COLOR" value="{textIntense}"/>
-        <option name="CARET_ROW_COLOR" value="{backgroundIntense}"/>
-        <option name="CONSOLE_BACKGROUND_KEY" value="{backgroundIntense}"/>
-        <option name="DELETED_LINES_COLOR" value="{redBackground}"/>
-        <option name="DIAGRAM_ANNOTATION_EDGE" value="{green}"/>
-        <option name="DIAGRAM_BEND" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_BEND_SELECTION" value="{green}"/>
-        <option name="DIAGRAM_DEFAULT_EDGE" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_EDGE_SELECTION" value="{orange}"/>
-        <option name="DIAGRAM_GENERALIZATION_EDGE" value="{blue}"/>
-        <option name="DIAGRAM_GRID" value="{backgroundMild}"/>
-        <option name="DIAGRAM_HOT_SPOTS" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_INNER_EDGE" value="{red}"/>
-        <option name="DIAGRAM_NODE_BACKGROUND" value="{background}"/>
-        <option name="DIAGRAM_NODE_BORDER" value="{backgroundMild}"/>
-        <option name="DIAGRAM_NODE_HEADER" value="{yellow}"/>
-        <option name="DIAGRAM_NODE_SLOPPY_BACKGROUND" value="{violetBackground}"/>
-        <option name="DIAGRAM_NOTE_BACKGROUND" value="{greenBackground}"/>
-        <option name="DIAGRAM_NOTE_BORDER" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_NOTE_SLOPPY_BACKGROUND" value="{yellowBackground}"/>
-        <option name="DIAGRAM_PORT" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_REALIZATION_EDGE" value="{green}"/>
-        <option name="DIAGRAM_SELECTED_NODE_BORDER" value="{orange}"/>
-        <option name="DIAGRAM_SELECTION_BOX_BACKGROUND" value="{background}"/>
-        <option name="DIAGRAM_SELECTION_BOX_BORDER" value="{backgroundMostMild}"/>
-        <option name="DIAGRAM_SNAPPING_LINES" value="{backgroundMostMild}"/>
-        <option name="DIFF_SEPARATORS_BACKGROUND" value="{backgroundMostIntense}"/>
-        <option name="DIFF_SEPARATORS_TOP_BORDER" value="{cyan}"/>
-        <option name="DOCUMENTATION_COLOR" value="{background}"/>
-        <option name="DOC_COMMENT_GUIDE" value="{cyanBackground}"/>
-        <option name="DOC_COMMENT_LINK" value="{blue}"/>
-        <option name="ERROR_HINT" value="{redBackground}"/>
-        <option name="FILESTATUS_ADDED" value="{green}"/>
-        <option name="FILESTATUS_COPIED" value="{blue}"/>
-        <option name="FILESTATUS_DELETED" value="{red}"/>
-        <option name="FILESTATUS_HIJACKED" value="{yellow}"/>
+        <option name="ADDED_LINES_COLOR" value="{greenBackground}" />
+        <option name="ANNOTATIONS_COLOR" value="{textIntense}" />
+        <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="{textMostIntense}" />
+        <option name="ANNOTATIONS_MERGED_COLOR" value="{textIntense}" />
+        <option name="ActionButton.hoverBackground" value="{background}" />
+        <option name="ActionButton.iconTextForeground" value="{text}" />
+        <option name="ActionButton.pressedBackground" value="{backgroundIntense}" />
+        <option name="BREADCRUMBS_BORDER_COLOR" value="{background}" />
+        <option name="BookmarkIcon.background" value="{yellow}" />
+        <option name="CARET_COLOR" value="{textIntense}" />
+        <option name="CARET_ROW_COLOR" value="{backgroundIntense}" />
+        <option name="CONSOLE_BACKGROUND_KEY" value="{backgroundIntense}" />
+        <option name="DELETED_LINES_COLOR" value="{redBackground}" />
+        <option name="DIAGRAM_ANNOTATION_EDGE" value="{green}" />
+        <option name="DIAGRAM_BEND" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_BEND_SELECTION" value="{green}" />
+        <option name="DIAGRAM_DEFAULT_EDGE" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_EDGE_SELECTION" value="{orange}" />
+        <option name="DIAGRAM_GENERALIZATION_EDGE" value="{blue}" />
+        <option name="DIAGRAM_GRID" value="{backgroundMild}" />
+        <option name="DIAGRAM_HOT_SPOTS" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_INNER_EDGE" value="{red}" />
+        <option name="DIAGRAM_NODE_BACKGROUND" value="{background}" />
+        <option name="DIAGRAM_NODE_BORDER" value="{backgroundMild}" />
+        <option name="DIAGRAM_NODE_HEADER" value="{yellow}" />
+        <option name="DIAGRAM_NODE_SLOPPY_BACKGROUND" value="{violetBackground}" />
+        <option name="DIAGRAM_NOTE_BACKGROUND" value="{greenBackground}" />
+        <option name="DIAGRAM_NOTE_BORDER" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_NOTE_SLOPPY_BACKGROUND" value="{yellowBackground}" />
+        <option name="DIAGRAM_PORT" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_REALIZATION_EDGE" value="{green}" />
+        <option name="DIAGRAM_SELECTED_NODE_BORDER" value="{orange}" />
+        <option name="DIAGRAM_SELECTION_BOX_BACKGROUND" value="{background}" />
+        <option name="DIAGRAM_SELECTION_BOX_BORDER" value="{backgroundMostMild}" />
+        <option name="DIAGRAM_SNAPPING_LINES" value="{backgroundMostMild}" />
+        <option name="DIFF_SEPARATORS_BACKGROUND" value="{backgroundMostIntense}" />
+        <option name="DIFF_SEPARATORS_TOP_BORDER" value="{cyan}" />
+        <option name="DOCUMENTATION_COLOR" value="{background}" />
+        <option name="DOC_COMMENT_GUIDE" value="{cyanBackground}" />
+        <option name="DOC_COMMENT_LINK" value="{blue}" />
+        <option name="ERROR_HINT" value="{redBackground}" />
+        <option name="FILESTATUS_ADDED" value="{green}" />
+        <option name="FILESTATUS_COPIED" value="{blue}" />
+        <option name="FILESTATUS_DELETED" value="{red}" />
+        <option name="FILESTATUS_HIJACKED" value="{yellow}" />
         <option
-            name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{red}"/>
-        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{violet}"/>
+            name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{red}" />
+        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{violet}" />
         <option
-            name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{orange}"/>
-        <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{orange}"/>
+            name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{orange}" />
+        <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{orange}" />
         <option
-            name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{orange}"/>
-        <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{green}"/>
-        <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="{green}"/>
-        <option name="FILESTATUS_IDEA_SVN_REPLACED" value="{green}"/>
-        <option name="FILESTATUS_MERGED" value="{magenta}"/>
-        <option name="FILESTATUS_MODIFIED" value="{yellow}"/>
-        <option name="FILESTATUS_NOT_CHANGED" value="{text}"/>
-        <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{text}"/>
-        <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{text}"/>
-        <option name="FILESTATUS_OBSOLETE" value="{yellow}"/>
-        <option name="FILESTATUS_RENAMED" value="{orange}"/>
-        <option name="FILESTATUS_SUPPRESSED" value="{blue}"/>
-        <option name="FILESTATUS_SWITCHED" value="{red}"/>
-        <option name="FILESTATUS_UNKNOWN" value="{red}"/>
-        <option name="FILESTATUS_addedOutside" value="{green}"/>
-        <option name="FILESTATUS_changelistConflict" value="{orange}"/>
-        <option name="FILESTATUS_modifiedOutside" value="{yellow}"/>
-        <option name="FOLDED_TEXT_BORDER_COLOR" value="{yellowBackground}"/>
-        <option name="GUTTER_BACKGROUND" value="{backgroundIntense}"/>
-        <option name="GUTTER_BORDER" value="{white}"/>
-        <option name="HTML_TAG_TREE_LEVEL0" value="{yellow}"/>
-        <option name="HTML_TAG_TREE_LEVEL1" value="{orange}"/>
-        <option name="HTML_TAG_TREE_LEVEL2" value="{magenta}"/>
-        <option name="HTML_TAG_TREE_LEVEL3" value="{violet}"/>
-        <option name="HTML_TAG_TREE_LEVEL4" value="{blue}"/>
-        <option name="HTML_TAG_TREE_LEVEL5" value="{cyan}"/>
-        <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="{greenBackground}"/>
-        <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="{redBackground}"/>
-        <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="{yellowBackground}"/>
-        <option name="INDENT_GUIDE" value="{background}"/>
-        <option name="INFORMATION_HINT" value="{yellowBackground}"/>
-        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{background}"/>
-        <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="{backgroundMild}"/>
-        <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="{backgroundMostMild}"/>
-        <option name="LINE_NUMBERS_COLOR" value="{textIntense}"/>
-        <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{text}"/>
-        <option name="LOOKUP_COLOR" value="{background}"/>
-        <option name="METHOD_SEPARATORS_COLOR" value="{background}"/>
-        <option name="MODIFIED_LINES_COLOR" value="{yellowBackground}"/>
-        <option name="MODIFIED_TAB_ICON" value="{yellow}"/>
-        <option name="MnemonicIcon.background" value="{background}"/>
-        <option name="MnemonicIcon.borderColor" value="{yellow}"/>
-        <option name="MnemonicIcon.foreground" value="{text}"/>
-        <option name="NOTIFICATION_BACKGROUND" value="{magentaBackground}"/>
-        <option name="PROMOTION_PANE" value="{cyanBackground}"/>
-        <option name="QUESTION_HINT" value="{cyanBackground}"/>
-        <option name="READONLY_BACKGROUND"/>
-        <option name="READONLY_FRAGMENT_BACKGROUND"/>
-        <option name="RECENT_LOCATIONS_SELECTION" value="{background}"/>
-        <option name="RECURSIVE_CALL_ATTRIBUTES" value="{yellow}"/>
-        <option name="RIGHT_MARGIN_COLOR" value="{background}"/>
-        <option name="SELECTED_INDENT_GUIDE" value="{background}"/>
-        <option name="SELECTED_TEARLINE_COLOR" value="{backgroundMild}"/>
-        <option name="SELECTION_BACKGROUND" value="{selectionBackground}"/>
-        <option name="SELECTION_FOREGROUND"/>
-        <option name="SEPARATOR_ABOVE_COLOR" value="{orange}"/>
-        <option name="SEPARATOR_BELOW_COLOR" value="{yellow}"/>
-        <option name="SOFT_WRAP_SIGN_COLOR" value="{textMostIntense}"/>
-        <option name="STRING_CONTENT_INDENT_GUIDE" value="{greenBackground}"/>
-        <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.Mac.Transparent.thumbColor" value="{backgroundMild}"/>
-        <option name="ScrollBar.Mac.Transparent.trackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.Mac.hoverThumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.Mac.hoverThumbColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.Mac.hoverTrackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.Mac.thumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.Mac.thumbColor" value="{backgroundMild}"/>
-        <option name="ScrollBar.Mac.trackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.Transparent.hoverThumbColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.Transparent.hoverTrackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.Transparent.thumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.Transparent.thumbColor" value="{backgroundMild}"/>
-        <option name="ScrollBar.Transparent.trackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.background" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.hoverThumbBorderColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.hoverThumbColor" value="{backgroundMostMild}"/>
-        <option name="ScrollBar.hoverTrackColor" value="{backgroundIntense}"/>
-        <option name="ScrollBar.thumbBorderColor" value="{backgroundMostIntense}"/>
-        <option name="ScrollBar.thumbColor" value="{backgroundMild}"/>
-        <option name="ScrollBar.trackColor" value="{backgroundIntense}"/>
-        <option name="TABS" value="{backgroundMostIntense}"/>
-        <option name="TEARLINE_COLOR" value="{orange}"/>
-        <option name="TOOLTIP" value="{background}"/>
-        <option name="Table.hoverBackground" value="{backgroundIntense}"/>
-        <option name="VCS_ANNOTATIONS_COLOR_1" value="{greenBackground}"/>
-        <option name="VCS_ANNOTATIONS_COLOR_2" value="{yellowBackground}"/>
-        <option name="VCS_ANNOTATIONS_COLOR_3" value="{orangeBackground}"/>
-        <option name="VCS_ANNOTATIONS_COLOR_4" value="{magentaBackground}"/>
-        <option name="VCS_ANNOTATIONS_COLOR_5" value="{redBackground}"/>
-        <option name="VISUAL_INDENT_GUIDE" value="{background}"/>
-        <option name="WHITESPACES" value="{textMostIntense}"/>
-        <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="{yellowBackground}"/>
+            name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{orange}" />
+        <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{green}" />
+        <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="{green}" />
+        <option name="FILESTATUS_IDEA_SVN_REPLACED" value="{green}" />
+        <option name="FILESTATUS_MERGED" value="{magenta}" />
+        <option name="FILESTATUS_MODIFIED" value="{yellow}" />
+        <option name="FILESTATUS_NOT_CHANGED" value="{text}" />
+        <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{text}" />
+        <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{text}" />
+        <option name="FILESTATUS_OBSOLETE" value="{yellow}" />
+        <option name="FILESTATUS_RENAMED" value="{orange}" />
+        <option name="FILESTATUS_SUPPRESSED" value="{blue}" />
+        <option name="FILESTATUS_SWITCHED" value="{red}" />
+        <option name="FILESTATUS_UNKNOWN" value="{red}" />
+        <option name="FILESTATUS_addedOutside" value="{green}" />
+        <option name="FILESTATUS_changelistConflict" value="{orange}" />
+        <option name="FILESTATUS_modifiedOutside" value="{yellow}" />
+        <option name="FOLDED_TEXT_BORDER_COLOR" value="{yellowBackground}" />
+        <option name="GUTTER_BACKGROUND" value="{backgroundIntense}" />
+        <option name="GUTTER_BORDER" value="{white}" />
+        <option name="HTML_TAG_TREE_LEVEL0" value="{yellow}" />
+        <option name="HTML_TAG_TREE_LEVEL1" value="{orange}" />
+        <option name="HTML_TAG_TREE_LEVEL2" value="{magenta}" />
+        <option name="HTML_TAG_TREE_LEVEL3" value="{violet}" />
+        <option name="HTML_TAG_TREE_LEVEL4" value="{blue}" />
+        <option name="HTML_TAG_TREE_LEVEL5" value="{cyan}" />
+        <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="{greenBackground}" />
+        <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="{redBackground}" />
+        <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="{yellowBackground}" />
+        <option name="INDENT_GUIDE" value="{background}" />
+        <option name="INFORMATION_HINT" value="{yellowBackground}" />
+        <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="{background}" />
+        <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="{backgroundMild}" />
+        <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="{backgroundMostMild}" />
+        <option name="LINE_NUMBERS_COLOR" value="{textIntense}" />
+        <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{text}" />
+        <option name="LOOKUP_COLOR" value="{background}" />
+        <option name="METHOD_SEPARATORS_COLOR" value="{background}" />
+        <option name="MODIFIED_LINES_COLOR" value="{yellowBackground}" />
+        <option name="MODIFIED_TAB_ICON" value="{yellow}" />
+        <option name="MnemonicIcon.background" value="{background}" />
+        <option name="MnemonicIcon.borderColor" value="{yellow}" />
+        <option name="MnemonicIcon.foreground" value="{text}" />
+        <option name="NOTIFICATION_BACKGROUND" value="{magentaBackground}" />
+        <option name="PROMOTION_PANE" value="{cyanBackground}" />
+        <option name="QUESTION_HINT" value="{cyanBackground}" />
+        <option name="READONLY_BACKGROUND" />
+        <option name="READONLY_FRAGMENT_BACKGROUND" />
+        <option name="RECENT_LOCATIONS_SELECTION" value="{background}" />
+        <option name="RECURSIVE_CALL_ATTRIBUTES" value="{yellow}" />
+        <option name="RIGHT_MARGIN_COLOR" value="{background}" />
+        <option name="SELECTED_INDENT_GUIDE" value="{background}" />
+        <option name="SELECTED_TEARLINE_COLOR" value="{backgroundMild}" />
+        <option name="SELECTION_BACKGROUND" value="{selectionBackground}" />
+        <option name="SELECTION_FOREGROUND" />
+        <option name="SEPARATOR_ABOVE_COLOR" value="{orange}" />
+        <option name="SEPARATOR_BELOW_COLOR" value="{yellow}" />
+        <option name="SOFT_WRAP_SIGN_COLOR" value="{textMostIntense}" />
+        <option name="STRING_CONTENT_INDENT_GUIDE" value="{greenBackground}" />
+        <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor"
+            value="{backgroundMostIntense}" />
+        <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.Mac.Transparent.thumbBorderColor" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.Mac.Transparent.thumbColor" value="{backgroundMild}" />
+        <option name="ScrollBar.Mac.Transparent.trackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.Mac.hoverThumbBorderColor" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.Mac.hoverThumbColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.Mac.hoverTrackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.Mac.thumbBorderColor" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.Mac.thumbColor" value="{backgroundMild}" />
+        <option name="ScrollBar.Mac.trackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.Transparent.hoverThumbBorderColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.Transparent.hoverThumbColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.Transparent.hoverTrackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.Transparent.thumbBorderColor" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.Transparent.thumbColor" value="{backgroundMild}" />
+        <option name="ScrollBar.Transparent.trackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.background" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.hoverThumbBorderColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.hoverThumbColor" value="{backgroundMostMild}" />
+        <option name="ScrollBar.hoverTrackColor" value="{backgroundIntense}" />
+        <option name="ScrollBar.thumbBorderColor" value="{backgroundMostIntense}" />
+        <option name="ScrollBar.thumbColor" value="{backgroundMild}" />
+        <option name="ScrollBar.trackColor" value="{backgroundIntense}" />
+        <option name="TABS" value="{backgroundMostIntense}" />
+        <option name="TEARLINE_COLOR" value="{orange}" />
+        <option name="TOOLTIP" value="{background}" />
+        <option name="Table.hoverBackground" value="{backgroundIntense}" />
+        <option name="VCS_ANNOTATIONS_COLOR_1" value="{greenBackground}" />
+        <option name="VCS_ANNOTATIONS_COLOR_2" value="{yellowBackground}" />
+        <option name="VCS_ANNOTATIONS_COLOR_3" value="{orangeBackground}" />
+        <option name="VCS_ANNOTATIONS_COLOR_4" value="{magentaBackground}" />
+        <option name="VCS_ANNOTATIONS_COLOR_5" value="{redBackground}" />
+        <option name="VISUAL_INDENT_GUIDE" value="{background}" />
+        <option name="WHITESPACES" value="{textMostIntense}" />
+        <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="{yellowBackground}" />
     </colors>
     <console-font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code"/>
-        <option name="EDITOR_FONT_SIZE" value="15"/>
+        <option name="EDITOR_FONT_NAME" value="Fira Code" />
+        <option name="EDITOR_FONT_SIZE" value="15" />
     </console-font>
     <console-font>
-        <option name="EDITOR_FONT_NAME" value="Ligalex Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="15"/>
+        <option name="EDITOR_FONT_NAME" value="Ligalex Mono" />
+        <option name="EDITOR_FONT_SIZE" value="15" />
     </console-font>
     <font>
-        <option name="EDITOR_FONT_NAME" value="Fira Code"/>
-        <option name="EDITOR_FONT_SIZE" value="15"/>
+        <option name="EDITOR_FONT_NAME" value="Fira Code" />
+        <option name="EDITOR_FONT_SIZE" value="15" />
     </font>
     <font>
-        <option name="EDITOR_FONT_NAME" value="Ligalex Mono"/>
-        <option name="EDITOR_FONT_SIZE" value="15"/>
+        <option name="EDITOR_FONT_NAME" value="Ligalex Mono" />
+        <option name="EDITOR_FONT_SIZE" value="15" />
     </font>
-    <option name="CONSOLE_LIGATURES" value="true"/>
-    <option name="EDITOR_LIGATURES" value="true"/>
-    <option name="FONT_SCALE" value="1.0"/>
-    <option name="LINE_SPACING" value="1.2"/>
+    <option name="CONSOLE_LIGATURES" value="true" />
+    <option name="EDITOR_LIGATURES" value="true" />
+    <option name="FONT_SCALE" value="1.0" />
+    <option name="LINE_SPACING" value="1.2" />
 </scheme>
