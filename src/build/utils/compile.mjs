@@ -24,8 +24,9 @@ export default class Compiler {
             };
 
             const preTemplateColors = scheme.colors;
-            const colors = this.parseJSONTemplateString(
+            const filledInScheme = this.parseJSONTemplateString(
                 JSON.stringify(preTemplateColors), this.solarizedColors);
+            const colors = this.addColoredBackgroundsToScheme(filledInScheme);
 
             const generalColors = this.fillTemplateAsObject(
                 colors, paths.GENERAL_STYLES_FOLDER);
@@ -58,7 +59,7 @@ export default class Compiler {
             const preTemplateColors = scheme.colors;
             const filledInScheme = this.parseJSONTemplateString(
                 JSON.stringify(preTemplateColors), this.solarizedColors);
-            const colors = this.addColoredBackgroundsToScheme(filledInScheme)
+            const colors = this.addColoredBackgroundsToScheme(filledInScheme);
 
             const colorsAndName = colors;
             colorsAndName["themeName"] = "#" + themeJSON["name"];
