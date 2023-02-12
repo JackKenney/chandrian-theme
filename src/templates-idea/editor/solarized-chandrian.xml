@@ -1145,7 +1145,7 @@
             <value>{comment}</value>
         </option>
         <option name="Groovydoc tag">
-            <value>{}</value>
+            <value></value>
         </option>
         <option name="HAML_ID">
             <value>{keyword}</value>
