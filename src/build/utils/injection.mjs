@@ -65,6 +65,11 @@ export default class XMLInjector {
                 <option name="FOREGROUND" value="{blue}"/>
             `,
 
+            error: `
+                <option name="EFFECT_COLOR" value="{redBackground}"/>
+                <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
+            `,
+
             expensive: `
                 <option name="EFFECT_COLOR" value="{red}"/>
                 <option name="EFFECT_TYPE" value="1"/>
@@ -82,13 +87,13 @@ export default class XMLInjector {
             `,
 
             function: `
-                <option name="FOREGROUND" value="{magenta}"/>
-                `,
+                <option name="FOREGROUND" value="{blue}"/>
+            `,
 
             global: `
-                <option name="FOREGROUND" value="{orange}"/>
+                <option name="FOREGROUND" value="{violet}"/>
                 <option name="FONT_TYPE" value="2"/>
-                `,
+            `,
 
             hint: `
                 <option name="FOREGROUND" value="{violet}"/>
@@ -101,8 +106,8 @@ export default class XMLInjector {
             `,
 
             injection: `
-                    <option name="EFFECT_COLOR" value="{green}"/>
-                `,
+                <option name="EFFECT_COLOR" value="{green}"/>
+            `,
 
             interpolation: `
                 <option name="FOREGROUND" value="{yellow}"/>
@@ -142,6 +147,10 @@ export default class XMLInjector {
                 <option name="FOREGROUND" value="{textMild}"/>
             `,
 
+            red: `
+                <option name="FOREGROUND" value="{red}"/>
+            `,
+
             search: `
                 <option name="BACKGROUND" value="{background}"/>
                 <option name="EFFECT_COLOR" value="{yellow}"/>
@@ -176,7 +185,7 @@ export default class XMLInjector {
             `,
 
             variable: `
-                <option name="FOREGROUND" value="{cyan}"/>
+                <option name="FOREGROUND" value="{textIntense}"/>
             `,
 
             warn: `

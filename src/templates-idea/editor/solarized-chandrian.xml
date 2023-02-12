@@ -1051,7 +1051,7 @@
             <value>{value}</value>
         </option>
         <option name="ERRORS_ATTRIBUTES">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="EVALUATED_EXPRESSION_ATTRIBUTES">
             <value>{injection}</value>
@@ -1069,7 +1069,7 @@
             <value>{enum}</value>
         </option>
         <option name="FILESTATUS_ERRORS">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="FOLDED_TEXT_ATTRIBUTES">
             <value>
@@ -1086,7 +1086,7 @@
             <value>{scalar}</value>
         </option>
         <option name="GENERIC_SERVER_ERROR_OR_WARNING">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="GHERKIN_REGEXP_PARAMETER">
             <value>{escape}</value>
@@ -1896,7 +1896,7 @@
             <value>{structure}</value>
         </option>
         <option name="LOG_ERROR_OUTPUT">
-            <value>{bad}</value>
+            <value>{red}</value>
         </option>
         <option name="LOG_EXPIRED_ENTRY">
             <value>{deprecated}</value>
@@ -2893,7 +2893,7 @@
             <value>{function}</value>
         </option>
         <option name="RUNTIME_ERROR">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="Rainbow Parens Level 1 (outermost)">
             <value>{level_0}</value>
@@ -3768,7 +3768,7 @@
             </value>
         </option>
         <option name="WRONG_REFERENCES_ATTRIBUTES">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="Wrong number">
             <value>{bad}</value>
@@ -3876,7 +3876,7 @@
             <value>{default}</value>
         </option>
         <option name="bemhtml.bem.error">
-            <value>{bad}</value>
+            <value>{error}</value>
         </option>
         <option name="bemhtml.bem.mlcomment">
             <value>{comment}</value>
