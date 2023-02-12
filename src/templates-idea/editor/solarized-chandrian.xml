@@ -542,35 +542,92 @@
                 <option name="EFFECT_COLOR" value="{cyan}" />
             </value>
         </option>
-        <option name="DART.BADCHARACTER">
-            <value>{bad}</value>
+        <option name="ERROR"> <!-- for dart -->
+            <value>{}</value>
         </option>
-        <option name="DART.BUILTIN_TYPES">
-            <value>{type}</value>
+        <option name="WARNING"> <!-- for dart -->
+            <value>{warn}</value>
         </option>
-        <option name="DART.COMMENT">
-            <value>{comment}</value>
+        <option name="HINT"> <!-- for dart -->
+            <value>{hint}</value>
         </option>
-        <option name="DART.KEYWORD">
-            <value>{keyword}</value>
+        <option name="DART_ANNOTATION">
+            <value>{decoration}</value>
         </option>
-        <option name="DART.NUMBER">
-            <value>{scalar}</value>
+        <option name="DART_CLASS">
+            <value>{class}</value>
         </option>
-        <option name="DART.STRING">
-            <value>{string}</value>
+        <option name="DART_CONSTRUCTOR">
+            <value>{constructor}</value>
         </option>
-        <option name="DART.UNRESERVED_KEYWORD">
+        <option name="DART_CONSTRUCTOR_TEAR_OFF">
+            <value>{constructor}</value>
+        </option>
+        <option name="DART_DYNAMIC_LOCAL_VARIABLE_DECLARATION">
             <value>{variable}</value>
+        </option>
+        <option name="DART_DYNAMIC_LOCAL_VARIABLE_REFERENCE">
+            <value>{variable}</value>
+        </option>
+        <option name="DART_DYNAMIC_PARAMETER_DECLARATION">
+            <value>{parameter}</value>
+        </option>
+        <option name="DART_DYNAMIC_PARAMETER_REFERENCE">
+            <value>{parameter}</value>
+        </option>
+        <option name="DART_ENUM">
+            <value>{class}</value>
         </option>
         <option name="DART_ENUM_CONSTANT">
             <value>{enum}</value>
         </option>
+        <option name="DART_FUNCTION_TYPE_ALIAS">
+            <value>{type}</value>
+        </option>
+        <option name="DART_TYPE_ALIAS">
+            <value>{type}</value>
+        </option>
+        <option name="DART_IDENTIFIER">
+            <value>{identifier}</value>
+        </option>
+        <option name="DART_INSTANCE_FIELD_DECLARATION">
+            <value>{member}</value>
+        </option>
+        <option name="DART_INSTANCE_FIELD_REFERENCE">
+            <value>{member}</value>
+        </option>
         <option name="DART_INSTANCE_GETTER_DECLARATION">
             <value>{getter}</value>
         </option>
+        <option name="DART_INSTANCE_GETTER_REFERENCE">
+            <value>{getter}</value>
+        </option>
+        <option name="DART_INSTANCE_METHOD_DECLARATION">
+            <value>{method}</value>
+        </option>
+        <option name="DART_INSTANCE_METHOD_REFERENCE">
+            <value>{method}</value>
+        </option>
+        <option name="DART_INSTANCE_METHOD_TEAR_OFF">
+            <value>{method}</value>
+        </option>
         <option name="DART_INSTANCE_SETTER_DECLARATION">
             <value>{setter}</value>
+        </option>
+        <option name="DART_INSTANCE_SETTER_REFERENCE">
+            <value>{setter}</value>
+        </option>
+        <option name="DART_IMPORT_PREFIX">
+            <value>{keyword}</value>
+        </option>
+        <option name="DART_KEYWORD">
+            <value>{keyword}</value>
+        </option>
+        <option name="DART_LABEL">
+            <value>{label}</value>
+        </option>
+        <option name="DART_LIBRARY_NAME">
+            <value>{library}</value>
         </option>
         <option name="DART_LOCAL_FUNCTION_DECLARATION">
             <value>{function}</value>
@@ -578,11 +635,131 @@
         <option name="DART_LOCAL_FUNCTION_REFERENCE">
             <value>{function}</value>
         </option>
+        <option name="DART_LOCAL_FUNCTION_TEAR_OFF">
+            <value>{function}</value>
+        </option>
+        <option name="DART_LOCAL_VARIABLE_DECLARATION">
+            <value>{variable}</value>
+        </option>
+        <option name="DART_LOCAL_VARIABLE_REFERENCE">
+            <value>{variable}</value>
+        </option>
+        <option name="DART_PARAMETER_DECLARATION">
+            <value>{parameter}</value>
+        </option>
+        <option name="DART_PARAMETER_REFERENCE">
+            <value>{parameter}</value>
+        </option>
+        <option name="DART_STATIC_FIELD_DECLARATION">
+            <value>{member}</value>
+        </option>
         <option name="DART_STATIC_GETTER_DECLARATION">
             <value>{getter}</value>
         </option>
+        <option name="DART_STATIC_GETTER_REFERENCE">
+            <value>{getter}</value>
+        </option>
+        <option name="DART_STATIC_METHOD_DECLARATION">
+            <value>{method}</value>
+        </option>
+        <option name="DART_STATIC_METHOD_REFERENCE">
+            <value>{method}</value>
+        </option>
+        <option name="DART_STATIC_METHOD_TEAR_OFF">
+            <value>{method}</value>
+        </option>
         <option name="DART_STATIC_SETTER_DECLARATION">
             <value>{setter}</value>
+        </option>
+        <option name="DART_STATIC_SETTER_REFERENCE">
+            <value>{setter}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_FUNCTION_DECLARATION">
+            <value>{function}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_FUNCTION_REFERENCE">
+            <value>{function}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_FUNCTION_TEAR_OFF">
+            <value>{function}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_GETTER_DECLARATION">
+            <value>{getter}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_GETTER_REFERENCE">
+            <value>{getter}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_SETTER_DECLARATION">
+            <value>{setter}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_SETTER_REFERENCE">
+            <value>{setter}</value>
+        </option>
+        <option name="DART_TOP_LEVEL_VARIABLE_DECLARATION">
+            <value>{global}</value>
+        </option>
+        <option name="DART_TYPE_NAME_DYNAMIC">
+            <value>{type}</value>
+        </option>
+        <option name="DART_TYPE_PARAMETER">
+            <value>{type}</value>
+        </option>
+        <option name="DART_UNRESOLVED_INSTANCE_MEMBER_REFERENCE">
+            <value>{unknown}</value>
+        </option>
+        <option name="DART_BLOCK_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="DART_DOC_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="DART_LINE_COMMENT">
+            <value>{comment}</value>
+        </option>
+        <option name="DART_NUMBER">
+            <value>{number}</value>
+        </option>
+        <option name="DART_STRING">
+            <value>{string}</value>
+        </option>
+        <option name="DART_VALID_STRING_ESCAPE">
+            <value>{escape}</value>
+        </option>
+        <option name="DART_INVALID_STRING_ESCAPE">
+            <value>{invalid}</value>
+        </option>
+        <option name="DART_OPERATION_SIGN">
+            <value>{operator}</value>
+        </option>
+        <option name="DART_PARENTH">
+            <value>{parenthesis}</value>
+        </option>
+        <option name="DART_BRACKETS">
+            <value>{square}</value>
+        </option>
+        <option name="DART_BRACES">
+            <value>{curly}</value>
+        </option>
+        <option name="DART_COMMA">
+            <value>{comma}</value>
+        </option>
+        <option name="DART_DOT">
+            <value>{dot}</value>
+        </option>
+        <option name="DART_SEMICOLON">
+            <value>{semicolon}</value>
+        </option>
+        <option name="DART_COLON">
+            <value>{colon}</value>
+        </option>
+        <option name="DART_FAT_ARROW">
+            <value>{operator}</value>
+        </option>
+        <option name="DART_BAD_CHARACTER">
+            <value>{bad}</value>
+        </option>
+        <option name="DART_SYMBOL_LITERAL">
+            <value>{symbol}</value>
         </option>
         <option name="DEBUGGER_INLINED_VALUES">
             <value>{injection}</value>
@@ -3857,7 +4034,7 @@
         <option name="FILESTATUS_ADDED" value="{green}" />
         <option name="FILESTATUS_COPIED" value="{blue}" />
         <option name="FILESTATUS_DELETED" value="{red}" />
-        <option name="FILESTATUS_HIJACKED" value="{yellow}" />
+        <option name="FILESTATUS_HIJACKED" value="{yellowBackground}" />
         <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{red}" />
         <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{violet}" />
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{orange}" />
