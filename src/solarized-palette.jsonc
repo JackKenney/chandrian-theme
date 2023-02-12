@@ -17,36 +17,36 @@
     "base2-5": "#e6e0cd", // light tan
     "base3": "#eee8d5", // white
     "base4": "#fdf6e3", // brwhite
-    "darkYellow": "#875B10", // dyellow
-    "yellow": "#b58900", // yellow
-    "brightYellow": "#F0A000", // bryellow 7.5
-    "brightYellowOnBlue": "#F0A000", // bryellow
-    "darkOrange": "#AE4001", //dorange
-    "orange": "#cb4b16", // brred
-    "brightOrange": "#FF9050", //brorange
-    "brightOrangeOnBlue": "#FF9050", //brorange
-    "darkRed": "#B00F0F", // dred
-    "red": "#dc322f", // red
-    "brightRed": "#FF7875", // brbrred 6.5
-    "brightRedOnBlue": "#FF8080", // brbrred 6.5
-    "darkMagenta": "#B310A5", // dmagenta
-    "magenta": "#C10078", // magenta
-    "brightMagenta": "#FF70F0", // brbrmagenta
-    "brightMagentaOnBlue": "#FF81D1", // brbrmagenta
-    "darkViolet": "#6858A6", //dviolet
-    "violet": "#6c71c4", // brmagenta
-    "brightViolet": "#A0A0F4", //brviolet
-    "brightVioletOnBlue": "#B0A0FF", //brviolet
-    "darkBlue": "#2B60C0", //dblue
-    "blue": "#268bd2", // blue
-    "brightBlue": "#38B0FF", // brblue
-    "brightBlueOnBlue": "#0AB8FF", // brblue
-    "darkCyan": "#006E7F", //dcyan
-    "cyan": "#2aa198", // cyan
-    "brightCyan": "#00BCB0", // brcyan
-    "brightCyanOnBlue": "#27C0B8", // brcyan
-    "darkGreen": "#407000", //dgreen
-    "green": "#859900", // green
-    "brightGreen": "#83B800", // brgreen
-    "brightGreenOnBlue": "#85BD2F", // brgreen
+    "darkYellow": "#875B10",
+    "yellow": "#b58900",
+    "brightYellow": "#F0A000",
+    "brightYellowOnBlue": "#FFA000",
+    "darkOrange": "#AE4001",
+    "orange": "#cb4b16",
+    "brightOrange": "#F08040",
+    "brightOrangeOnBlue": "#FF8F40",
+    "darkRed": "#B00F0F",
+    "red": "#dc322f",
+    "brightRed": "#FF7070",
+    "brightRedOnBlue": "#FF7070",
+    "darkMagenta": "#B310A5",
+    "magenta": "#C10078",
+    "brightMagenta": "#FF60C0",
+    "brightMagentaOnBlue": "#FF60B0",
+    "darkViolet": "#6858A6",
+    "violet": "#6c71c4",
+    "brightViolet": "#A0A0F4",
+    "brightVioletOnBlue": "#B0A0FF",
+    "darkBlue": "#2B60C0",
+    "blue": "#268bd2",
+    "brightBlue": "#38B0FF",
+    "brightBlueOnBlue": "#0AB8FF",
+    "darkCyan": "#006E7F",
+    "cyan": "#2aa198",
+    "brightCyan": "#00BCB0",
+    "brightCyanOnBlue": "#27C0B8",
+    "darkGreen": "#407000",
+    "green": "#859900",
+    "brightGreen": "#83B800",
+    "brightGreenOnBlue": "#85BD2F",
 }
