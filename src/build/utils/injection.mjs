@@ -237,17 +237,21 @@ export default class XMLInjector {
         template["interface"] = template["entity"];
         template["invalid"] = template["bad"];
         template["keyword"] = template["structure"];
+        template["label"] = template["tag"];
+        template["library"] = template["external"]
         template["method"] = template["function"];
         template["macro"] = template["global"];
         template["scalar"] = template["constant"];
         template["object"] = template["class"];
         template["operator"] = template["structure"];
         template["overloaded"] = template["macro"];
+        template["package"] = template["library"];
         template["parameter"] = template["variable"];
         template["semicolon"] = template["punctuation_unimportant"];
         template["separator"] = template["comma"];
         template["setter"] = template["function"];
         template["square"] = template["parenthesis"];
+        template["symbol"] = template["global"];
         template["trait"] = template["metadata"];
         template["type"] = template["metadata"];
 

@@ -158,12 +158,12 @@
       "underlinedTabBackground": "{{background}}"
     },
     "FileColor": {
-      "Blue": "{{blue}}",
-      "Green": "{{green}}",
-      "Orange": "{{orange}}",
-      "Rose": "{{magenta}}",
-      "Violet": "{{violet}}",
-      "Yellow": "{{yellow}}"
+      "Blue": "{{blueBackground}}",
+      "Green": "{{greenBackground}}",
+      "Orange": "{{orangeBackground}}",
+      "Rose": "{{magentaBackground}}",
+      "Violet": "{{violetBackground}}",
+      "Yellow": "{{yellowBackground}}"
     },
     "FlameGraph": {
       "JavaCell": {
