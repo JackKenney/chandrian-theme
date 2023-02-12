@@ -543,7 +543,7 @@
             </value>
         </option>
         <option name="ERROR"> <!-- for dart -->
-            <value>{}</value>
+            <value></value>
         </option>
         <option name="WARNING"> <!-- for dart -->
             <value>{warn}</value>
