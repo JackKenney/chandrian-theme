@@ -3468,9 +3468,9 @@
         </option>
         <option name="TDIFF_FUZZY_MISMATCHED">
             <value>
-                <option name="BACKGROUND" value="383b3d" />
-                <option name="EFFECT_COLOR" value="f0a000" />
-                <option name="ERROR_STRIPE_COLOR" value="f0a000" />
+                <option name="BACKGROUND" value="{background}" />
+                <option name="EFFECT_COLOR" value="{yellow}" />
+                <option name="ERROR_STRIPE_COLOR" value="{yellow}" />
             </value>
         </option>
         <option name="TEA.BADCHARACTER">
