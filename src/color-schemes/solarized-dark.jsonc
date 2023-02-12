@@ -15,7 +15,6 @@
         "background": "{{base02}}", //#073642
         "backgroundMild": "{{base01}}", //#586e75
         "backgroundMostMild": "{{base00}}", //#657b83
-        "selectionBackground": "{{base02}}", //#073642
         // end basics
         "commentGray": "{{base1}}", //#93a1a1
         "commentGrayProminent": "{{base1}}", //#93a1a1

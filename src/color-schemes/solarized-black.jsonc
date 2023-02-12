@@ -15,12 +15,11 @@
         "background": "{{base-2}}", //#383b3d
         "backgroundMild": "{{base-1}}", //#555555
         "backgroundMostMild": "{{base-00}}", //#888883
-        "selectionBackground": "{{base02}}", //#073642
         // end basics
         "commentGray": "{{base1}}", //#93a1a1
         "commentGrayProminent": "{{base1}}", //#93a1a1
         // begin mayhem coolest to warmest
-        "keywordGray": "{{base0}}", //#
+        "keywordGray": "{{base0}}", //#839496
         "mainMild": "{{brightCyan}}", //#2ab1a8
         "functions": "{{brightBlue}}", //#66A5EF // doers
         "mainAlt": "{{brightViolet}}", //#7f84D7 //fn definition, .keys, grayish cyan
