@@ -238,7 +238,7 @@ export default class XMLInjector {
         template["invalid"] = template["bad"];
         template["keyword"] = template["structure"];
         template["label"] = template["tag"];
-        template["library"] = template["external"]
+        template["library"] = template["external"];
         template["method"] = template["function"];
         template["macro"] = template["global"];
         template["scalar"] = template["constant"];
