@@ -17,12 +17,12 @@
       "hoverInactiveBackground": "{{background}}",
       "inactiveBackground": "{{backgroundIntense}}",
       "inactiveForeground": "{{textMild}}",
-      "selectionBackground": "{{backgroundMild}}",
-      "selectionBackgroundInactive": "{{backgroundMild}}",
-      "selectionForeground": "{{textMostIntense}}",
-      "selectionForegroundInactive": "{{textIntense}}",
-      "selectionInactiveBackground": "{{backgroundMild}}",
-      "selectionInactiveForeground": "{{textIntense}}",
+      "selectionBackground": "{{selectionBackground}}",
+      "selectionBackgroundInactive": "{{selectionBackground}}",
+      "selectionForeground": "{{textIntense}}",
+      "selectionForegroundInactive": "{{text}}",
+      "selectionInactiveBackground": "{{selectionBackground}}",
+      "selectionInactiveForeground": "{{text}}",
       "textBackground": "{{backgroundIntense}}",
       "textForeground": "{{text}}"
     },
@@ -134,9 +134,9 @@
       "borderColor": "{{background}}",
       "hoverBackground": "{{backgroundMostIntense}}",
       "inactiveUnderlineColor": "{{backgroundMild}}",
-      "underlineColor": "{{blue}}",
-      "underlinedTabBackground": "{{backgroundIntense}}",
-      "underlinedTabForeground": "{{text}}"
+      "underlineColor": "{{violetBackground}}",
+      "underlinedTabBackground": "{{selectionBackground}}",
+      "underlinedTabForeground": "{{textIntense}}"
     },
     "DragAndDrop": {
       "areaBackground": "{{background}}",
@@ -155,7 +155,7 @@
     },
     "EditorTabs": {
       "inactiveColoredFileBackground": "{{orangeBackground}}",
-      "underlinedTabBackground": "{{background}}"
+      "underlinedTabBackground": "{{selectionBackground}}"
     },
     "FileColor": {
       "Blue": "{{blueBackground}}",
@@ -204,21 +204,21 @@
       },
       "ParentCell": {
         "background": "{{backgroundMild}}",
-        "foreground": "{{backgroundMostMild}}",
-        "hoverBackground": "{{textIntense}}",
-        "hoverForeground": "{{backgroundMostMild}}",
+        "foreground": "{{textIntense}}",
+        "hoverBackground": "{{backgroundMostMild}}",
+        "hoverForeground": "{{textMostIntense}}",
         "hoverInactiveBackground": "{{backgroundMild}}",
-        "hoverInactiveForeground": "{{backgroundMostMild}}",
-        "inactiveBackground": "{{backgroundMild}}",
+        "hoverInactiveForeground": "{{textIntense}}",
+        "inactiveBackground": "{{background}}",
         "inactiveForeground": "{{text}}",
         "searchFailBackground": "{{backgroundMild}}",
         "searchFailHoverBackground": "{{orangeBackground}}",
         "searchFailHoverInactiveBackground": "{{yellowBackground}}",
         "searchFailInactiveBackground": "{{background}}",
-        "searchOkBackground": "{{backgroundMild}}",
-        "searchOkHoverBackground": "{{textIntense}}",
-        "searchOkHoverInactiveBackground": "{{backgroundMild}}",
-        "searchOkInactiveBackground": "{{backgroundMild}}"
+        "searchOkBackground": "{{backgroundIntense}}",
+        "searchOkHoverBackground": "{{background}}",
+        "searchOkHoverInactiveBackground": "{{background}}",
+        "searchOkInactiveBackground": "{{backgroundIntense}}"
       }
     },
     "FormattedTextField": {
@@ -669,7 +669,7 @@
           "selectionBackground": "{{blueBackground}}"
         },
         "background": "{{backgroundIntense}}",
-        "selectionBackground": "{{blueBackground}}",
+        "selectionBackground": "{{selectionBackground}}",
         "selectionInactiveBackground": "{{selectionBackground}}"
       },
       "separatorColor": "{{backgroundMostMild}}",

@@ -409,7 +409,7 @@
             <value>{link}</value>
         </option>
         <option name="CTRL_CLICKABLE">
-            <value>{link}</value>
+            <value>{link}{bold}</value>
         </option>
         <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
             <value>{invalid}</value>
