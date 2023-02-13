@@ -1,3 +1,9 @@
+## 2.2.x
+
+- bring high-level color words like "function" to top compile level for high-level tuning
+- adjust various colors to bring VSCode and IDEA closer together 
+(to the spirit of the Chandrian theme intentions)
+
 ## 1.2.x
 
 - unify semantic colors across all 3 themes
