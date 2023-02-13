@@ -1896,7 +1896,7 @@
             <value>{structure}</value>
         </option>
         <option name="LOG_ERROR_OUTPUT">
-            <value>{red}</value>
+            <value>{error}</value>
         </option>
         <option name="LOG_EXPIRED_ENTRY">
             <value>{deprecated}</value>
@@ -3174,7 +3174,7 @@
             <value>{search}</value>
         </option>
         <option name="SLIM_FILTER">
-             <value>{attribute}</value>
+            <value>{attribute}</value>
         </option>
         <option name="SLIM_FILTER_CONTENT">
             <value>{value}</value>

@@ -23,18 +23,13 @@ export default class Compiler {
                 tokenColors: [],
             };
 
-            const preTemplateColors = scheme.colors;
-            const filledInScheme = this.parseJSONTemplateString(
-                JSON.stringify(preTemplateColors), this.solarizedColors);
-            const colors = this.addColoredBackgroundsToScheme(filledInScheme);
+            const colors = this.loadColors(scheme);
 
-            const generalColors = this.fillTemplateAsObject(
+            base.colors =  this.fillTemplateAsObject(
                 colors, paths.GENERAL_STYLES_FOLDER);
-            base.colors = generalColors;
 
-            const codeColors = this.fillTemplateAsArray(
+            base.tokenColors = this.fillTemplateAsArray(
                 colors, paths.CODE_STYLES_FOLDER);
-            base.tokenColors = codeColors;
 
             const outputFileName = this.outputFileName(scheme);
             this.writeOutputFile(
@@ -49,20 +44,15 @@ export default class Compiler {
 
             const themeJSON = {
                 name: `${scheme.name} Chandrian`,
-                dark: scheme.type == "dark",
+                dark: scheme.type === "dark",
                 author: "JackKenney",
                 editorScheme: "",
                 colors: {},
                 ui: {}
             };
 
-            const preTemplateColors = scheme.colors;
-            const filledInScheme = this.parseJSONTemplateString(
-                JSON.stringify(preTemplateColors), this.solarizedColors);
-            const colors = this.addColoredBackgroundsToScheme(filledInScheme);
-
-            const colorsAndName = colors;
-            colorsAndName["themeName"] = "#" + themeJSON["name"];
+            const colors = this.loadColors(scheme);
+            colors["themeName"] = "#" + themeJSON["name"];
 
             const editorXML = this.replaceXMLTemplateContents(
                 `${paths.IDEA_TEMPLATES}/editor/solarized-chandrian.xml`, colors);
@@ -72,7 +62,8 @@ export default class Compiler {
 
             const themeFilePrefix = this.outputFileName(scheme);
             const xmlFilename = this.writeOutputFile(
-                editorXML, `${paths.IDEA_OUTPUT_PATH}/editor`, themeFilePrefix, "xml", false);
+                editorXML, `${paths.IDEA_OUTPUT_PATH}/editor`,
+                themeFilePrefix, "xml", false);
 
             themeJSON["editorScheme"] = `/editor/${xmlFilename}`;
             themeJSON["colors"] = themeBase["colors"];
@@ -83,6 +74,14 @@ export default class Compiler {
         });
         console.log("Build complete.");
     };
+
+    loadColors = (scheme) => {
+        const preTemplateColors = scheme.colors;
+        const filledInScheme = this.parseJSONTemplateString(
+            JSON.stringify(preTemplateColors), this.solarizedColors);
+        const colors = this.addColoredBackgroundsToScheme(filledInScheme);
+        return this.addSymbolColorsToScheme(colors);
+    }
 
     parseColors = () => {
         const solarizedContents = fs.readFileSync(
@@ -114,7 +113,9 @@ export default class Compiler {
         });
 
         // combine templates to do one round of templating
-        const template = Object.assign(injections, colorsNoHash);
+        const template = Object.assign(colorsNoHash, injections);
+
+        console.log(template)
 
         return templateXML(contents, template);
     }
@@ -145,6 +146,58 @@ export default class Compiler {
         );
 
         return Object.assign(scheme, extraColors);
+    }
+
+    /** affords unified schemes across ides */
+    addSymbolColorsToScheme = (scheme) => {
+        const joiner = {
+            attributes: scheme.violet,  // grayish purple
+            booleans: scheme.magenta,
+            class: scheme.violet,
+            commentGray: scheme.gray,
+            commentGrayProminent: scheme.gray,
+            constant: scheme.magenta,
+            decoration: scheme.magenta,
+            deprecated: scheme.textMild,
+            entity: scheme.blue,
+            exit: scheme.orange, // return, throw
+            external: scheme.violet,
+            functions: scheme.blue,  // doers
+            function: scheme.blue,  // doers
+            global: scheme.violet,
+            hint: scheme.violet,
+            injection: scheme.green,
+            interfaces: scheme.violet,  //class names, Promise., bright cyan
+            interpolated: scheme.cyan,
+            interpolation: scheme.cyan,
+            key: scheme.cyan,
+            keys: scheme.cyan,  //this.state.foo, json keys, bright purple
+            keywordGray: scheme.gray,
+            macros: scheme.violet, // @gen, async
+            mainAlt: scheme.violet,
+            mainMild: scheme.cyan,
+            member: scheme.cyan,
+            metadata: scheme.violet,
+            number: scheme.violet,
+            parenthesis: scheme.blue,
+            punctuation_important: scheme.textMostIntense,
+            punctuation_unimportant: scheme.textMild,
+            regex: scheme.yellow,
+            search: scheme.yellow,
+            structural: scheme.yellow,  // if/then
+            string: scheme.green,
+            strings: scheme.green,
+            subtypes: scheme.violet,  // brown-ish red, types, annotation, Type
+            types: scheme.violet, // brown-ish red, types, annotation, Type
+            type: scheme.violet,
+            value: scheme.green,
+            tag: scheme.cyan,
+            important: scheme.orange,
+            variable: scheme.textIntense,
+            warn: scheme.yellow,
+        }
+
+        return Object.assign(scheme, joiner);
     }
 
     mixColors = (bottom, top, alpha) => {

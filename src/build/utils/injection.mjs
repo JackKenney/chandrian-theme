@@ -1,235 +1,173 @@
 /**
-    EFFECT_TYPE
-        none but color present = bordered
-        1 = underscored
-        2 = under-waved
-        4 = bold underscored
-        5 = strikeout
-        6 = dotted line
+ EFFECT_TYPE
+ none but color present = bordered
+ 1 = underscored
+ 2 = under-waved
+ 4 = bold underscored
+ 5 = strikeout
+ 6 = dotted line
 
-    FONT_TYPE
-        1 = bold
-        2 = italic
-        3 = bold and italic
+ FONT_TYPE
+ 1 = bold
+ 2 = italic
+ 3 = bold and italic
 
-    <option name="FOREGROUND" value="{}" />
-    <option name="BACKGROUND" value="{}" />
-    <option name="EFFECT_TYPE" value="" />
-    <option name="EFFECT_COLOR" value="{}" />
-    <option name="ERROR_STRIPE_COLOR" value="{}" />
-    <option name="FONT_TYPE" value="" />
-*/
+ <option name="FOREGROUND" value="{}" />
+ <option name="BACKGROUND" value="{}" />
+ <option name="EFFECT_TYPE" value="" />
+ <option name="EFFECT_COLOR" value="{}" />
+ <option name="ERROR_STRIPE_COLOR" value="{}" />
+ <option name="FONT_TYPE" value="" />
+ */
 export default class XMLInjector {
+    // FONTS
+    BOLD = "1"
+    ITALICS = "2"
+    BOLD_ITALIC = "3"
+    // EFFECTS
+    BORDERED = null
+    UNDERSCORE = "1"
+    UNDERWAVE = "2"
+    BOLD_UNDERSCORED = "4"
+    STRIKEOUT = "5"
+    DOTTED_LINE = "6"
+
+    foreground = (key) => (`
+                <option name="FOREGROUND" value="{${key}}"/>
+            `)
+
+    background = (key) => (`
+            <option name="BACKGROUND" value="{${key}}"/>
+    `)
+
+    effectColor = (key) => (`
+            <option name="EFFECT_COLOR" value="{${key}}"/>
+    `)
+
+    effectType = (value) => (value ? `
+            <option name="EFFECT_TYPE" value="${value}" />
+    ` : "")
+
+    fontType = (value) => (`
+                <option name="FONT_TYPE" value="${value}"/>
+            `)
+
+    errorStripe = (value) => (`
+                <option name="ERROR_STRIPE_COLOR" value="{${value}}"/>
+    `)
+
     getInjectionXMLTemplates() {
         const template = {
-            bad: `
-                <option name="FOREGROUND" value="{red}"/>
-                <option name="EFFECT_COLOR" value="{redBackground}"/>
-                <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
-            `,
+            bad: this.foreground("red") +
+                this.effectColor("redBackground") +
+                this.effectType(this.UNDERWAVE),
 
-            bold: `
-                <option name="FONT_TYPE" value="1"/>
-            `,
+            bold: this.fontType(this.BOLD),
 
-            bold_italic: `
-                <option name="FONT_TYPE" value="3"/>
-            `,
+            bold_italic: this.fontType(this.BOLD_ITALIC),
 
-            class: `
-                <option name="FOREGROUND" value="{violet}"/>
-            `,
+            class: this.foreground("class"),
 
-            comment: `
-                <option name="FOREGROUND" value="{commentGray}"/>
-                <option name="FONT_TYPE" value="2"/>
-            `,
+            comment: this.foreground("commentGray") +
+                this.fontType(this.ITALICS),
 
-            constant: `
-                <option name="FOREGROUND" value="{magenta}"/>
-                <option name="FONT_TYPE" value="2"/>
-            `,
+            constant: this.foreground("constant") +
+                this.fontType(this.ITALICS),
 
-            decoration: `
-                <option name="FOREGROUND" value="{magenta}"/>
-                <option name="FONT_TYPE" value="2"/>
-            `,
+            decoration: this.foreground("decoration") +
+                this.fontType(this.ITALICS),
 
-            default: `
-                <option name="FOREGROUND" value="{text}"/>
-                <option name="BACKGROUND" value="{backgroundMostIntense}"/>
-            `,
+            default: this.foreground("text") +
+                this.background("backgroundMostIntense"),
 
-            deprecated: `
-                <option name="EFFECT_COLOR" value="{textMild}"/>
-                <option name="EFFECT_TYPE" value="3"/>
-            `,
+            deprecated: this.effectColor("deprecated") +
+                this.effectType(this.BOLD_ITALIC),
 
-            entity: `
-                <option name="FOREGROUND" value="{blue}"/>
-            `,
+            entity: this.foreground("blue"),
 
-            error: `
-                <option name="EFFECT_COLOR" value="{red}"/>
-                <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
-            `,
+            error: this.foreground("red") +
+                this.effectType(this.UNDERWAVE),
 
-            expensive: `
-                <option name="EFFECT_COLOR" value="{red}"/>
-                <option name="EFFECT_TYPE" value="1"/>
-            `,
+            expensive: this.foreground("red") +
+                this.effectColor("red") +
+                this.effectType(this.UNDERSCORE),
 
-            external: `
-                <option name="FOREGROUND" value="{violet}"/>
-            `,
+            external: this.foreground("external"),
 
-            followed: `
-                <option name="FOREGROUND" value="{violet}"/>
-                <option name="FONT_TYPE" value="2"/>
-                <option name="EFFECT_COLOR" value="{violet}"/>
-                <option name="EFFECT_TYPE" value="1"/>
-            `,
+            followed: this.foreground("violet") +
+                this.fontType(this.ITALICS) +
+                this.effectColor("violet") +
+                this.effectType(this.UNDERSCORE),
 
-            function: `
-                <option name="FOREGROUND" value="{blue}"/>
-            `,
+            function: this.foreground("function"),
 
-            global: `
-                <option name="FOREGROUND" value="{violet}"/>
-                <option name="FONT_TYPE" value="2"/>
-            `,
+            global: this.foreground("global") +
+                this.fontType(this.ITALICS),
 
-            hint: `
-                <option name="FOREGROUND" value="{violet}"/>
-                <option name="BACKGROUND" value="{background}"/>
-            `,
+            hint: this.foreground("hint") +
+                this.background("background"),
 
-            important: `
-                <option name="FOREGROUND" value="{orange}"/>
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-            `,
+            important: this.foreground("important") +
+                this.background("backgroundIntense"),
 
-            injection: `
-                <option name="EFFECT_COLOR" value="{green}"/>
-            `,
+            injection: this.effectColor("injection"),
 
-            interpolation: `
-                <option name="FOREGROUND" value="{yellow}"/>
-            `,
+            interpolation: this.foreground("interpolation"),
 
-            italic: `
-                <option name="FONT_TYPE" value="2"/>
-            `,
+            italic: this.fontType(this.ITALICS),
 
-            key: `
-                <option name="FOREGROUND" value="{cyan}"/>
-            `,
+            key: this.foreground("key"),
 
-            link: `
-                <option name="FOREGROUND" value="{blue}"/>
-                <option name="EFFECT_COLOR" value="{blue}"/>
-                <option name="EFFECT_TYPE" value="1"/>
-            `,
+            link: this.foreground("blue") +
+                this.effectColor("blue") +
+                this.effectType(this.UNDERSCORE),
 
-            member: `
-                <option name="FOREGROUND" value="{cyan}"/>
-            `,
+            member: this.foreground("member"),
 
-            metadata: `
-                <option name="FOREGROUND" value="{violet}"/>
-            `,
+            metadata: this.foreground("metadata"),
 
-            parenthesis: `
-                <option name="FOREGROUND" value="{blue}"/>
-            `,
+            parenthesis: this.foreground("parenthesis"),
 
-            punctuation_important: `
-                <option name="FOREGROUND" value="{textMostIntense}"/>
-            `,
+            punctuation_important: this.foreground("punctuation_important"),
 
-            punctuation_unimportant: `
-                <option name="FOREGROUND" value="{textMild}"/>
-            `,
+            punctuation_unimportant: this.foreground("punctuation_unimportant"),
 
-            red: `
-                <option name="FOREGROUND" value="{red}"/>
-            `,
+            search: this.background("background") +
+                this.effectColor("search") +
+                this.errorStripe("search"),
 
-            search: `
-                <option name="BACKGROUND" value="{background}"/>
-                <option name="EFFECT_COLOR" value="{yellow}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
-            `,
+            string: this.foreground("string"),
 
-            string: `
-                <option name="FOREGROUND" value="{green}"/>
-            `,
+            structure: this.foreground("structural"),
 
-            structure: `
-                <option name="FOREGROUND" value="{yellow}"/>
-            `,
+            tag: this.foreground("tag"),
 
-            tag: `
-                <option name="FOREGROUND" value="{cyan}"/>
-            `,
+            template: this.background("backgroundIntense") +
+                this.effectColor("violet"),
 
-            template: `
-                <option name="BACKGROUND" value="{backgroundIntense}"/>
-                <option name="EFFECT_COLOR" value="{violet}"/>
-            `,
+            unknown: this.foreground("commentGray") +
+                this.effectColor("commentGray") +
+                this.effectType(this.STRIKEOUT),
 
-            unknown: `
-                <option name="FOREGROUND" value="{commentGray}"/>
-                <option name="EFFECT_COLOR" value="{commentGray}"/>
-                <option name="EFFECT_TYPE" value="5"/>
-            `,
+            value: this.foreground("value"),
 
-            value: `
-                <option name="FOREGROUND" value="{green}"/>
-            `,
+            variable: this.foreground("variable"),
 
-            variable: `
-                <option name="FOREGROUND" value="{textIntense}"/>
-            `,
-
-            warn: `
-                <option name="EFFECT_COLOR" value="{yellowBackground}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{yellow}"/>
-                <option name="EFFECT_TYPE" value="2"/>
-            `,
+            warn: this.errorStripe("warn") +
+                this.effectColor("warn") +
+                this.effectType(this.UNDERWAVE),
 
             // levels
-
-            level_0: `
-                <option name="FOREGROUND" value="{blue}"/>
-            `,
-            level_1: `
-                <option name="FOREGROUND" value="{orange}"/>
-            `,
-            level_2: `
-                <option name="FOREGROUND" value="{cyan}"/>
-            `,
-            level_3: `
-                <option name="FOREGROUND" value="{violet}"/>
-            `,
-            level_4: `
-                <option name="FOREGROUND" value="{yellow}"/>
-            `,
-            level_5: `
-                <option name="FOREGROUND" value="{magenta}"/>
-            `,
-            level_6: `
-                <option name="FOREGROUND" value="{green}"/>
-            `,
-            level_7: `
-                <option name="FOREGROUND" value="{red}"/>
-            `,
-            level_8: `
-                <option name="FOREGROUND" value="{blue}"/>
-            `,
-            level_9: `
-                <option name="FOREGROUND" value="{orange}"/>
-            `,
+            level_0: this.foreground("blue"),
+            level_1: this.foreground("orange"),
+            level_2: this.foreground("cyan"),
+            level_3: this.foreground("violet"),
+            level_4: this.foreground("yellow"),
+            level_5: this.foreground("magenta"),
+            level_6: this.foreground("green"),
+            level_7: this.foreground("red"),
+            level_8: this.foreground("blue"),
+            level_9: this.foreground("orange"),
         };
 
         // duplicates to facilitate future complications
@@ -263,6 +201,7 @@ export default class XMLInjector {
         template["separator"] = template["comma"];
         template["setter"] = template["function"];
         template["square"] = template["parenthesis"];
+        template["strings"] = template["string"];
         template["symbol"] = template["global"];
         template["trait"] = template["metadata"];
         template["type"] = template["metadata"];

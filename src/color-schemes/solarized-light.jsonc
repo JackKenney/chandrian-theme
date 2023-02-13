@@ -15,29 +15,8 @@
         "background": "{{base2}}",
         "backgroundMild": "{{base1-75}}",
         "backgroundMostMild": "{{base1-5}}",
-        // end basics
-        "commentGray": "{{base02}}",
-        "commentGrayProminent": "{{base01}}",
-        // coolest to warmest
-        "keywordGray": "{{base02}}",
-        "mainMild": "{{darkCyan}}",
-        "functions": "{{darkViolet}}", // doers
-        "mainAlt": "{{darkViolet}}", //fn definition, .keys, grayish cyan
-        "keys": "{{darkCyan}}", //this.state.foo, json keys, dark purple
-        "structural": "{{darkYellow}}", //ifthen
-        "exit": "{{darkOrange}}", // return, throw
-        "macros": "{{darkViolet}}", // @gen, async
-        "types": "{{darkCyan}}", // brown-ish red, types, annotation, Type declaration
-        "subtypes": "{{darkBlue}}", // brown-ish red, types, annotation, Type declaration
-        "interpolated": "{{darkCyan}}",
-        "interfaces": "{{darkBlue}}", //class names, Promise., dark cyan
-        "attributes": "{{darkViolet}}", // grayish purple
-        "strings": "{{darkGreen}}",
-        "regex": "{{darkYellow}}",
-        "number": "{{darkViolet}}",
-        "booleans": "{{darkMagenta}}",
-        "important": "{{darkRed}}",
         // simple colors
+        "gray": "{{base02}}",
         "yellow": "{{darkYellow}}",
         "orange": "{{darkOrange}}",
         "red": "{{darkRed}}",

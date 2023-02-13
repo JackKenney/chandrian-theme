@@ -15,29 +15,8 @@
         "background": "{{base02}}", //#073642
         "backgroundMild": "{{base01}}", //#586e75
         "backgroundMostMild": "{{base00}}", //#657b83
-        // end basics
-        "commentGray": "{{base1}}", //#93a1a1
-        "commentGrayProminent": "{{base1}}", //#93a1a1
-        // begin mayhem coolest to warmest
-        "keywordGray": "{{base0}}", //#839496
-        "mainMild": "{{brightCyanOnBlue}}", //#2ab1a8
-        "functions": "{{brightVioletOnBlue}}", //#66A5EF // doers
-        "mainAlt": "{{brightVioletOnBlue}}", //#7f84D7 //fn definition, .keys, grayish cyan
-        "keys": "{{brightCyanOnBlue}}", //#2ab1a8 //this.state.foo, json keys, bright purple
-        "structural": "{{brightYellowOnBlue}}", //#DBA000 //ifthen
-        "exit": "{{brightOrangeOnBlue}}", //#EB7A06 // return, throw
-        "macros": "{{brightVioletOnBlue}}", //#7f84D7 // @gen, async
-        "types": "{{brightCyanOnBlue}}", //#2ab1a8 // brown-ish red, types, annotation, Type declaration
-        "subtypes": "{{brightBlueOnBlue}}", //#66A5EF // brown-ish red, types, annotation, Type declaration
-        "interpolated": "{{brightCyanOnBlue}}", //#2ab1a8
-        "interfaces": "{{brightBlueOnBlue}}", //#66A5EF //class names, Promise., bright cyan
-        "attributes": "{{brightVioletOnBlue}}", //#7f84D7 // grayish purple
-        "strings": "{{brightGreenOnBlue}}", //#85A930
-        "regex": "{{brightYellowOnBlue}}", //#DBA000
-        "number": "{{brightVioletOnBlue}}", //#7f84D7
-        "booleans": "{{brightMagentaOnBlue}}", //#F246A2
-        "important": "{{brightRedOnBlue}}", //#ff454f
         // simple colors
+        "gray": "{{base1}}",
         "yellow": "{{brightYellowOnBlue}}", //#DBA000
         "orange": "{{brightOrangeOnBlue}}", //#EB7A06
         "red": "{{brightRedOnBlue}}", //#ff454f
