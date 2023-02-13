@@ -717,7 +717,7 @@
             <value>{comment}</value>
         </option>
         <option name="DART_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="DART_STRING">
             <value>{string}</value>
@@ -978,7 +978,7 @@
             <value>{keyword}</value>
         </option>
         <option name="DOCKER_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="DOCKER_PARENTH">
             <value>{parenthesis}</value>
@@ -1435,10 +1435,10 @@
             <value>{class}</value>
         </option>
         <option name="JS.EXPORTED.FUNCTION">
-            <value>{function}</value>
+            <value>{external}</value>
         </option>
         <option name="JS.EXPORTED.VARIABLE">
-            <value>{variable}</value>
+            <value>{external}</value>
         </option>
         <option name="JS.FUNCTION_ARROW">
             <value>{operator}</value>
@@ -1582,7 +1582,7 @@
             <value>{function}</value>
         </option>
         <option name="JSONPATH.IDENTIFIER">
-            <value>{entity}</value>
+            <value>{identifier}</value>
         </option>
         <option name="JSONPATH.KEYWORD">
             <value>{keyword}</value>
@@ -2580,7 +2580,7 @@
             <value>{comment}</value>
         </option>
         <option name="PROTOTEXT_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="PROTOTEXT_OPERATION_SIGN">
             <value>{operator}</value>
@@ -2625,7 +2625,7 @@
             <value>{comment}</value>
         </option>
         <option name="PROTO_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="PROTO_PARENTHESES">
             <value>{parenthesis}</value>
@@ -2707,7 +2707,7 @@
             <value>{entity}</value>
         </option>
         <option name="QUTE_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="QUTE_OPERATOR_SIGN">
             <value>{operator}</value>
@@ -3098,7 +3098,7 @@
             <value>{function}</value>
         </option>
         <option name="SASS_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="SASS_OPERATORS">
             <value>{operator}</value>
@@ -3131,7 +3131,7 @@
             <value>{key}</value>
         </option>
         <option name="SASS_UNICODE_RANGE">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="SASS_URL">
             <value>{link}</value>
@@ -3174,7 +3174,7 @@
             <value>{search}</value>
         </option>
         <option name="SLIM_FILTER">
-            <value>{attribute}</value>
+             <value>{attribute}</value>
         </option>
         <option name="SLIM_FILTER_CONTENT">
             <value>{value}</value>
@@ -3251,7 +3251,7 @@
             <value>{method}</value>
         </option>
         <option name="SPEL.NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="SPEL.OPERATIONS">
             <value>{operator}</value>
@@ -3653,7 +3653,7 @@
         <option name="TYPO">
             <value>
                 <option name="EFFECT_COLOR" value="{green}" />
-                <option name="EFFECT_TYPE" value="2" />
+                <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
             </value>
         </option>
         <option name="Template lazy val/var">
@@ -3728,7 +3728,7 @@
             <value>{keyword}</value>
         </option>
         <option name="VELOCITY_NUMBER">
-            <value>{number}</value>
+            <value>{scalar}</value>
         </option>
         <option name="VELOCITY_OPERATION_SIGN">
             <value>{operator}</value>
