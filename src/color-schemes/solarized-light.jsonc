@@ -21,7 +21,7 @@
         // coolest to warmest
         "keywordGray": "{{base02}}",
         "mainMild": "{{darkCyan}}",
-        "functions": "{{darkBlue}}", // doers
+        "functions": "{{darkViolet}}", // doers
         "mainAlt": "{{darkViolet}}", //fn definition, .keys, grayish cyan
         "keys": "{{darkCyan}}", //this.state.foo, json keys, dark purple
         "structural": "{{darkYellow}}", //ifthen

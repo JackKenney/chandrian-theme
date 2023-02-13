@@ -21,7 +21,7 @@
         // begin mayhem coolest to warmest
         "keywordGray": "{{base0}}", //#839496
         "mainMild": "{{brightCyanOnBlue}}", //#2ab1a8
-        "functions": "{{brightBlueOnBlue}}", //#66A5EF // doers
+        "functions": "{{brightVioletOnBlue}}", //#66A5EF // doers
         "mainAlt": "{{brightVioletOnBlue}}", //#7f84D7 //fn definition, .keys, grayish cyan
         "keys": "{{brightCyanOnBlue}}", //#2ab1a8 //this.state.foo, json keys, bright purple
         "structural": "{{brightYellowOnBlue}}", //#DBA000 //ifthen

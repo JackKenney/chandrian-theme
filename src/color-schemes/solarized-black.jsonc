@@ -30,7 +30,7 @@
         "types": "{{brightCyan}}", //#2ab1a8// brown-ish red, types, annotation, Type declaration
         "subtypes": "{{brightBlue}}", //#66A5EF // brown-ish red, types, annotation, Type declaration
         "interpolated": "{{brightCyan}}", //#2ab1a8
-        "interfaces": "{{brightBlue}}", //#66A5EF //class names, Promise., bright cyan
+        "interfaces": "{{brightViolet}}", //#66A5EF //class names, Promise., bright cyan
         "attributes": "{{brightViolet}}", //#7f84D7 // grayish purple
         "strings": "{{brightGreen}}", //#85A930
         "regex": "{{brightYellow}}", //#DBA000
