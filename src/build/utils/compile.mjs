@@ -25,7 +25,7 @@ export default class Compiler {
 
             const colors = this.loadColors(scheme);
 
-            base.colors =  this.fillTemplateAsObject(
+            base.colors = this.fillTemplateAsObject(
                 colors, paths.GENERAL_STYLES_FOLDER);
 
             base.tokenColors = this.fillTemplateAsArray(
@@ -35,7 +35,6 @@ export default class Compiler {
             this.writeOutputFile(
                 base, paths.VSCODE_OUTPUT_PATH, outputFileName, "json");
         });
-        console.log("Build complete.");
     };
 
     compileIDEA = () => {
@@ -72,7 +71,6 @@ export default class Compiler {
             this.writeOutputFile(
                 themeJSON, paths.IDEA_OUTPUT_PATH, themeFilePrefix, "theme.json");
         });
-        console.log("Build complete.");
     };
 
     loadColors = (scheme) => {
@@ -114,8 +112,6 @@ export default class Compiler {
 
         // combine templates to do one round of templating
         const template = Object.assign(colorsNoHash, injections);
-
-        console.log(template)
 
         return templateXML(contents, template);
     }

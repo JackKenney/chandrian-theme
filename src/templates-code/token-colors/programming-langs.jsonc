@@ -48,7 +48,6 @@
             "punctuation.definition.tag",
             "punctuation.definition.variable", //$ in $this
             "punctuation.separator.arguments",
-            
         ],
         "settings": {
             "foreground": "{{text}}BF",
@@ -60,7 +59,6 @@
             "comment",
             "keyword.control.class", //ruby class keyword
             "keyword.control.module", //ruby module keyworld
-            "keyword.operator.assignment",
             "meta.function.expression meta.brace.round", //also catches if blocks
             "meta.method.declaration meta.brace.round", //all paranthesis within a method, excluding if/switch etc
             "meta.var.expr meta.brace.round",
@@ -68,21 +66,30 @@
             "source.cpp keyword.operator.new",
             "source.css.less entity.other.attribute-name.id",
             "source.groovy.embedded",
-            "source.powershell variable.other.member",
             "strong",
             "meta.brace.round",
             "meta.brace.square",
             "meta.diff.header",
             "meta.embedded",
-            "meta.object-literal.key",
-            "meta.object-literal.key",
             "meta.preprocessor.numeric",
             "meta.preprocessor",
-            "meta.property.object",
-            "meta.structure.dictionary.key.python",
         ],
         "settings": {
             "foreground": "{{textMild}}",
+        }
+    },
+    {
+        "name": "Members",
+        "scope": [
+            "meta.object-literal.key",
+            "meta.object-literal.key",
+            "meta.property.object",
+            "meta.structure.dictionary.key.python",
+            "source.powershell variable.other.member",
+            "variable.other.enummember",
+        ],
+        "settings": {
+            "foreground": "{{member}}",
         }
     },
     {
@@ -102,7 +109,6 @@
             "meta.definition.method",
             "entity.name.function", //function definition
             "support.function", //.keys, .forEach, require
-            
         ],
         "settings": {
             "foreground": "{{functions}}"
@@ -144,7 +150,6 @@
             "constant.numeric",
             "constant.language",
             "constant.language.booleans",
-            "variable.other.enummember",
             "support.constant.color",
             "support.constant.dom",
             "support.constant.font-name",
@@ -167,7 +172,6 @@
             "variable.language.this",
             "variable.language.wildcard.java",
             "variable.other.constant",
-            "variable.other.enummember",
             "variable.other.less",
             "variable.other.object",
             "variable.other.property.static",
@@ -184,7 +188,7 @@
             "entity.name.variable",
         ],
         "settings": {
-            "foreground": "{{text}}"
+            "foreground": "{{variable}}"
         }
     },
     {
@@ -193,7 +197,6 @@
             "meta.class meta.method meta.var storage.type", //var, const etc
             "storage.type",
             "meta.class meta.method.declaration storage.type",
-            "storage.type.function.arrow",
             "support.class",
             "support.type",
             "entity.name.type",
@@ -276,6 +279,7 @@
             "keyword.other.unit",
             "keyword",
             "keyword.control",
+            "keyword.operator.assignment",
             "keyword.operator.ternary",
             "keyword.control.case",
             "keyword.control.default",
@@ -296,6 +300,10 @@
             "keyword.other.operator",
             "keyword.other.using",
             "keyword",
+            "keyword.operator.logical.python",
+            "keyword.operator.expression",
+            "keyword.operator",
+            "storage.type.function.arrow",
         ],
         "settings": {
             "foreground": "{{structural}}"
@@ -310,7 +318,6 @@
             "keyword.operator.new",
             "keyword.operator.noexcept",
             "keyword.operator.plus.exponent",
-            "keyword.operator",
             "keyword.control.flow",
             "keyword.control.return",
             "keyword.control.break",
@@ -328,14 +335,12 @@
             "entity.name.type.class",
             "entity.other.inherited-class",
             "keyword.operator.new",
-            "keyword.operator.expression",
             "keyword.operator.cast",
             "keyword.operator.sizeof",
             "keyword.operator.alignof",
             "keyword.operator.typeid",
             "keyword.operator.alignas",
             "keyword.operator.instanceof",
-            "keyword.operator.logical.python",
             "keyword.operator.wordlike",
         ],
         "settings": {

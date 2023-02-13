@@ -105,7 +105,7 @@
             "constant.other.object.key" //What's this?
         ],
         "settings": {
-            "foreground": "{{regex}}"
+            "foreground": "{{keys}}"
         }
     },
     {

@@ -21,7 +21,7 @@
             "log.constant"
         ],
         "settings": {
-            "foreground": "{{attributes}}"
+            "foreground": "{{constant}}"
         }
     },
     {
