@@ -36,6 +36,10 @@ export default class XMLInjector {
                 <option name="FONT_TYPE" value="3"/>
             `,
 
+            class: `
+                <option name="FOREGROUND" value="{violet}"/>
+            `,
+
             comment: `
                 <option name="FOREGROUND" value="{commentGray}"/>
                 <option name="FONT_TYPE" value="2"/>
@@ -66,7 +70,7 @@ export default class XMLInjector {
             `,
 
             error: `
-                <option name="EFFECT_COLOR" value="{redBackground}"/>
+                <option name="EFFECT_COLOR" value="{red}"/>
                 <option name="EFFECT_TYPE" value="2" /> <!-- underwave -->
             `,
 
@@ -128,7 +132,7 @@ export default class XMLInjector {
             `,
 
             member: `
-                <option name="FOREGROUND" value="{blue}"/>
+                <option name="FOREGROUND" value="{cyan}"/>
             `,
 
             metadata: `
@@ -232,7 +236,6 @@ export default class XMLInjector {
 
         template["angle"] = template["default"];
         template["attribute"] = template["key"];
-        template["class"] = template["entity"];
         template["constructor"] = template["function"];
         template["comma"] = template["punctuation_important"];
         template["colon"] = template["structure"];
