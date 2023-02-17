@@ -131,7 +131,7 @@ export default class Compiler {
             const bottom = scheme["backgroundMostIntense"];
             const top = scheme[colorName];
             const key = colorName + "Background";
-            accum[key] = this.mixColors(bottom, top, 0.33);
+            accum[key] = this.mixColors(bottom, top, 0.30); // TODO: fine tune this
             return accum;
         }, {});
 
@@ -139,6 +139,12 @@ export default class Compiler {
             scheme["backgroundMostIntense"],
             scheme["violet"],
             0.15
+        );
+
+        extraColors["injectionBackground"] = this.mixColors(
+            scheme["backgroundMostIntense"],
+            scheme["green"],
+            0.05
         );
 
         return Object.assign(scheme, extraColors);
@@ -157,15 +163,16 @@ export default class Compiler {
             deprecated: scheme.textMild,
             entity: scheme.blue,
             exit: scheme.orange, // return, throw
+            escape: scheme.yellow,
             external: scheme.violet,
             functions: scheme.blue,  // doers
             function: scheme.blue,  // doers
             global: scheme.violet,
             hint: scheme.violet,
-            injection: scheme.green,
+            injection: scheme.injectionBackground,
             interfaces: scheme.violet,  //class names, Promise., bright cyan
-            interpolated: scheme.cyan,
-            interpolation: scheme.cyan,
+            interpolated: scheme.yellow,
+            interpolation: scheme.yellow,
             key: scheme.cyan,
             keys: scheme.cyan,  //this.state.foo, json keys, bright purple
             keywordGray: scheme.gray,
