@@ -71,8 +71,7 @@ export default class XMLInjector {
             comment: this.foreground("commentGray") +
                 this.fontType(this.ITALICS),
 
-            constant: this.foreground("constant") +
-                this.fontType(this.ITALICS),
+            constant: this.foreground("constant"),
 
             decoration: this.foreground("decoration") +
                 this.fontType(this.ITALICS),
@@ -85,7 +84,7 @@ export default class XMLInjector {
 
             entity: this.foreground("blue"),
 
-            error: this.foreground("red") +
+            error: this.effectColor("red") +
                 this.effectType(this.UNDERWAVE),
 
             expensive: this.foreground("red") +
@@ -110,7 +109,7 @@ export default class XMLInjector {
             important: this.foreground("important") +
                 this.background("backgroundIntense"),
 
-            injection: this.effectColor("injection"),
+            injection: this.background("injection"),
 
             interpolation: this.foreground("interpolation"),
 

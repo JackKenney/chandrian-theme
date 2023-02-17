@@ -1537,7 +1537,7 @@
             <value>{invalid}</value>
         </option>
         <option name="JSON.KEYWORD">
-            <value>{keyword}</value>
+            <value>{constant}</value>
         </option>
         <option name="JSON.LINE_COMMENT">
             <value>{comment}</value>
@@ -1956,6 +1956,9 @@
             <value>{macro}</value>
         </option>
         <option name="MACRO_PARAMETER">
+            <value>{member}</value>
+        </option>
+        <option name="MAGIC_MEMBER_ACCESS">
             <value>{member}</value>
         </option>
         <option name="MAKEFILE_BRACES">
@@ -2377,14 +2380,12 @@
         <option name="PHP_COMMENT">
             <value>{comment}</value>
         </option>
-        <option name="PHP_CONCATENATION">
-            <value>{operator}</value>
-        </option>
+        <option name="PHP_CONCATENATION"></option>
         <option name="PHP_CONSTANT">
             <value>{constant}</value>
         </option>
         <option name="PHP_DOC_COMMENT_ID">
-            <value>{attribute}</value>
+            <value>{comment}</value>
         </option>
         <option name="PHP_DOC_IDENTIFIER">
             <value>{variable}</value>
@@ -2489,10 +2490,10 @@
             <value>{class}</value>
         </option>
         <option name="PHP_VAR">
-            <value>{keyword}</value>
+            <value>{variable}</value>
         </option>
         <option name="PHP_VAR_VAR">
-            <value>{keyword}</value>
+            <value>{variable}</value>
         </option>
         <option name="POWER_SHELL_COMMAND_NAME">
             <value>{function}</value>
@@ -3517,9 +3518,9 @@
         </option>
         <option name="TODO_DEFAULT_ATTRIBUTES">
             <value>
-                <option name="ERROR_STRIPE_COLOR" value="{yellow}" />
+                <option name="ERROR_STRIPE_COLOR" value="{orange}" />
                 <option name="FONT_TYPE" value="2" />
-                <option name="FOREGROUND" value="{yellow}" />
+                <option name="FOREGROUND" value="{orange}" />
             </value>
         </option>
         <option name="TS.BADCHARACTER">
@@ -3910,6 +3911,9 @@
         </option>
         <option name="com.plan9.REGISTER">
             <value>{class}</value>
+        </option>
+        <option name="GOTO_LABEL">
+            <value>{keyword}</value>
         </option>
         <option name="go.block.comment">
             <value>{comment}</value>
