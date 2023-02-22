@@ -27,5 +27,6 @@
         "cyan": "{{brightCyan}}", //#2ab1a8
         "green": "{{brightGreen}}", //#85A930
         "white": "#FFFFFF",
+        "black": "#000000",
     }
 }

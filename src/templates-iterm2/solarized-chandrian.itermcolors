@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Name:       {themeName}
+    Author:     Jack Kenney (http://github.com/jackkenney)
+
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Ansi 0 Color</key>
+		<dict>
+			{Ansi_0_Color}
+		</dict>
+		<key>Ansi 1 Color</key>
+		<dict>
+			{Ansi_1_Color}
+		</dict>
+		<key>Ansi 10 Color</key>
+		<dict>
+			{Ansi_10_Color}
+		</dict>
+		<key>Ansi 11 Color</key>
+		<dict>
+			{Ansi_11_Color}
+		</dict>
+		<key>Ansi 12 Color</key>
+		<dict>
+			{Ansi_12_Color}
+		</dict>
+		<key>Ansi 13 Color</key>
+		<dict>
+			{Ansi_13_Color}
+		</dict>
+		<key>Ansi 14 Color</key>
+		<dict>
+			{Ansi_14_Color}
+		</dict>
+		<key>Ansi 15 Color</key>
+		<dict>
+			{Ansi_15_Color}
+		</dict>
+		<key>Ansi 2 Color</key>
+		<dict>
+			{Ansi_2_Color}
+		</dict>
+		<key>Ansi 3 Color</key>
+		<dict>
+			{Ansi_3_Color}
+		</dict>
+		<key>Ansi 4 Color</key>
+		<dict>
+			{Ansi_4_Color}
+		</dict>
+		<key>Ansi 5 Color</key>
+		<dict>
+			{Ansi_5_Color}
+		</dict>
+		<key>Ansi 6 Color</key>
+		<dict>
+			{Ansi_6_Color}
+		</dict>
+		<key>Ansi 7 Color</key>
+		<dict>
+			{Ansi_7_Color}
+		</dict>
+		<key>Ansi 8 Color</key>
+		<dict>
+			{Ansi_8_Color}
+		</dict>
+		<key>Ansi 9 Color</key>
+		<dict>
+			{Ansi_9_Color}
+		</dict>
+		<key>Background Color</key>
+		<dict>
+			{Background_Color}
+		</dict>
+		<key>Bold Color</key>
+		<dict>
+			{Bold_Color}
+		</dict>
+		<key>Cursor Color</key>
+		<dict>
+			{Cursor_Color}
+		</dict>
+		<key>Cursor Text Color</key>
+		<dict>
+			{Cursor_Text_Color}
+		</dict>
+		<key>Foreground Color</key>
+		<dict>
+			{Foreground_Color}
+		</dict>
+		<key>Selected Text Color</key>
+		<dict>
+			{Selected_Text_Color}
+		</dict>
+		<key>Selection Color</key>
+		<dict>
+			{Selection_Color}
+		</dict>
+		<key>Badge Color</key>
+		<dict>
+			{Badge_Color}
+		</dict>
+		<key>Bold Color</key>
+		<dict>
+			{Bold_Color}
+		</dict>
+		<key>Cursor Guide Color</key>
+		<dict>
+			{Cursor_Guide_Color}
+		</dict>
+		<key>Cursor Text Color</key>
+		<dict>
+			{Cursor_Text_Color}
+		</dict>
+		<key>Link Color</key>
+		<dict>
+			{Link_Color}
+		</dict>
+		<key>Selected Text Color</key>
+		<dict>
+			{Selected_Text_Color}
+		</dict>
+		<key>Tab Color</key>
+		<dict>
+			{Tab_Color}
+		</dict>
+		<key>Underline Color</key>
+		<dict>
+			{Underline_Color}
+		</dict>
+	</dict>
+</plist>

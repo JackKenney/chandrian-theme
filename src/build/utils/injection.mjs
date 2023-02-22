@@ -207,4 +207,64 @@ export default class XMLInjector {
 
         return template;
     }
+
+    iterm2Template = (hex) => {
+        if (hex[0] === '#')
+            hex = hex.substr(1);
+
+        const red = hex.substr(0, 2);
+        const green = hex.substr(2, 2);
+        const blue = hex.substr(4, 2);
+
+        return `<key>Alpha Component</key>
+		    <real>1.0</real>
+            <key>Color Space</key>
+            <string>sRGB</string>
+            <key>Blue Component</key>
+            <real>${this.plistReal(blue)}</real>
+            <key>Green Component</key>
+            <real>${this.plistReal(green)}</real>
+            <key>Red Component</key>
+            <real>${this.plistReal(red)}</real>`;
+    }
+
+    plistReal = (value) => {
+        const float = parseInt(value, 16) / 255.0
+        if (float == 1)
+            return "1.0";
+        if (float == 0)
+            return "0.0";
+        return float.toString();
+    }
+
+    iterm2Injections = (colors) => ({
+        "Foreground_Color": this.iterm2Template(colors["text"]),
+        "Background_Color": this.iterm2Template(colors["backgroundMostIntense"]),
+        "Ansi_0_Color": this.iterm2Template(colors["black"]),
+        "Ansi_4_Color": this.iterm2Template(colors["blue"]),
+        "Ansi_6_Color": this.iterm2Template(colors["cyan"]),
+        "Ansi_2_Color": this.iterm2Template(colors["green"]),
+        "Ansi_5_Color": this.iterm2Template(colors["magenta"]),
+        "Ansi_1_Color": this.iterm2Template(colors["red"]),
+        "Ansi_7_Color": this.iterm2Template(colors["white"]),
+        "Ansi_3_Color": this.iterm2Template(colors["yellow"]),
+        "Ansi_8_Color": this.iterm2Template(colors["black"]),
+        "Ansi_12_Color": this.iterm2Template(colors["blue"]),
+        "Ansi_14_Color": this.iterm2Template(colors["cyan"]),
+        "Ansi_10_Color": this.iterm2Template(colors["green"]),
+        "Ansi_13_Color": this.iterm2Template(colors["magenta"]),
+        "Ansi_9_Color": this.iterm2Template(colors["red"]),
+        "Ansi_15_Color": this.iterm2Template(colors["white"]),
+        "Ansi_11_Color": this.iterm2Template(colors["yellow"]),
+        "Selection_Color": this.iterm2Template(colors["selectionBackground"]),
+        "Cursor_Color": this.iterm2Template(colors["textIntense"]),
+        "Cursor_Guide_Color": this.iterm2Template(colors["textIntense"]),
+        "Cursor_Text_Color": this.iterm2Template(colors["textIntense"]),
+        "Link_Color": this.iterm2Template(colors["violet"]),
+        "Selected_Text_Color": this.iterm2Template(colors["textMostIntense"]),
+        "Tab_Color": this.iterm2Template(colors["background"]),
+        "Underline_Color": this.iterm2Template(colors["textMild"]),
+        "Bold_Color": this.iterm2Template(colors["textIntense"]),
+        "Badge_Color": this.iterm2Template(colors["violet"]),
+    })
 }

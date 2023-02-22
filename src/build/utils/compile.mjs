@@ -73,6 +73,22 @@ export default class Compiler {
         });
     };
 
+    compileITerm2 = () => {
+        this.colorSchemeFiles.forEach((fileName) => {
+            const scheme = this.parseColorScheme(fileName);
+            const colors = this.loadColors(scheme);
+
+            const themeName = `${scheme.name} Chandrian`;
+            const plist = this.replacePlistTemplateContents(
+                `${paths.ITERM2_TEMPLATES}/solarized-chandrian.itermcolors`,
+                colors, themeName
+            );
+
+            this.writeOutputFile(
+                plist, paths.ITERM2_OUTPUT_PATH, themeName, "itermcolors", false);
+        });
+    }
+
     loadColors = (scheme) => {
         const preTemplateColors = scheme.colors;
         const filledInScheme = this.parseJSONTemplateString(
@@ -114,6 +130,14 @@ export default class Compiler {
         const template = Object.assign(colorsNoHash, injections);
 
         return templateXML(contents, template);
+    }
+
+    replacePlistTemplateContents = (fileName, colors, themeName) => {
+        const plistTemplate = fs.readFileSync(fileName, "utf8");
+        const injections = (new XMLInjector()).iterm2Injections(colors);
+        injections["themeName"] = themeName;
+
+        return templateXML(plistTemplate, injections);
     }
 
     parseColorScheme = (fileName) => {

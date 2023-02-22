@@ -3,6 +3,7 @@
 - bring high-level color words like "function" to top compile level for high-level tuning
 - adjust various colors to bring VSCode and IDEA closer together 
 (to the spirit of the Chandrian theme intentions)
+- add iTerm2 color themes
 
 ## 1.2.x
 
