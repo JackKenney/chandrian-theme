@@ -1,7 +1,7 @@
 <idea-plugin>
     <name>Solarized Chandrian Themes</name>
     <id>com.jackkenney.solarized-chandrian-theme</id>
-    <version>2.2.1</version>
+    <version>2.2.2</version>
 
     <vendor
         email="jack@kenney.dev"
@@ -36,7 +36,7 @@
             <b>Solarized Light Chandrian</b> or <b>Solarized Dark Chandrian</b> or <b>Solarized Black Chandrian</b> in the Theme dropdown</li>
         <ul type="disc">
         <li>Or to select only an editor scheme go to <b>Settings | Editor | Color Scheme</b> and
-            select <b>Solarized Light CHandrian</b> or <b>Solarized Dark Chandrian</b> or <b>Solarized Black Chandrian</b> in the Scheme dropdown</li>
+            select <b>Solarized Light Chandrian</b> or <b>Solarized Dark Chandrian</b> or <b>Solarized Black Chandrian</b> in the Scheme dropdown</li>
         </ul>
         </ol>
     ]]>

@@ -542,8 +542,11 @@
                 <option name="EFFECT_COLOR" value="{cyan}" />
             </value>
         </option>
+        <option name="ComposableCallTextAttributes">
+            <value>{interface}</value>
+        </option>
         <option name="ERROR"> <!-- for dart -->
-            <value></value>
+            <value>{error}</value>
         </option>
         <option name="WARNING"> <!-- for dart -->
             <value>{warn}</value>
