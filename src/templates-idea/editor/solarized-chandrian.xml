@@ -543,7 +543,7 @@
             </value>
         </option>
         <option name="ComposableCallTextAttributes">
-            <value>{interface}</value>
+            <value>{member}</value>
         </option>
         <option name="ERROR"> <!-- for dart -->
             <value>{error}</value>
