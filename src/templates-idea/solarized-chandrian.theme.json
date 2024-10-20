@@ -399,35 +399,35 @@
     "RadioButtonMenuItem": {},
     "ScrollBar": {
       "background": "{{backgroundMostIntense}}",
-      "hoverThumbBorderColor": "{{backgroundIntense}}",
-      "hoverThumbColor": "{{backgroundMild}}",
-      "hoverTrackColor": "",
+      "hoverThumbBorderColor": "{{backgroundMostMild}}",
+      "hoverThumbColor": "{{backgroundMostMild}}",
+      "hoverTrackColor": "{{backgroundIntense}}",
       "Mac": {
         "hoverThumbBorderColor": "{{backgroundMostIntense}}",
-        "hoverThumbColor": "{{backgroundIntense}}",
-        "hoverTrackColor": "",
+        "hoverThumbColor": "{{backgroundMostMild}}",
+        "hoverTrackColor": "{{backgroundIntense}}",
         "thumbBorderColor": "{{backgroundMostIntense}}",
-        "thumbColor": "{{backgroundIntense}}",
-        "trackColor": "",
+        "thumbColor": "{{backgroundMild}}",
+        "trackColor": "{{backgroundIntense}}",
         "Transparent": {
           "hoverThumbBorderColor": "{{backgroundMostIntense}}",
-          "hoverThumbColor": "{{backgroundMild}}8C",
-          "hoverTrackColor": "{{backgroundMild}}1A",
-          "thumbBorderColor": "",
-          "thumbColor": "",
-          "trackColor": ""
+          "hoverThumbColor": "{{backgroundMostMild}}",
+          "hoverTrackColor": "{{backgroundIntense}}",
+          "thumbBorderColor": "{{backgroundMostIntense}}",
+          "thumbColor": "{{backgroundMild}}",
+          "trackColor": "{{backgroundIntense}}"
         }
       },
-      "thumbBorderColor": "{{backgroundIntense}}",
-      "thumbColor": "{{background}}",
-      "trackColor": "",
+      "thumbBorderColor": "{{backgroundMostIntense}}",
+      "thumbColor": "{{backgroundMild}}",
+      "trackColor": "{{backgroundIntense}}",
       "Transparent": {
-        "hoverThumbBorderColor": "{{backgroundIntense}}59",
-        "hoverThumbColor": "{{backgroundMild}}",
-        "hoverTrackColor": "{{backgroundMild}}1A",
-        "thumbBorderColor": "{{backgroundIntense}}47",
-        "thumbColor": "{{background}}",
-        "trackColor": ""
+        "hoverThumbBorderColor": "{{backgroundMostMild}}",
+        "hoverThumbColor": "{{backgroundMostMild}}",
+        "hoverTrackColor": "{{backgroundIntense}}",
+        "thumbBorderColor": "{{backgroundMostIntense}}",
+        "thumbColor": "{{backgroundMild}}",
+        "trackColor": "{{backgroundIntense}}"
       }
     },
     "ScrollPane": {},
