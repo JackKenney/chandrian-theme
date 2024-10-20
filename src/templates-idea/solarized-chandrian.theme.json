@@ -294,7 +294,7 @@
       "borderColor": "{{backgroundMild}}"
     },
     "Notification": {
-      "borderColor": "{{magentaBackground}}",
+      "borderColor": "{{backgroundMild}}",
       "errorBackground": "{{redBackground}}",
       "errorBorderColor": "{{red}}",
       "errorForeground": "{{text}}",
@@ -304,8 +304,8 @@
         "innerBorderColor": "{{background}}"
       },
       "ToolWindow": {
-        "errorBackground": "{{backround}}",
-        "errorBorderColor": "{{backroundIntense}}",
+        "errorBackground": "{{background}}",
+        "errorBorderColor": "{{backgroundIntense}}",
         "errorForeground": "{{text}}",
         "informativeBackground": "{{backgroundIntense}}",
         "informativeBorderColor": "{{green}}",
@@ -313,6 +313,12 @@
         "warningBackground": "{{yellowBackground}}",
         "warningBorderColor": "{{yellow}}",
         "warningForeground": "{{text}}"
+      }
+    },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "{{backgroundMild}}",
+        "hoverBackground": "{{background}}"
       }
     },
     "OptionPane": {
@@ -497,7 +503,9 @@
     },
     "StatusBar": {
       "borderColor": "{{backgroundIntense}}",
-      "hoverBackground": "{{background}}"
+      "Widget": {
+        "hoverBackground": "{{background}}"
+      }
     },
     "TabbedPane": {
       "contentAreaColor": "{{backgroundMostIntense}}",
