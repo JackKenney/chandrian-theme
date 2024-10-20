@@ -79,7 +79,6 @@
         "iconColor": "{{textMild}}",
         "nonEditableBackground": "{{backgroundIntense}}"
       },
-      "disabledBackground": "{{backgroundIntense}}",
       "modifiedItemForeground": "{{blue}}",
       "nonEditableBackground": "{{backgroundIntense}}"
     },
@@ -140,7 +139,6 @@
     },
     "DragAndDrop": {
       "areaBackground": "{{background}}",
-      "areaBorderColor": "{{blue}}",
       "areaForeground": "{{text}}",
       "borderColor": "{{red}}"
     },
