@@ -79,6 +79,7 @@
         "iconColor": "{{textMild}}",
         "nonEditableBackground": "{{backgroundIntense}}"
       },
+      "disabledBackground": "{{backgroundIntense}}",
       "modifiedItemForeground": "{{blue}}",
       "nonEditableBackground": "{{backgroundIntense}}"
     },
@@ -139,6 +140,7 @@
     },
     "DragAndDrop": {
       "areaBackground": "{{background}}",
+      "areaBorderColor": "{{blue}}",
       "areaForeground": "{{text}}",
       "borderColor": "{{red}}"
     },
@@ -415,8 +417,8 @@
         "trackColor": "{{backgroundIntense}}",
         "Transparent": {
           "hoverThumbBorderColor": "{{backgroundMostIntense}}",
-          "hoverThumbColor": "{{backgroundMostMild}}",
-          "hoverTrackColor": "{{backgroundIntense}}",
+          "hoverThumbColor": "{{backgroundMostMild}}8C",
+          "hoverTrackColor": "{{backgroundIntense}}1A",
           "thumbBorderColor": "{{backgroundMostIntense}}",
           "thumbColor": "{{backgroundMild}}",
           "trackColor": "{{backgroundIntense}}"
@@ -426,10 +428,10 @@
       "thumbColor": "{{backgroundMild}}",
       "trackColor": "{{backgroundIntense}}",
       "Transparent": {
-        "hoverThumbBorderColor": "{{backgroundMostMild}}",
+        "hoverThumbBorderColor": "{{backgroundMostMild}}59",
         "hoverThumbColor": "{{backgroundMostMild}}",
-        "hoverTrackColor": "{{backgroundIntense}}",
-        "thumbBorderColor": "{{backgroundMostIntense}}",
+        "hoverTrackColor": "{{backgroundIntense}}1A",
+        "thumbBorderColor": "{{backgroundMostIntense}}47",
         "thumbColor": "{{backgroundMild}}",
         "trackColor": "{{backgroundIntense}}"
       }
