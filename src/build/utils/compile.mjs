@@ -154,8 +154,13 @@ export default class Compiler {
         const extraColors = basicColorNames.reduce((accum, colorName) => {
             const bottom = scheme["backgroundMostIntense"];
             const top = scheme[colorName];
+
             const key = colorName + "Background";
             accum[key] = this.mixColors(bottom, top, 0.30); // TODO: fine tune this
+
+            const lightKey = "light" + colorName[0].toUpperCase() + colorName.substring(1) + "Background";
+            accum[lightKey] = this.mixColors(bottom, top, 0.20); // TODO: fine tune this
+
             return accum;
         }, {});
 
